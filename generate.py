@@ -29,12 +29,12 @@ def main():
         print('调用 bmfont.exe ...')
         with subprocess.Popen(cmdline) as proc:
             pass
-        if os.path.exists(outputname_base + '_1.tga'):
+        if os.path.exists(outputname_base + '_1.png'):
             warnings.warn(fontname + ': 请使用更大的输出纹理')
-        if os.path.exists(outputname_base + '.tga'):
-            os.remove(outputname_base + '.tga')
-        os.rename(outputname_base + '_0.tga', outputname_base + '.tga')
-        
+        if os.path.exists(outputname_base + '.png'):
+            os.remove(outputname_base + '.png')
+        os.rename(outputname_base + '_0.png', outputname_base + '.png')
+
         print('转换格式 ...')
         fnt2lst(outputname_base + '.fnt', outputname_base + '.lst')
         print('过河拆桥 ...')

@@ -4,9 +4,6 @@
 class Line(dict):
     def __init__(self, line):
         super().__init__(self)
-        self.parse(line)
-        
-    def parse(self, line):
         line = line.strip()
         comps = line.split(' ')
         if '=' not in comps[0]:
@@ -25,7 +22,7 @@ def fnt2lst(fnt_path, lst_path, scale=1, fallback=95):
     lst_file = open(lst_path, 'w')
     lines = open(fnt_path, 'r', encoding='utf-8').readlines()
 
-    infos = Line(lines[0])
+    infos = Line(lines[0][lines[0].find("spacing="):])
     spacing = infos['spacing'].split(',')
 
     commons = Line(lines[1])
@@ -45,15 +42,12 @@ def fnt2lst(fnt_path, lst_path, scale=1, fallback=95):
         y = int(infos['y'])
         w = int(infos['width'])
         h = int(infos['height'])
-        xoffset = int(infos['xoffset'])
-        yoffset = int(infos['yoffset'])
-        xadvance = int(infos['xadvance'])
-    
+
         coord1 = (x/width, y/height)
         coord2 = ((x+w)/width, (y+h)/height)
-        offset = (xoffset, yoffset)
-        gwidth = xadvance
-    
+        offset = (float(infos['xoffset']), float(infos['yoffset']))
+        gwidth = int(infos['xadvance'])
+
         lst_file.write(
             '{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\n'.format(
                 unicode,
@@ -66,7 +60,7 @@ def fnt2lst(fnt_path, lst_path, scale=1, fallback=95):
     print('processed', char_count, 'glyphes   ')
 
     lst_file.write('{}\n'.format(line_height))
-    lst_file.write('{} {}\n'.format(spacing[0], spacing[1]))
+    lst_file.write('{}\t{}\n'.format(spacing[0], spacing[1]))
     lst_file.write('{}\n'.format(scale))
     lst_file.write('{}\n'.format(fallback))
     
