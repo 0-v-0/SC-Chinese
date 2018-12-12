@@ -1,12 +1,11 @@
 <Screen xmlns="runtime-namespace:Game">
 
-  <ClearWidget />
   <PanoramaWidget />
 
   <StackPanelWidget Direction="Horizontal">
 
-    <CanvasWidget Style="{Widgets\TopBarContents}" >
-      <LabelWidget Name="TopBar.Label" Text="选择一个分类" />
+    <CanvasWidget Style="{Widgets/TopBarContents}" >
+      <LabelWidget Name="TopBar.Label" Text="选择设置分类" />
     </CanvasWidget>
 
     <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center">
@@ -14,15 +13,14 @@
       <CanvasWidget Size="Infinity, Infinity">
         <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
           <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Near" Margin="8, 0">
-            <BevelledButtonWidget Name="Performance" Text="性能" Style="{Styles\ButtonStyle_310x60}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 5" />
-            <BevelledButtonWidget Name="Graphics" Text="画面" Style="{Styles\ButtonStyle_310x60}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 5" />
-            <BevelledButtonWidget Name="Ui" Text="用户界面" Style="{Styles\ButtonStyle_310x60}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 5" />
-            <BevelledButtonWidget Name="Compatibility" Text="兼容性" Style="{Styles\ButtonStyle_310x60}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 5" />
+            <BevelledButtonWidget Name="Performance" Text="性能" Style="{Styles/ButtonStyle_310x60}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 5" />
+            <BevelledButtonWidget Name="Graphics" Text="图形" Style="{Styles/ButtonStyle_310x60}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 5" />
+            <BevelledButtonWidget Name="Ui" Text="用户界面" Style="{Styles/ButtonStyle_310x60}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 5" />
           </StackPanelWidget>
           <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Near" Margin="8, 0">
-            <BevelledButtonWidget Name="Audio" Text="音频" Style="{Styles\ButtonStyle_310x60}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 5" />
-            <BevelledButtonWidget Name="Controls" Text="控制" Style="{Styles\ButtonStyle_310x60}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 5" />
-            <BevelledButtonWidget Name="Sensitivities" Text="操控灵敏度" Style="{Styles\ButtonStyle_310x60}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 5" />
+            <BevelledButtonWidget Name="Audio" Text="声音" Style="{Styles/ButtonStyle_310x60}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 5" />
+            <BevelledButtonWidget Name="Controls" Text="控制" Style="{Styles/ButtonStyle_310x60}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 5" />
+            <BevelledButtonWidget Name="Compatibility" Text="灵敏度" Style="{Styles/ButtonStyle_310x60}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 5" />
           </StackPanelWidget>
         </StackPanelWidget>
       </CanvasWidget>

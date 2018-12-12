@@ -1,19 +1,18 @@
 <Screen xmlns="runtime-namespace:Game">
 
-  <ClearWidget />
   <PanoramaWidget />
 
   <StackPanelWidget Direction="Horizontal">
 
-    <CanvasWidget Style="{Widgets\TopBarContents}" >
-      <LabelWidget Name="TopBar.Label" Text="调整设备兼容性设置" />
+    <CanvasWidget Style="{Widgets/TopBarContents}" >
+      <LabelWidget Name="TopBar.Label" Text="调整设备兼容" />
     </CanvasWidget>
 
     <StackPanelWidget Direction="Vertical" Margin="10, 0">
 
       <CanvasWidget Size="0, 20" />
 
-      <LabelWidget Font="{Fonts\Pericles18}" Color="255, 255, 255" HorizontalAlignment="Center" TextAnchor="HorizontalCenter" WordWrap="true" Text="仅当你的游戏体验欠佳时修改下列设置。" />
+      <LabelWidget Font="{Fonts/Pericles18}" Color="255, 255, 255" HorizontalAlignment="Center" TextAnchor="HorizontalCenter" WordWrap="true" Text="仅当游戏异常时才更改这些设置。" />
 
       <CanvasWidget Size="0, 20" />
 
@@ -23,35 +22,35 @@
           <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
 
             <UniformSpacingPanelWidget Direction="Horizontal">
-              <LabelWidget Text="Invisible Models Workaround:" Font="{Fonts\Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-              <BevelledButtonWidget Name="InvisibleModelsWorkaroundButton" Style="{Styles\ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+              <LabelWidget Text="隐形模型解决方案：" Font="{Fonts/Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+              <BevelledButtonWidget Name="InvisibleModelsWorkaroundButton" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
             </UniformSpacingPanelWidget>
 
             <UniformSpacingPanelWidget Direction="Horizontal">
-              <LabelWidget Text="Singlethreaded Terrain Update:" Font="{Fonts\Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-              <BevelledButtonWidget Name="SinglethreadedTerrainUpdateButton" Style="{Styles\ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+              <LabelWidget Text="单线程更新地形：" Font="{Fonts/Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+              <BevelledButtonWidget Name="SinglethreadedTerrainUpdateButton" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
             </UniformSpacingPanelWidget>
 
             <UniformSpacingPanelWidget Name="DisableAudioTrackCachingContainer" Direction="Horizontal">
-              <LabelWidget Text="Use AudioTrack Caching:" Font="{Fonts\Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-              <BevelledButtonWidget Name="UseAudioTrackCachingButton" Style="{Styles\ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+              <LabelWidget Text="使用音轨缓存：" Font="{Fonts/Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+              <BevelledButtonWidget Name="UseAudioTrackCachingButton" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
             </UniformSpacingPanelWidget>
 
             <UniformSpacingPanelWidget Name="UseReducedZRangeContainer" Direction="Horizontal">
-              <LabelWidget Text="Use Reduced Z-Range:" Font="{Fonts\Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-              <BevelledButtonWidget Name="UseReducedZRangeButton" Style="{Styles\ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+              <LabelWidget Text="使用简化Z范围：" Font="{Fonts/Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+              <BevelledButtonWidget Name="UseReducedZRangeButton" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
             </UniformSpacingPanelWidget>
 
 			<CanvasWidget Size="0, 20" />
 
             <UniformSpacingPanelWidget Direction="Horizontal">
-              <LabelWidget Text="查看游戏日志:" Font="{Fonts\Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-              <BevelledButtonWidget Name="ViewGameLogButton" Style="{Styles\ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" Text="..."/>
+              <LabelWidget Text="查看游戏日志：" Font="{Fonts/Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+              <BevelledButtonWidget Name="ViewGameLogButton" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" Text="..."/>
             </UniformSpacingPanelWidget>
 			
             <UniformSpacingPanelWidget Direction="Horizontal">
-			  <LabelWidget Text="重置为默认设置:" Font="{Fonts\Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-              <BevelledButtonWidget Name="ResetDefaultsButton" Style="{Styles\ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" Text="重置"/>
+			  <LabelWidget Text="恢复默认：" Font="{Fonts/Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+              <BevelledButtonWidget Name="ResetDefaultsButton" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" Text="重置"/>
             </UniformSpacingPanelWidget>
 
 			</StackPanelWidget>
@@ -61,7 +60,7 @@
       <CanvasWidget Size="0, 10"/>
 
       <CanvasWidget Size="Infinity, 80" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <LabelWidget Name="Description" HorizontalAlignment="Center" VerticalAlignment="Center" TextAnchor="HorizontalCenter, VerticalCenter" Font="{Fonts\Pericles18}" Color="128, 128, 128" WordWrap="true" />
+        <LabelWidget Name="Description" HorizontalAlignment="Center" VerticalAlignment="Center" TextAnchor="HorizontalCenter, VerticalCenter" Font="{Fonts/Pericles18}" Color="128, 128, 128" WordWrap="true" />
       </CanvasWidget>
 
       <CanvasWidget Size="0, 10"/>

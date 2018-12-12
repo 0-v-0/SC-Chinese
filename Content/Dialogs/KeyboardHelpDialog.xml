@@ -1,12 +1,10 @@
 <CanvasWidget xmlns="runtime-namespace:Game">
 
-  <RectangleWidget FillColor="0, 0, 0, 128" OutlineColor="0, 0, 0, 0" IsHitTestVisible="true" />
-
-  <CanvasWidget Size="600, 380" ClampToBounds="true" HorizontalAlignment="Center" VerticalAlignment="Center">
+  <CanvasWidget Size="620, 420" ClampToBounds="true" HorizontalAlignment="Center" VerticalAlignment="Center">
     <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" OutlineThickness="2" />
     <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Near" Margin="0, 15">
 
-      <LabelWidget Font="{Fonts\Pericles32}" Text="游戏功能键" HorizontalAlignment="Center"/>
+      <LabelWidget Font="{Fonts/Pericles32}" Text="键盘控制" HorizontalAlignment="Center"/>
 
       <CanvasWidget Margin="20, 15">
 
@@ -18,6 +16,7 @@
 
             <StackPanelWidget Direction="Vertical">
               <LabelWidget Text="W/A/S/D" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
+              <LabelWidget Text="移动鼠标" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
               <LabelWidget Text="Space" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
               <LabelWidget Text="Shift" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
               <LabelWidget Text="E" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
@@ -29,41 +28,46 @@
               <LabelWidget Text="P" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
               <LabelWidget Text="T" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
               <LabelWidget Text="L" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
-              <LabelWidget Text="1 到 6" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
-              <LabelWidget Text="2x空格连击 或 F" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
+              <LabelWidget Text="1 to 6" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
+              <LabelWidget Text="2xSpace or F" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
               <LabelWidget Text="Space/Shift" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
               <LabelWidget Text="鼠标左键" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
               <LabelWidget Text="鼠标右键" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
-              <LabelWidget Text="鼠标左键拖拽" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
-              <LabelWidget Text="鼠标右键拖拽" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
-              <LabelWidget Text="按住鼠标左键" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
+              <LabelWidget Text="鼠标左键拖动" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
+              <LabelWidget Text="鼠标右键拖动" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
+              <LabelWidget Text="鼠标左键长按" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
+              <LabelWidget Text="Shift + 鼠标左键" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
               <LabelWidget Text="鼠标滚轮" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
+              <LabelWidget Text="Escape" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
             </StackPanelWidget>
 
             <CanvasWidget Size="16, 0" />
 
             <StackPanelWidget Direction="Vertical">
               <LabelWidget Text="移动" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
-              <LabelWidget Text="跳" Font="{Fonts/Pericles18}" Color="160, 160, 160"/>
-              <LabelWidget Text="切换潜行模式" Font="{Fonts/Pericles18}" Color="160, 160, 160"/>
+              <LabelWidget Text="查看" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
+              <LabelWidget Text="跳跃" Font="{Fonts/Pericles18}" Color="160, 160, 160"/>
+              <LabelWidget Text="切换潜行" Font="{Fonts/Pericles18}" Color="160, 160, 160"/>
               <LabelWidget Text="打开背包面板" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
-              <LabelWidget Text="打开人物面板" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
+              <LabelWidget Text="打开身体面板" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
               <LabelWidget Text="丢弃物品" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
-              <LabelWidget Text="更改摄像机模式" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
-              <LabelWidget Text="骑乘动物或载具" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
-              <LabelWidget Text="编辑方块或物品" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
-              <LabelWidget Text="保存屏幕截图" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
-              <LabelWidget Text="更改游戏内时间 (创造模式)" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
-              <LabelWidget Text="召唤雷击 (创造模式)" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
-              <LabelWidget Text="选择物品槽" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
-              <LabelWidget Text="切换飞行模式 (创造模式)" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
-              <LabelWidget Text="往上飞/往下飞 (创造模式)" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
-              <LabelWidget Text="挖掘、攻击、瞄准" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
-              <LabelWidget Text="放置方块、使用物品、与方块交互" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
+              <LabelWidget Text="更改相机模式" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
+              <LabelWidget Text="骑乘" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
+              <LabelWidget Text="编辑块或物品" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
+              <LabelWidget Text="屏幕截图" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
+              <LabelWidget Text="更改时间 (创造)" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
+              <LabelWidget Text="召唤闪电 (创造)" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
+              <LabelWidget Text="选择背包插槽" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
+              <LabelWidget Text="切换飞行模式 (创造)" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
+              <LabelWidget Text="飞行 上升/下降 (创造)" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
+              <LabelWidget Text="挖掘，攻击，瞄准" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
+              <LabelWidget Text="放置，使用，交互" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
               <LabelWidget Text="移动所有物品" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
-              <LabelWidget Text="移动一个物品" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
-              <LabelWidget Text="标记该格以供划分" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
-              <LabelWidget Text="滚动/切换物品槽" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
+              <LabelWidget Text="移动单个物品" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
+              <LabelWidget Text="用于分裂的标记栈" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
+              <LabelWidget Text="自动移动背包物品" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
+              <LabelWidget Text="滚动，更改背包插槽" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
+              <LabelWidget Text="显示游戏菜单" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
             </StackPanelWidget>
           </StackPanelWidget>
 
@@ -72,9 +76,9 @@
       </CanvasWidget>
 
       <StackPanelWidget HorizontalAlignment="Center">
-        <BevelledButtonWidget Name="OkButton" Text="OK" Style="{Styles\ButtonStyle_160x60}"  />
+        <BevelledButtonWidget Name="OkButton" Text="确定" Style="{Styles/ButtonStyle_160x60}"  />
         <CanvasWidget Size="40, 0" />
-        <BevelledButtonWidget Name="HelpButton" Text="帮助" Style="{Styles\ButtonStyle_160x60}" />
+        <BevelledButtonWidget Name="HelpButton" Text="帮助" Style="{Styles/ButtonStyle_160x60}" />
       </StackPanelWidget>
       
     </StackPanelWidget>

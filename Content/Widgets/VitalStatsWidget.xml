@@ -1,86 +1,164 @@
-<ClothingWidget xmlns="runtime-namespace:Game">
-  <BevelledRectangleWidget Size="614, 382" Texture="{Textures\Gui\Panel}" BevelSize="3" TextureScale="0.5" />
-  <LabelWidget Text="人物状态" Font="{Fonts\Pericles24}" Color="255, 255, 255, 192" Margin="0, 12" HorizontalAlignment="Center"/>
+<ClothingWidget xmlns="runtime-namespace:Game" Size="614, 382">
+  <BevelledRectangleWidget BevelSize="3" />
 
-  <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" >
+  <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center">
 
-    <StackPanelWidget Direction="Vertical">
+    <CanvasWidget Size="0, 12"/>
 
-      <StackPanelWidget Direction="Vertical" Margin="0, 4">
-        <LabelWidget Text="健康值" Font="{Fonts\Pericles18}" HorizontalAlignment="Center" Margin="0, 4" />
-        <CanvasWidget Size="162, 30" >
-          <BevelledRectangleWidget Size="162, 30" Texture="{Textures\Gui\Panel}" BevelSize="-2" TextureScale="0.5" CenterColor="0, 0, 0, 0" />
-          <ValueBarWidget Name="HealthValueBar" LayoutDirection="Horizontal" BarsCount="6" LitBarColor="160, 32, 0" UnlitBarColor="48, 48, 48, 80" BarSize="26, 26" BarSubtexture="{Textures\Atlas\ProgressBarLarge}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        </CanvasWidget>
+    <LabelWidget Name="TitleLabel" Text="" Font="{Fonts/Pericles24}" Color="255, 255, 255" HorizontalAlignment="Center"/>
+    <CanvasWidget Size="0, 4" />
+    <LabelWidget Text="生命统计" Font="{Fonts/Pericles18}" Color="160, 160, 160, 255" HorizontalAlignment="Center" />
+
+    <CanvasWidget Size="0, Infinity"/>
+    
+    <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" >
+
+      <StackPanelWidget Direction="Vertical">
+
+        <StackPanelWidget Direction="Horizontal">
+          <LinkWidget Name="HealthLink" Size="110, -1" Text="生命" Font="{Fonts/Pericles18u}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
+          <CanvasWidget Size="10, 0"/>
+          <CanvasWidget Size="148, 36" >
+            <BevelledRectangleWidget BevelSize="-2" CenterColor="0, 0, 0, 0" />
+            <ValueBarWidget Name="HealthValueBar" LayoutDirection="Horizontal" BarsCount="10" HalfBars="true" BarBlending="false"  LitBarColor="160, 32, 0" UnlitBarColor="48, 48, 48, 80" BarSize="14, 28" BarSubtexture="{Textures/Atlas/ProgressBarTall}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+          </CanvasWidget>
+        </StackPanelWidget>
+
+        <CanvasWidget Size="0, 8" />
+
+        <StackPanelWidget Direction="Horizontal">
+          <LinkWidget Name="StaminaLink" Size="110, -1" Text="耐力" Font="{Fonts/Pericles18u}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
+          <CanvasWidget Size="10, 0"/>
+          <CanvasWidget Size="148, 36" >
+            <BevelledRectangleWidget BevelSize="-2" CenterColor="0, 0, 0, 0" />
+            <ValueBarWidget Name="StaminaValueBar" LayoutDirection="Horizontal" BarsCount="10" HalfBars="true" BarBlending="false"  LitBarColor="0, 128, 0" UnlitBarColor="48, 48, 48, 80" BarSize="14, 28" BarSubtexture="{Textures/Atlas/ProgressBarTall}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+          </CanvasWidget>
+        </StackPanelWidget>
+
+        <CanvasWidget Size="0, 8" />
+
+        <StackPanelWidget Direction="Horizontal">
+          <LinkWidget Name="SleepLink" Size="110, -1" Text="睡觉" Font="{Fonts/Pericles18u}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
+          <CanvasWidget Size="10, 0"/>
+          <CanvasWidget Size="148, 36" >
+            <BevelledRectangleWidget BevelSize="-2" CenterColor="0, 0, 0, 0" />
+            <ValueBarWidget Name="SleepValueBar" LayoutDirection="Horizontal" BarsCount="10" HalfBars="true" BarBlending="false"  LitBarColor="112, 112, 136" UnlitBarColor="48, 48, 48, 80" BarSize="14, 28" BarSubtexture="{Textures/Atlas/ProgressBarTall}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+          </CanvasWidget>
+        </StackPanelWidget>
+
+        <CanvasWidget Size="0, 8" />
+
+        <StackPanelWidget Direction="Horizontal">
+          <LinkWidget Name="FoodLink" Size="110, -1" Text="食物" Font="{Fonts/Pericles18u}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
+          <CanvasWidget Size="10, 0"/>
+          <CanvasWidget Size="148, 36" >
+            <BevelledRectangleWidget BevelSize="-2" CenterColor="0, 0, 0, 0" />
+            <ValueBarWidget Name="FoodValueBar" LayoutDirection="Horizontal" BarsCount="10" HalfBars="true" BarBlending="false"  LitBarColor="112, 64, 0" UnlitBarColor="48, 48, 48, 80" BarSize="14, 28" BarSubtexture="{Textures/Atlas/ProgressBarTall}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+          </CanvasWidget>
+        </StackPanelWidget>
+
+        <CanvasWidget Size="0, 8" />
+
+        <StackPanelWidget Direction="Horizontal">
+          <LinkWidget Name="WetnessLink" Size="110, -1" Text="湿度" Font="{Fonts/Pericles18u}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
+          <CanvasWidget Size="10, 0"/>
+          <CanvasWidget Size="148, 36" >
+            <BevelledRectangleWidget BevelSize="-2" CenterColor="0, 0, 0, 0" />
+            <ValueBarWidget Name="WetnessValueBar" LayoutDirection="Horizontal" BarsCount="10" HalfBars="true" BarBlending="false"  LitBarColor="0, 0, 128" UnlitBarColor="48, 48, 48, 80" BarSize="14, 28" BarSubtexture="{Textures/Atlas/ProgressBarTall}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+          </CanvasWidget>
+        </StackPanelWidget>
+
+        <CanvasWidget Size="0, 8" />
+
+        <StackPanelWidget Direction="Horizontal">
+          <LinkWidget Name="TemperatureLink" Size="110, -1" Text="体温" Font="{Fonts/Pericles18u}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
+          <CanvasWidget Size="10, 0"/>
+          <CanvasWidget Size="148, 36" >
+            <BevelledRectangleWidget BevelSize="-2" CenterColor="0, 0, 0, 0" />
+            <ValueBarWidget Name="TemperatureValueBar" LayoutDirection="Horizontal" BarsCount="10" HalfBars="true" BarBlending="false"  LitBarColor="0, 96, 255" UnlitBarColor="48, 48, 48, 80" BarSize="14, 28" BarSubtexture="{Textures/Atlas/ProgressBarTall}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+          </CanvasWidget>
+        </StackPanelWidget>
+
       </StackPanelWidget>
 
-      <StackPanelWidget Direction="Vertical" Margin="0, 4">
-        <LabelWidget Text="体力值" Font="{Fonts\Pericles18}" HorizontalAlignment="Center" Margin="0, 4" />
-        <CanvasWidget Size="162, 30" >
-          <BevelledRectangleWidget Size="162, 30" Texture="{Textures\Gui\Panel}" BevelSize="-2" TextureScale="0.5" CenterColor="0, 0, 0, 0" />
-          <ValueBarWidget Name="StaminaValueBar" LayoutDirection="Horizontal" BarsCount="6" LitBarColor="0, 128, 0" UnlitBarColor="48, 48, 48, 80" BarSize="26, 26" BarSubtexture="{Textures\Atlas\ProgressBarLarge}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        </CanvasWidget>
-      </StackPanelWidget>
+      <CanvasWidget Size="30, 0"/>
 
-      <StackPanelWidget Direction="Vertical" Margin="0, 4">
-        <LabelWidget Text="饱食度" Font="{Fonts\Pericles18}" HorizontalAlignment="Center" Margin="0, 4" />
-        <CanvasWidget Size="162, 30" >
-          <BevelledRectangleWidget Texture="{Textures\Gui\Panel}" BevelSize="-2" TextureScale="0.5" CenterColor="0, 0, 0, 0" />
-          <ValueBarWidget Name="FoodValueBar" LayoutDirection="Horizontal" BarsCount="6" LitBarColor="112, 64, 0" UnlitBarColor="48, 48, 48, 80" BarSize="26, 26" BarSubtexture="{Textures\Atlas\ProgressBarLarge}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        </CanvasWidget>
-      </StackPanelWidget>
+      <StackPanelWidget Direction="Vertical" VerticalAlignment="Center">
 
-      <StackPanelWidget Direction="Vertical" Margin="0, 4">
-        <LabelWidget Text="移动速度" Font="{Fonts\Pericles18}" HorizontalAlignment="Center" Margin="0, 4" />
-        <CanvasWidget Size="162, 30">
-          <BevelledRectangleWidget Texture="{Textures\Gui\Panel}" BevelSize="-2" TextureScale="0.5" CenterColor="0, 0, 0, 0" />
-          <LabelWidget Name="MovementSpeedLabel" Font="{Fonts\Pericles18}" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        </CanvasWidget>
+        <StackPanelWidget Direction="Horizontal">
+          <LinkWidget Name="ExperienceLink" Size="110, -1" Text="经验" Font="{Fonts/Pericles18u}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
+          <CanvasWidget Size="10, 0"/>
+          <CanvasWidget Size="148, 36" >
+            <BevelledRectangleWidget BevelSize="-2" CenterColor="0, 0, 0, 0" />
+            <ValueBarWidget Name="ExperienceValueBar" LayoutDirection="Horizontal" BarsCount="10" HalfBars="true" BarBlending="false"  LitBarColor="255, 208, 128" UnlitBarColor="48, 48, 48, 80" BarSize="14, 28" BarSubtexture="{Textures/Atlas/ProgressBarTall}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+          </CanvasWidget>
+        </StackPanelWidget>
+
+        <CanvasWidget Size="0, 8" />
+
+        <StackPanelWidget Direction="Horizontal">
+          <LinkWidget Name="StrengthLink" Size="110, -1" Text="力量" Font="{Fonts/Pericles18u}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
+          <CanvasWidget Size="10, 0"/>
+          <CanvasWidget Size="148, 36" >
+            <BevelledRectangleWidget BevelSize="-2" CenterColor="0, 0, 0, 0" />
+            <LabelWidget Name="StrengthLabel" Font="{Fonts/Pericles24}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+          </CanvasWidget>
+        </StackPanelWidget>
+
+        <CanvasWidget Size="0, 8" />
+
+        <StackPanelWidget Direction="Horizontal">
+          <LinkWidget Name="ResilienceLink" Size="110, -1" Text="恢复" Font="{Fonts/Pericles18u}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
+          <CanvasWidget Size="10, 0"/>
+          <CanvasWidget Size="148, 36" >
+            <BevelledRectangleWidget BevelSize="-2" CenterColor="0, 0, 0, 0" />
+            <LabelWidget Name="ResilienceLabel" Font="{Fonts/Pericles24}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+          </CanvasWidget>
+        </StackPanelWidget>
+
+        <CanvasWidget Size="0, 8" />
+
+        <StackPanelWidget Direction="Horizontal">
+          <LinkWidget Name="SpeedLink" Size="110, -1" Text="速度" Font="{Fonts/Pericles18u}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
+          <CanvasWidget Size="10, 0"/>
+          <CanvasWidget Size="148, 36" >
+            <BevelledRectangleWidget BevelSize="-2" CenterColor="0, 0, 0, 0" />
+            <LabelWidget Name="SpeedLabel" Font="{Fonts/Pericles24}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+          </CanvasWidget>
+        </StackPanelWidget>
+
+        <CanvasWidget Size="0, 8" />
+
+        <StackPanelWidget Direction="Horizontal">
+          <LinkWidget Name="HungerLink" Size="110, -1" Text="饥饿" Font="{Fonts/Pericles18u}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
+          <CanvasWidget Size="10, 0"/>
+          <CanvasWidget Size="148, 36" >
+            <BevelledRectangleWidget BevelSize="-2" CenterColor="0, 0, 0, 0" />
+            <LabelWidget Name="HungerLabel" Font="{Fonts/Pericles24}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+          </CanvasWidget>
+        </StackPanelWidget>
+
+        <CanvasWidget Size="0, 8" />
+
+        <StackPanelWidget Direction="Horizontal">
+          <LinkWidget Name="InsulationLink" Size="110, -1" Text="绝缘" Font="{Fonts/Pericles18u}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
+          <CanvasWidget Size="10, 0"/>
+          <CanvasWidget Size="148, 36" >
+            <BevelledRectangleWidget BevelSize="-2" CenterColor="0, 0, 0, 0" />
+            <LabelWidget Name="InsulationLabel" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+          </CanvasWidget>
+        </StackPanelWidget>
+
       </StackPanelWidget>
 
     </StackPanelWidget>
 
-    <CanvasWidget Size="60, 0"/>
-
-    <StackPanelWidget Direction="Vertical">
-
-      <StackPanelWidget Direction="Vertical" Margin="0, 4">
-        <LabelWidget Text="空气" Font="{Fonts\Pericles18}" HorizontalAlignment="Center" Margin="0, 4" />
-        <CanvasWidget Size="162, 30">
-          <BevelledRectangleWidget Texture="{Textures\Gui\Panel}" BevelSize="-2" TextureScale="0.5" CenterColor="0, 0, 0, 0" />
-          <ValueBarWidget Name="AirValueBar" LayoutDirection="Horizontal" BarsCount="6" LitBarColor="112, 112, 136" UnlitBarColor="48, 48, 48, 80" BarSize="26, 26" BarSubtexture="{Textures\Atlas\ProgressBarLarge}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        </CanvasWidget>
-      </StackPanelWidget>
-
-      <StackPanelWidget Direction="Vertical" Margin="0, 4">
-        <LabelWidget Text="体温" Font="{Fonts\Pericles18}" HorizontalAlignment="Center" Margin="0, 4" />
-        <CanvasWidget Size="162, 30">
-          <BevelledRectangleWidget Texture="{Textures\Gui\Panel}" BevelSize="-2" TextureScale="0.5" CenterColor="0, 0, 0, 0" />
-          <ValueBarWidget Name="TemperatureValueBar" LayoutDirection="Horizontal" BarsCount="6" LitBarColor="0, 96, 255" LitBarColor2="255, 96, 0" UnlitBarColor="48, 48, 48, 80" BarSize="26, 26" BarSubtexture="{Textures\Atlas\ProgressBarLarge}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        </CanvasWidget>
-      </StackPanelWidget>
-
-      <StackPanelWidget Direction="Vertical" Margin="0, 4">
-        <LabelWidget Text="身体湿度" Font="{Fonts\Pericles18}" HorizontalAlignment="Center" Margin="0, 4" />
-        <CanvasWidget Size="162, 30">
-          <BevelledRectangleWidget Texture="{Textures\Gui\Panel}" BevelSize="-2" TextureScale="0.5" CenterColor="0, 0, 0, 0" />
-          <ValueBarWidget Name="WetnessValueBar" LayoutDirection="Horizontal" BarsCount="6" LitBarColor="0, 0, 128" UnlitBarColor="48, 48, 48, 80" BarSize="26, 26" BarSubtexture="{Textures\Atlas\ProgressBarLarge}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        </CanvasWidget>
-      </StackPanelWidget>
-
-      <StackPanelWidget Direction="Vertical" Margin="0, 4">
-        <LabelWidget Text="衣物隔热性" Font="{Fonts\Pericles18}" HorizontalAlignment="Center" Margin="0, 4" />
-        <CanvasWidget Size="162, 30">
-          <BevelledRectangleWidget Texture="{Textures\Gui\Panel}" BevelSize="-2" TextureScale="0.5" CenterColor="0, 0, 0, 0" />
-          <LabelWidget Name="InsulationLabel" Font="{Fonts\Pericles18}" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        </CanvasWidget>
-      </StackPanelWidget>
-
-    </StackPanelWidget>
+    <CanvasWidget Size="0, Infinity"/>
 
   </StackPanelWidget>
 
-  <BevelledButtonWidget Name="ChokeButton" CanvasWidget.Position="530, 15" Text="" Style="{Styles\ButtonStyle_70x60}">
-    <RectangleWidget Size="40, 40" OutlineColor="0, 0, 0, 0" FillColor="255, 255, 255" Subtexture="{Textures\Atlas\SkullAndBones}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+  <BevelledButtonWidget Name="ChokeButton" CanvasWidget.Position="535, 12" Text="" Style="{Styles/ButtonStyle_70x60}">
+    <RectangleWidget Size="40, 40" OutlineColor="0, 0, 0, 0" FillColor="255, 255, 255" Subtexture="{Textures/Atlas/SkullAndBones}" HorizontalAlignment="Center" VerticalAlignment="Center" />
   </BevelledButtonWidget>
+  
 </ClothingWidget>

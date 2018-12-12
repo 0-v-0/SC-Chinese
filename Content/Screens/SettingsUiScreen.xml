@@ -1,11 +1,10 @@
 <Screen xmlns="runtime-namespace:Game">
 
-  <ClearWidget />
   <PanoramaWidget />
 
   <StackPanelWidget Direction="Horizontal">
 
-    <CanvasWidget Style="{Widgets\TopBarContents}" >
+    <CanvasWidget Style="{Widgets/TopBarContents}" >
       <LabelWidget Name="TopBar.Label" Text="调整用户界面设置" />
     </CanvasWidget>
 
@@ -15,33 +14,38 @@
         <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
 
           <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
-            <LabelWidget Text="UI 大小:" Font="{Fonts\Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-            <BevelledButtonWidget Name="UiSizeButton" Style="{Styles\ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+            <LabelWidget Text="用户界面大小：" Font="{Fonts/Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+            <BevelledButtonWidget Name="UiSizeButton" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
           </UniformSpacingPanelWidget>
 
           <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
-            <LabelWidget Text="隐藏 移动/视角 托盘:" Font="{Fonts\Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-            <BevelledButtonWidget Name="HideMoveLookPads" Style="{Styles\ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+            <LabelWidget Text="隐藏移动观察按钮：" Font="{Fonts/Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+            <BevelledButtonWidget Name="UpsideDownButton" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
           </UniformSpacingPanelWidget>
 
           <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
-            <LabelWidget Text="在屏幕截图中显示 UI:" Font="{Fonts\Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-            <BevelledButtonWidget Name="ShowGuiInScreenshotsButton" Style="{Styles\ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+            <LabelWidget Text="隐藏移动/查看图标：" Font="{Fonts/Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+            <BevelledButtonWidget Name="HideMoveLookPads" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
           </UniformSpacingPanelWidget>
 
           <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
-            <LabelWidget Text="在屏幕截图中显示 Logo:" Font="{Fonts\Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-            <BevelledButtonWidget Name="ShowLogoInScreenshotsButton" Style="{Styles\ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+            <LabelWidget Text="截图显示用户界面：" Font="{Fonts/Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+            <BevelledButtonWidget Name="ShowGuiInScreenshotsButton" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
           </UniformSpacingPanelWidget>
 
           <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
-            <LabelWidget Text="屏幕截图分辨率:" Font="{Fonts\Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-            <BevelledButtonWidget Name="ScreenshotSizeButton" Style="{Styles\ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+            <LabelWidget Text="截图显示Logo：" Font="{Fonts/Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+            <BevelledButtonWidget Name="ShowLogoInScreenshotsButton" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
           </UniformSpacingPanelWidget>
 
           <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
-            <LabelWidget Text="社区内容:" Font="{Fonts\Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-            <BevelledButtonWidget Name="CommunityContentEnabledButton" Style="{Styles\ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+            <LabelWidget Text="截图分辨率：" Font="{Fonts/Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+            <BevelledButtonWidget Name="ScreenshotSizeButton" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+          </UniformSpacingPanelWidget>
+
+          <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+            <LabelWidget Text="社区内容：" Font="{Fonts/Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+            <BevelledButtonWidget Name="CommunityContentModeButton" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
           </UniformSpacingPanelWidget>
 
         </StackPanelWidget>

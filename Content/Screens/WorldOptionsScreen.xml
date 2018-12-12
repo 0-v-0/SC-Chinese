@@ -1,11 +1,10 @@
 <Screen xmlns="runtime-namespace:Game">
 
-  <ClearWidget />
   <PanoramaWidget />
 
   <StackPanelWidget Direction="Horizontal">
 
-    <CanvasWidget Style="{Widgets\TopBarContents}" >
+    <CanvasWidget Style="{Widgets/TopBarContents}" >
       <LabelWidget Name="TopBar.Label" Text="更改世界选项" />
     </CanvasWidget>
 
@@ -16,112 +15,140 @@
         <ScrollPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="3, 3">
           <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
 
-            <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
-              <LabelWidget Text="角色皮肤:" Font="{Fonts\Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-              <StackPanelWidget Direction="Horizontal" Margin="20, 0">
-                <CanvasWidget Size="6, 0" />
-                <CanvasWidget VerticalAlignment="Center">
-                  <RectangleWidget FillColor="0, 0, 0, 0" OutlineColor="255, 255, 255, 48" Size="56, 56"/>
-                  <ModelWidget Name="CharacterSkinModel" Size="28, 56" ViewPosition="0, 1.5, -1.75" ViewTarget="0, 1.0, 0" AutoRotationVector="0, 0, 0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                </CanvasWidget>
-                <CanvasWidget Size="10, 0" />
-                <CanvasWidget Size="Infinity, 64" ClampToBounds="true">
-                  <StackPanelWidget Direction="Vertical" VerticalAlignment="Center">
-                    <LabelWidget Name="CharacterSkinLabel" Font="{Fonts\Pericles18}"/>
-                    <LabelWidget Name="CharacterSkinDetails" Font="{Fonts\Pericles18}" Color="128, 128, 128"/>
-                  </StackPanelWidget>
-                </CanvasWidget>
-                <BevelledButtonWidget Name="CharacterSkinButton" Style="{Styles\ButtonStyle_70x60}" Text="..." VerticalAlignment="Center" />
-              </StackPanelWidget>
-            </UniformSpacingPanelWidget>
+            <!--New world only panel-->
+            <StackPanelWidget Name="NewWorldOnlyPanel" Direction="Vertical" HorizontalAlignment="Center">
 
-            <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
-              <LabelWidget Text="方块纹理:" Font="{Fonts\Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-              <StackPanelWidget Direction="Horizontal" Margin="20, 0">
-                <CanvasWidget Size="6, 0" />
-                <RectangleWidget Name="BlocksTextureIcon" Size="56, 56" FillColor="255, 255, 255" OutlineColor="0, 0, 0, 0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <CanvasWidget Size="10, 0" />
-                <CanvasWidget Size="Infinity, 64" ClampToBounds="true">
-                  <StackPanelWidget Direction="Vertical" VerticalAlignment="Center">
-                    <LabelWidget Name="BlocksTextureLabel" Font="{Fonts\Pericles18}" />
-                    <LabelWidget Name="BlocksTextureDetails" Font="{Fonts\Pericles18}" Color="128, 128, 128"/>
-                  </StackPanelWidget>
-                </CanvasWidget>
-                <BevelledButtonWidget Name="BlocksTextureButton" Style="{Styles\ButtonStyle_70x60}" Text="..." VerticalAlignment="Center" />
-              </StackPanelWidget>
-            </UniformSpacingPanelWidget>
-
-            <StackPanelWidget Name="CreativeModePanel" Direction="Vertical" HorizontalAlignment="Center">
-
-              <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
-                <LabelWidget Text="环境行为:" Font="{Fonts\Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-                <BevelledButtonWidget Name="EnvironmentBehavior" Style="{Styles\ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
-              </UniformSpacingPanelWidget>
-
-              <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
-                <LabelWidget Text="时间:" Font="{Fonts\Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-                <BevelledButtonWidget Name="TimeOfDay" Style="{Styles\ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
-              </UniformSpacingPanelWidget>
-
-              <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
-                <LabelWidget Text="天气:" Font="{Fonts\Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-                <BevelledButtonWidget Name="WeatherEffects" Style="{Styles\ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
-              </UniformSpacingPanelWidget>
-
-              <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
-                <LabelWidget Text="冒险模式 复活:" Font="{Fonts\Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-                <BevelledButtonWidget Name="AdventureRespawn" Style="{Styles\ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
-              </UniformSpacingPanelWidget>
-
-              <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
-                <LabelWidget Text="冒险模式 生存机制:" Font="{Fonts\Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-                <BevelledButtonWidget Name="AdventureSurvivalMechanics" Style="{Styles\ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
-              </UniformSpacingPanelWidget>
-
-              <StackPanelWidget Name="NewWorldOnlyPanel" Direction="Vertical" >
+              <!--Terrain generation-->
+              <StackPanelWidget Name="TerrainGenerationPanel" Direction="Vertical" >
 
                 <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
-                  <LabelWidget Text="地形生成:" Font="{Fonts\Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-                  <BevelledButtonWidget Name="TerrainGeneration" Style="{Styles\ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+                  <LabelWidget Text="地形类型：" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+                  <StackPanelWidget Direction="Horizontal" VerticalAlignment="Center" Margin="20, 0">
+                    <LabelWidget Name="TerrainGenerationLabel" Font="{Fonts/Pericles32}" VerticalAlignment="Center" />
+                    <CanvasWidget Size="Infinity, 0"/>
+                    <BevelledButtonWidget Name="TerrainGeneration" Style="{Styles/ButtonStyle_70x60}" Text="..." VerticalAlignment="Center" />
+                  </StackPanelWidget>
                 </UniformSpacingPanelWidget>
+
+                <StackPanelWidget Name="ContinentTerrainPanel" Direction="Vertical"/>
+
+                <StackPanelWidget Name="IslandTerrainPanel" Direction="Vertical">
+                  <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+                    <LabelWidget Text="岛屿大小 东/西：" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+                    <SliderWidget Name="IslandSizeEW" Size="Infinity, 60" VerticalAlignment="Center" Margin="20, 0" />
+                  </UniformSpacingPanelWidget>
+                  <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+                    <LabelWidget Text="岛屿大小 南/北：" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+                    <SliderWidget Name="IslandSizeNS" Size="Infinity, 60" VerticalAlignment="Center" Margin="20, 0" />
+                  </UniformSpacingPanelWidget>
+                </StackPanelWidget>
 
                 <StackPanelWidget Name="FlatTerrainPanel" Direction="Vertical" >
 
                   <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
-                    <LabelWidget Text="平坦地形 高度:" Font="{Fonts\Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-                    <SliderWidget Name="FlatTerrainLevel" Size="360, 60" VerticalAlignment="Center" Margin="20, 0" Granularity="8" MinValue="8" MaxValue="104" />
+                    <LabelWidget Text="平坦地形高度：" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+                    <SliderWidget Name="FlatTerrainLevel" Size="Infinity, 60" VerticalAlignment="Center" Margin="20, 0" Granularity="8" MinValue="8" MaxValue="104" />
                   </UniformSpacingPanelWidget>
 
                   <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
-                    <LabelWidget Text="平坦地形 方块:" Font="{Fonts\Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+                    <LabelWidget Text="平坦地形材质：" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
                     <StackPanelWidget Direction="Horizontal" Margin="20, 0">
                       <BlockIconWidget Name="FlatTerrainBlock" Size="64, 64" VerticalAlignment="Center" HorizontalAlignment="Center" Contents="1" />
                       <CanvasWidget Size="10, 0" />
-                      <LabelWidget Name="FlatTerrainBlockLabel" Font="{Fonts\Pericles18}" VerticalAlignment="Center" />
+                      <LabelWidget Name="FlatTerrainBlockLabel" Font="{Fonts/Pericles18}" VerticalAlignment="Center" />
                       <CanvasWidget Size="20, 0" />
-                      <BevelledButtonWidget Name="FlatTerrainBlockButton" Style="{Styles\ButtonStyle_70x60}" Text="..." VerticalAlignment="Center" />
+                      <BevelledButtonWidget Name="FlatTerrainBlockButton" Style="{Styles/ButtonStyle_70x60}" Text="..." VerticalAlignment="Center" />
                     </StackPanelWidget>
                   </UniformSpacingPanelWidget>
 
                   <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
-                    <LabelWidget Text="平坦地形 岩浆海洋:" Font="{Fonts\Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+                    <LabelWidget Text="岩浆海洋：" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
                     <CheckboxWidget Name="MagmaOcean" VerticalAlignment="Center" IsAutoCheckingEnabled="false" Margin="20, 14" />
                   </UniformSpacingPanelWidget>
 
                 </StackPanelWidget>
 
-                <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
-                  <LabelWidget Text="温度:" Font="{Fonts\Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-                  <SliderWidget Name="TemperatureOffset" Size="360, 60" VerticalAlignment="Center" Margin="20, 0" Granularity="2" MinValue="-16" MaxValue="16" />
-                </UniformSpacingPanelWidget>
-
-                <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
-                  <LabelWidget Text="湿度:" Font="{Fonts\Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-                  <SliderWidget Name="HumidityOffset" Size="360, 60" VerticalAlignment="Center" Margin="20, 0" Granularity="2" MinValue="-16" MaxValue="16" />
-                </UniformSpacingPanelWidget>
-
               </StackPanelWidget>
+
+              <!-- Terrain options -->
+              <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+                <LabelWidget Text="海平面：" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+                <SliderWidget Name="SeaLevelOffset" Size="Infinity, 60" VerticalAlignment="Center" Margin="20, 0" Granularity="1" MinValue="0" MaxValue="16" />
+              </UniformSpacingPanelWidget>
+
+              <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+                <LabelWidget Text="温度：" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+                <SliderWidget Name="TemperatureOffset" Size="Infinity, 60" VerticalAlignment="Center" Margin="20, 0" Granularity="2" MinValue="-16" MaxValue="16" />
+              </UniformSpacingPanelWidget>
+
+              <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+                <LabelWidget Text="湿度：" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+                <SliderWidget Name="HumidityOffset" Size="Infinity, 60" VerticalAlignment="Center" Margin="20, 0" Granularity="2" MinValue="-16" MaxValue="16" />
+              </UniformSpacingPanelWidget>
+
+              <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+                <LabelWidget Text="生物大小：" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+                <SliderWidget Name="BiomeSize" Size="Infinity, 60" VerticalAlignment="Center" Margin="20, 0" Granularity="2" MinValue="-16" MaxValue="16" />
+              </UniformSpacingPanelWidget>
+
             </StackPanelWidget>
+
+            <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+              <LabelWidget Text="材质纹理：" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+              <StackPanelWidget Direction="Horizontal" Margin="20, 0">
+                <CanvasWidget Size="6, 0" />
+                <RectangleWidget Name="BlocksTextureIcon" Size="56, 56" FillColor="255, 255, 255" OutlineColor="0, 0, 0, 0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <CanvasWidget Size="10, 0" />
+                <CanvasWidget Size="Infinity, 64">
+                  <StackPanelWidget Direction="Vertical" VerticalAlignment="Center">
+                    <LabelWidget Name="BlocksTextureLabel" Font="{Fonts/Pericles18}" />
+                    <LabelWidget Name="BlocksTextureDetails" Font="{Fonts/Pericles18}" Color="128, 128, 128"/>
+                  </StackPanelWidget>
+                </CanvasWidget>
+                <BevelledButtonWidget Name="BlocksTextureButton" Style="{Styles/ButtonStyle_70x60}" Text="..." VerticalAlignment="Center" />
+              </StackPanelWidget>
+            </UniformSpacingPanelWidget>
+
+            <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+              <LabelWidget Text="自定义颜色：" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+              <BevelledButtonWidget Name="Palette" Text="..." Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+            </UniformSpacingPanelWidget>
+
+            <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+              <LabelWidget Text="超自然生物：" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+              <BevelledButtonWidget Name="SupernaturalCreatures" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+            </UniformSpacingPanelWidget>
+
+            <!--Creative mode panel-->
+            <StackPanelWidget Name="CreativeModePanel" Direction="Vertical" HorizontalAlignment="Center">
+
+              <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+                <LabelWidget Text="环境行为：" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+                <BevelledButtonWidget Name="EnvironmentBehavior" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+              </UniformSpacingPanelWidget>
+
+              <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+                <LabelWidget Text="当天时间：" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+                <BevelledButtonWidget Name="TimeOfDay" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+              </UniformSpacingPanelWidget>
+
+              <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+                <LabelWidget Text="天气效果：" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+                <BevelledButtonWidget Name="WeatherEffects" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+              </UniformSpacingPanelWidget>
+
+              <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+                <LabelWidget Text="冒险重生：" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+                <BevelledButtonWidget Name="AdventureRespawn" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+              </UniformSpacingPanelWidget>
+
+              <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+                <LabelWidget Text="冒险生存模拟：" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+                <BevelledButtonWidget Name="AdventureSurvivalMechanics" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+              </UniformSpacingPanelWidget>
+
+            </StackPanelWidget>
+
           </StackPanelWidget>
         </ScrollPanelWidget>
       </CanvasWidget>
@@ -129,7 +156,7 @@
       <CanvasWidget Size="0, 10" />
 
       <CanvasWidget Size="Infinity, 80" Margin="20, 0">
-        <LabelWidget Name="Description" Font="{Fonts\Pericles18}" Color="128, 128, 128" HorizontalAlignment="Center" VerticalAlignment="Center" TextAnchor="HorizontalCenter, VerticalCenter" WordWrap="true"/>
+        <LabelWidget Name="Description" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Center" VerticalAlignment="Center" TextAnchor="HorizontalCenter, VerticalCenter" WordWrap="true"/>
       </CanvasWidget>
     
     </StackPanelWidget>

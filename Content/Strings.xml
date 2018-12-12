@@ -3,50 +3,74 @@
   <String Name="MoveControlMode.Pad">触摸板</String>
   <String Name="MoveControlMode.Buttons">按钮</String>
   <String Name="LookControlMode.Pad">仅触摸板</String>
-  <String Name="LookControlMode.EntireScreen">全屏幕</String>
-  <String Name="LookControlMode.SplitTouch">分离 触控</String>
+  <String Name="LookControlMode.EntireScreen">全屏</String>
+  <String Name="LookControlMode.SplitTouch">准心触控</String>
 
-  <String Name="GameMode.Creative.Description">创造模式中，你拥有无限供应量的物品而且你能以无限快的速度挖掘方块。你还拥有不死和飞行的能力。</String>
-  <String Name="GameMode.Harmless.Description">无害模式中，所有的危险因素都会被移除。动物不会主动攻击你，除非你招惹它们。从高处跌落变得不那么致命。健康值得回复速度很快。挖掘速度提高 25%。</String>
-  <String Name="GameMode.Challenging.Description">挑战模式是正常生存模式。你会遇到危险，但当你死亡时，你可以在你上一次睡觉的地方复活。</String>
-  <String Name="GameMode.Cruel.Description">残酷模式与挑战模式相同，但你不能复活。明智地进行游戏，因为一旦你死了，你就再也不能回到你的世界了！</String>
-  <String Name="GameMode.Adventure.Description">冒险模式是专为那些想要创造探索性的地图，并与其他玩家分享的玩家准备的。在这种模式中，你只能使用专用的工具挖掘方块，你的健康值不会自动回复。在创造模式中创建探索性地图，然后在上传之前切换成冒险模式。</String>
+  <String Name="GameMode.Creative.Description">创造，你有所有无限的物品和方块，挖掘无等待时间，无敌，还能飞行移动。在这个模式中你能直接成为建筑师。</String>
+  <String Name="GameMode.Harmless.Description">无害，建议新手选择这个模式，几乎所有的危险都从游戏中移除。动物不会主动攻击。摔下不会致命。生命恢复速度加快，挖掘速度快25%，可复活。</String>
+  <String Name="GameMode.Challenging.Description">挑战，是正常的生存模式，有危险，动物会主动攻击，死后将复活在上次睡觉或开始的地点，但携带的所有物品会掉落在死亡之地。</String>
+  <String Name="GameMode.Cruel.Description">残酷，和挑战模式的区别是无法复活，有更多危险的动物。谨慎地玩，因为一旦你死了，你的世界也就失败了！</String>
+  <String Name="GameMode.Adventure.Description">冒险，能作为任务地图与他人分享。没有工具不能挖掘方块，生命不会恢复。可复活。冒险模式可由创造模式更改。</String>
 
-  <String Name="EnvironmentBehaviorMode.Living.Description">在动态模式的世界是一个充满动物的、动态的地方。植物和草会生长，用疏松材料制作的方块会衰败消失，从树上采集下来的叶子会腐烂。</String>
-  <String Name="EnvironmentBehaviorMode.Static.Description">在静态模式中，世界里不存在动物。植物的生长、方块的衰败、叶子的腐烂都会停滞。当你想按照自己的意愿塑造世界时，这会很有用。</String>
+  <String Name="SeaLevelOffset.Description">调整世界海平面。</String>
+  <String Name="TemperatureOffset.Description">调整世界温度。</String>
+  <String Name="HumidityOffset.Description">调整世界湿度。</String>
 
-  <String Name="TimeOfDayMode.Changing.Description">时间将会流逝。太阳、月亮和星星会在天空中运行。</String>
-  <String Name="TimeOfDayMode.Day.Description">时间定格在正午。太阳、月亮和星星固定不动。</String>
-  <String Name="TimeOfDayMode.Night.Description">时间定格在午夜。太阳、月亮和星星固定不动。</String>
-  <String Name="TimeOfDayMode.Sunrise.Description">时间定格在早上。太阳、月亮和星星固定不动。</String>
-  <String Name="TimeOfDayMode.Sunset.Description">时间定格在晚上。太阳、月亮和星星固定不动。</String>
+  <String Name="EnvironmentBehaviorMode.Living.Description">动态，动物会生成。植物会生长，掉落的方块会消失，树叶会腐烂。</String>
+  <String Name="EnvironmentBehaviorMode.Static.Description">静态，动物不会生成，植物不会生长，掉落的方块不会消失，树叶不会腐烂。</String>
 
-  <String Name="TerrainGenerationMode.Normal.Description">在正常模式中，环境就像真实世界的一样，充满了森林、平原、沙漠、冰川、湖泊、山脉、丘陵、山洞 ……</String>
-  <String Name="TerrainGenerationMode.Flat.Description">在平坦模式中，地形完全是平的，给你最大程度的创作自由。你可以自由改变地形的高度以及组成地形的方块。</String>
+  <String Name="TimeOfDayMode.Changing.Description">变化，时间持续变化。太阳、月亮和星星会移动。</String>
+  <String Name="TimeOfDayMode.Day.Description">白天，时间保持在中午。太阳、月亮河星星不会移动。</String>
+  <String Name="TimeOfDayMode.Night.Description">夜晚，时间保持在午夜。太阳、月亮河星星不会移动。</String>
+  <String Name="TimeOfDayMode.Sunrise.Description">日出，时间保持在清晨。太阳、月亮河星星不会移动。</String>
+  <String Name="TimeOfDayMode.Sunset.Description">日落，时间保持在傍晚。太阳、月亮河星星不会移动。</String>
 
-  <String Name="FlatTerrainLevel.Description">调整平坦模式中地形相对于基岩的高度。这个值越低，地上空间越多。这个值越高，地下空间越多。</String>
-  <String Name="FlatTerrainMagmaOcean.Description">将海洋变成岩浆之海。</String>
-  <String Name="TemperatureOffset.Description">调整此世界的全局温度。</String>
-  <String Name="HumidityOffset.Description">调整此世界的全局湿度。</String>
+  <String Name="TerrainGenerationMode.Continent.Description">大陆模式下，环境逼真，充满森林、平原、沙漠、冰川、湖泊、山脉、山丘、洞穴等。</String>
+  <String Name="TerrainGenerationMode.Island.Description">岛屿模式下，地形局限于一个小岛屿，但其他地区看起来像大陆模式。您可以调整岛屿大小。</String>
+  <String Name="TerrainGenerationMode.Flat.Description">平坦，地形完全平坦，让你更好的创造，能调整高度。</String>
 
-  <String Name="WeatherMode.True">此世界会发生周期性的降雨和降雪，降雪后会形成积雪。闪电会击中高处的物体，并使其着火。</String>
-  <String Name="WeatherMode.False">没有降雨、降雪、闪电。</String>
+  <String Name="IslandSize.Description">调整岛屿大小</String>
 
-  <String Name="AdventureRespawnMode.True">玩家可以在他上一次睡觉的地方或者出生点复活(适合大型的、有检查点的冒险地图)。</String>
-  <String Name="AdventureRespawnMode.False">不允许复活，当玩家死亡时，只能重新开始。(适合大型的、没有检查点的冒险地图)。</String>
+  <String Name="BiomeSize.Description">调整生物群落大小</String>
 
-  <String Name="AdventureSurvivalMechanics.True">饥饿值、体力值、体温、睡眠需求度 在冒险模式中起作用。</String>
-  <String Name="AdventureSurvivalMechanics.False">饥饿值、体力值、体温、睡眠需求度 在冒险模式中被禁用。健康值仍然起作用，玩家仍会受到伤害。</String>
+  <String Name="FlatTerrainLevel.Description">在平坦地形模式中调整地形水平线。调得越低，地上空间更多；调得越高，地下空间更多。</String>
+  <String Name="FlatTerrainMagmaOcean.Description">海洋替换成岩浆。</String>
 
-  <String Name="CharacterSkin.Description">选择游戏中角色的皮肤。</String>
-  <String Name="BlocksTexture.Description">选择用来绘制世界的方块纹理。通过选择不同的方块纹理，你可以彻底地改变世界的面貌。</String>
+  <String Name="WeatherMode.True">世界将经历周期性的雨雪，闪电将击中并燃烧物体。</String>
+  <String Name="WeatherMode.False">世界不会有雨雪和闪电。</String>
 
-  <String Name="ExternalContentType.BlocksTexture">方块纹理</String>
-  <String Name="ExternalContentType.World">世界</String>
+  <String Name="AdventureRespawnMode.True">玩家死后将复活在最后的地方或睡觉的地点。</String>
+  <String Name="AdventureRespawnMode.False">玩家无法复活，死后会重新开始。</String>
 
-  <String Name="Settings.Compatibility.InvisibleModelsWorkaround.Description">Enable this if you cannot see animals in the game. It selects a slower, less optimized code path which runs correctly on a wide range of devices even with a buggy shaders implementation.</String>
-  <String Name="Settings.Compatibility.SinglethreadedTerrainUpdate.Description">Enable this to force the game to use a single thread only when updating the terrain. It will make the game run slower on multicore devices, but might make it slightly faster on single core ones.</String>
-  <String Name="Settings.Compatibility.UseAudioTrackCaching.Description">Enable this if you experience issues with audio and have Android 4.3 or earlier. This setting reduces the number of AudioTrack objects created.</String>
-  <String Name="Settings.Compatibility.UseReducedZRange.Description">Enable this if you experience issues with graphics like invisible parts of the world near the player or garbled textures. It reduces the clip-space Z range from -1/1 to 0/1, as some Android devices have depth buffering and clipping issues with the full range.</String>
-  
+  <String Name="AdventureSurvivalMechanics.True">饥饿、耐力、体温、睡眠将在冒险模式中进行模拟。</String>
+  <String Name="AdventureSurvivalMechanics.False">饥饿、耐力、体温、睡眠将在冒险模式中禁用。生命和伤害仍然将被模拟。</String>
+
+  <String Name="SupernaturalCreatures.True">超自然生物会在世界上产卵。</String>
+  <String Name="SupernaturalCreatures.False">超自然生物不会在世界上产卵。 任何现有的生物将保留。</String>
+
+  <String Name="CharacterSkin.Description">选择游戏中使用的角色皮肤。</String>
+  <String Name="BlocksTexture.Description">选择绘制世界时使用的材质，可以通过使用不同的材质完全改变世界的外观。</String>
+
+  <String Name="Settings.Compatibility.InvisibleModelsWorkaround.Description">如果在游戏中看不到动物可以启用改选项。这通过运行一个较慢并且无优化的代码来保证在大多数设备中正确运行。</String>
+  <String Name="Settings.Compatibility.SinglethreadedTerrainUpdate.Description">启用后将强制使用单线程更新游戏。这将使游戏在单核设备上运行更快，在多核设备上反而运行更慢。</String>
+  <String Name="Settings.Compatibility.UseAudioTrackCaching.Description">如果在Android 4.3或更早的设备上遇到音频问题，请启用此选项。</String>
+  <String Name="Settings.Compatibility.UseReducedZRange.Description">如果遇到纹理紊乱问题，请启用此选项。</String>
+
+  <String Name="ScreenLayout.Single.Name">单人全屏</String>
+  <String Name="ScreenLayout.Single.Description">单人全屏</String>
+  <String Name="ScreenLayout.DoubleVertical.Name">双人垂直</String>
+  <String Name="ScreenLayout.DoubleVertical.Description">两人玩家垂直分屏</String>
+  <String Name="ScreenLayout.DoubleHorizontal.Name">双人水平</String>
+  <String Name="ScreenLayout.DoubleHorizontal.Description">两人玩家水平分屏</String>
+  <String Name="ScreenLayout.DoubleOpposite.Name">双人对分</String>
+  <String Name="ScreenLayout.DoubleOpposite.Description">两人玩家对分屏幕</String>
+  <String Name="ScreenLayout.TripleVertical.Name">三人垂直</String>
+  <String Name="ScreenLayout.TripleVertical.Description">三人玩家垂直分屏</String>
+  <String Name="ScreenLayout.TripleHorizontal.Name">三人水平</String>
+  <String Name="ScreenLayout.TripleHorizontal.Description">三人玩家垂直分屏</String>
+  <String Name="ScreenLayout.TripleEven.Name">三人均分</String>
+  <String Name="ScreenLayout.TripleEven.Description">三人玩家均分屏幕</String>
+  <String Name="ScreenLayout.Quadruple.Name">四人均分</String>
+  <String Name="ScreenLayout.Quadruple.Description">四人玩家均分屏幕</String>
+
 </Strings>

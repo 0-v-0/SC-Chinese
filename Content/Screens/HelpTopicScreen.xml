@@ -1,12 +1,11 @@
 <Screen xmlns="runtime-namespace:Game">
 
-  <ClearWidget />
   <PanoramaWidget />
 
   <StackPanelWidget Direction="Horizontal">
 
-    <CanvasWidget Style="{Widgets\TopBarContents}" >
-      <LabelWidget Name="TopBar.Label" Text="帮助话题" />
+    <CanvasWidget Style="{Widgets/TopBarContents}" >
+      <LabelWidget Name="TopBar.Label" Text="帮助主题" />
     </CanvasWidget>
 
     <CanvasWidget Size="Infinity, Infinity" Margin="10, 10">
@@ -19,8 +18,7 @@
           <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" Margin="10, 10" >
             <LabelWidget Name="Title" HorizontalAlignment="Center" TextAnchor="HorizontalCenter" WordWrap="true" />
             <CanvasWidget Size="0, 20" />
-            <LabelWidget Name="Text" Font="{Fonts\Pericles18}" Color="128, 128, 128" HorizontalAlignment="Center" TextAnchor="HorizontalCenter" WordWrap="true" />
-            <CanvasWidget Size="0, 1400" />
+            <LabelWidget Name="Text" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Center" TextAnchor="HorizontalCenter" WordWrap="true" />
           </StackPanelWidget>
 
         </CanvasWidget>

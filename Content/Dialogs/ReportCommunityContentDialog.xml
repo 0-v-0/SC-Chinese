@@ -1,17 +1,15 @@
 <CanvasWidget xmlns="runtime-namespace:Game">
 
-  <RectangleWidget FillColor="0, 0, 0, 192" OutlineColor="0, 0, 0, 0" IsHitTestVisible="true" />
-
   <CanvasWidget Size="640, 400" ClampToBounds="true" HorizontalAlignment="Center" VerticalAlignment="Center">
     <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" OutlineThickness="2" />
     <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Near" Margin="0, 15">
 
-      <LabelWidget Font="{Fonts\Pericles32}" HorizontalAlignment="Center" Text="报告社区内容"/>
-      <LabelWidget Name="ReportCommunityContentDialog.Name" Font="{Fonts\Pericles24}" HorizontalAlignment="Center"/>
+      <LabelWidget Font="{Fonts/Pericles32}" HorizontalAlignment="Center" Text="报告社区内容"/>
+      <LabelWidget Name="ReportCommunityContentDialog.Name" Font="{Fonts/Pericles24}" HorizontalAlignment="Center"/>
 
       <CanvasWidget Size="0, 20" />
 
-      <LabelWidget Font="{Fonts\Pericles18}" HorizontalAlignment="Center" Color="128, 128, 128" Text="请勾选一个最符合的选项:"/>
+      <LabelWidget Font="{Fonts/Pericles18}" HorizontalAlignment="Center" Color="128, 128, 128" Text="请勾出应用接近的选项："/>
 
       <CanvasWidget Size="0, 5" />
 
@@ -25,8 +23,8 @@
       <CanvasWidget Size="0, 20" />
 
       <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Margin="5, 0">
-        <BevelledButtonWidget Name="ReportCommunityContentDialog.Report" Text="报告" Style="{Styles\ButtonStyle_160x60}" VerticalAlignment="Center" Margin="40, 0"/>
-        <BevelledButtonWidget Name="ReportCommunityContentDialog.Cancel" Style="{Styles\ButtonStyle_160x60}" Text="取消" Margin="40, 0"/>
+        <BevelledButtonWidget Name="ReportCommunityContentDialog.Report" Text="报告" Style="{Styles/ButtonStyle_160x60}" VerticalAlignment="Center" Margin="40, 0"/>
+        <BevelledButtonWidget Name="ReportCommunityContentDialog.Cancel" Style="{Styles/ButtonStyle_160x60}" Text="取消" Margin="40, 0"/>
       </StackPanelWidget>
 
     </StackPanelWidget>

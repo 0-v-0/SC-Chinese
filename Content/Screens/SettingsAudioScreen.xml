@@ -1,11 +1,10 @@
 <Screen xmlns="runtime-namespace:Game">
 
-  <ClearWidget />
   <PanoramaWidget />
 
   <StackPanelWidget Direction="Horizontal">
 
-    <CanvasWidget Style="{Widgets\TopBarContents}" >
+    <CanvasWidget Style="{Widgets/TopBarContents}" >
       <LabelWidget Name="TopBar.Label" Text="调整音频设置" />
     </CanvasWidget>
 
@@ -15,8 +14,13 @@
         <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
 
           <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
-            <LabelWidget Text="音量:" Font="{Fonts\Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-            <SliderWidget Name="VolumeSlider" Size="360, 60" VerticalAlignment="Center" Margin="20, 0" />
+            <LabelWidget Text="声音音量：" Font="{Fonts/Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+            <SliderWidget Name="SoundsVolumeSlider" Size="Infinity, 60" VerticalAlignment="Center" Margin="20, 0" />
+          </UniformSpacingPanelWidget>
+
+          <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+            <LabelWidget Text="音乐音量：" Font="{Fonts/Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+            <SliderWidget Name="MusicVolumeSlider" Size="Infinity, 60" VerticalAlignment="Center" Margin="20, 0" />
           </UniformSpacingPanelWidget>
 
         </StackPanelWidget>

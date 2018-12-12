@@ -1,12 +1,11 @@
 <Screen xmlns="runtime-namespace:Game">
 
-  <ClearWidget />
   <PanoramaWidget />
 
   <StackPanelWidget Direction="Horizontal">
 
-    <CanvasWidget Style="{Widgets\TopBarContents}" >
-      <LabelWidget Name="TopBar.Label" Text="社区资源" />
+    <CanvasWidget Style="{Widgets/TopBarContents}" >
+      <LabelWidget Name="TopBar.Label" Text="社区内容" />
     </CanvasWidget>
 
     <StackPanelWidget Direction="Vertical" VerticalAlignment="Center">
@@ -15,14 +14,14 @@
 
       <UniformSpacingPanelWidget Direction="Horizontal" Margin="10, 0">
         <StackPanelWidget HorizontalAlignment="Near">
-          <LabelWidget Name="Order" Text="-" Font="{Fonts\Pericles24}" VerticalAlignment="Center" ClampToBounds="true"/>
+          <LabelWidget Name="Order" Text="-" Font="{Fonts/Pericles24}" VerticalAlignment="Center" ClampToBounds="true"/>
           <CanvasWidget Size="10, 0"/>
-          <BevelledButtonWidget Name="ChangeOrder" Text="..." Style="{Styles\ButtonStyle_70x60}" VerticalAlignment="Center"/>
+          <BevelledButtonWidget Name="ChangeOrder" Text="..." Style="{Styles/ButtonStyle_70x60}" VerticalAlignment="Center"/>
         </StackPanelWidget>
         <StackPanelWidget HorizontalAlignment="Far">
-          <LabelWidget Name="Filter" Text="-" Font="{Fonts\Pericles24}" VerticalAlignment="Center"/>
+          <LabelWidget Name="Filter" Text="-" Font="{Fonts/Pericles24}" VerticalAlignment="Center"/>
           <CanvasWidget Size="10, 0"/>
-          <BevelledButtonWidget Name="ChangeFilter" Text="..." Style="{Styles\ButtonStyle_70x60}" VerticalAlignment="Center"/>
+          <BevelledButtonWidget Name="ChangeFilter" Text="..." Style="{Styles/ButtonStyle_70x60}" VerticalAlignment="Center"/>
         </StackPanelWidget>
       </UniformSpacingPanelWidget>
 
@@ -36,11 +35,11 @@
       <CanvasWidget Size="0, 8" />
 
       <StackPanelWidget Direction="Horizontal" Margin="5, 0">
-        <BevelledButtonWidget Name="Download" Style="{Styles\ButtonStyle_310x60}" Text="下载"/>
+        <BevelledButtonWidget Name="Download" Style="{Styles/ButtonStyle_310x60}" Text="下载"/>
         <CanvasWidget Size="Infinity, 0"/>
-        <BevelledButtonWidget Name="Delete" Style="{Styles\ButtonStyle_160x60}" Text="删除"/>
+        <BevelledButtonWidget Name="Delete" Style="{Styles/ButtonStyle_160x60}" Text="删除"/>
         <CanvasWidget Size="10, 0"/>
-        <BevelledButtonWidget Name="MoreOptions" Style="{Styles\ButtonStyle_70x60}" Text="..."/>
+        <BevelledButtonWidget Name="MoreOptions" Style="{Styles/ButtonStyle_70x60}" Text="..."/>
       </StackPanelWidget>
 
       <CanvasWidget Size="0, 8" />

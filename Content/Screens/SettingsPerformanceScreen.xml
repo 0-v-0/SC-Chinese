@@ -1,11 +1,10 @@
 <Screen xmlns="runtime-namespace:Game">
 
-  <ClearWidget />
   <PanoramaWidget />
 
   <StackPanelWidget Direction="Horizontal">
 
-    <CanvasWidget Style="{Widgets\TopBarContents}" >
+    <CanvasWidget Style="{Widgets/TopBarContents}" >
       <LabelWidget Name="TopBar.Label" Text="调整性能设置" />
     </CanvasWidget>
 
@@ -15,51 +14,41 @@
         <StackPanelWidget Direction="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" IsHitTestVisible="false">
         
           <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
-            <LabelWidget Text="屏幕分辨率:" Font="{Fonts\Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-            <BevelledButtonWidget Name="ResolutionButton" Style="{Styles\ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+            <LabelWidget Text="屏幕分辨率：" Font="{Fonts/Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+            <BevelledButtonWidget Name="ResolutionButton" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
           </UniformSpacingPanelWidget>
 
           <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
-            <LabelWidget Text="可视距离:" Font="{Fonts\Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+            <LabelWidget Text="可视范围：" Font="{Fonts/Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
             <StackPanelWidget Direction="Vertical" VerticalAlignment="Center" Margin="20, 0">
-              <SliderWidget Name="VisibilityRangeSlider" Size="360, 60" Granularity="1" />
-              <LabelWidget Name="VisibilityRangeWarningLabel" Font="{Fonts\Pericles18}" TextAnchor="HorizontalCenter" Color="128, 128, 128" HorizontalAlignment="Center" />
+              <SliderWidget Name="VisibilityRangeSlider" Size="Infinity, 60" Granularity="1" />
+              <LabelWidget Name="VisibilityRangeWarningLabel" Font="{Fonts/Pericles18}" TextAnchor="HorizontalCenter" Color="128, 128, 128" HorizontalAlignment="Center" />
             </StackPanelWidget>
           </UniformSpacingPanelWidget>
 
           <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
-            <LabelWidget Text="摄像机视角范围:" Font="{Fonts\Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-            <BevelledButtonWidget Name="ViewAnglesButton" Style="{Styles\ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+            <LabelWidget Text="相机视角：" Font="{Fonts/Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+            <BevelledButtonWidget Name="ViewAnglesButton" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
           </UniformSpacingPanelWidget>
 
           <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
-            <LabelWidget Text="天空渲染模式:" Font="{Fonts\Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-            <BevelledButtonWidget Name="SkyRenderingModeButton" Style="{Styles\ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+            <LabelWidget Text="天空渲染模式：" Font="{Fonts/Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+            <BevelledButtonWidget Name="SkyRenderingModeButton" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
           </UniformSpacingPanelWidget>
 
           <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
-            <LabelWidget Text="纹理动画模式:" Font="{Fonts\Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-            <BevelledButtonWidget Name="TextureAnimationModeButton" Style="{Styles\ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+            <LabelWidget Text="对象阴影：" Font="{Fonts/Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+            <BevelledButtonWidget Name="ObjectShadowsButton" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
           </UniformSpacingPanelWidget>
 
           <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
-            <LabelWidget Text="物体阴影:" Font="{Fonts\Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-            <BevelledButtonWidget Name="ObjectShadowsButton" Style="{Styles\ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
-          </UniformSpacingPanelWidget>
-
-          <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
-            <LabelWidget Text="AI 自动寻路:" Font="{Fonts\Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-            <BevelledButtonWidget Name="PathfindingButton" Style="{Styles\ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
-          </UniformSpacingPanelWidget>
-
-          <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
-            <LabelWidget Text="帧率限制:" Font="{Fonts\Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-            <SliderWidget Name="FramerateLimitSlider" Size="360, 60" VerticalAlignment="Center" Margin="20, 0" MinValue="0" MaxValue="4" Granularity="1" />
+            <LabelWidget Text="帧率限制：" Font="{Fonts/Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+            <SliderWidget Name="FramerateLimitSlider" Size="Infinity, 60" VerticalAlignment="Center" Margin="20, 0" MinValue="0" MaxValue="2" Granularity="1" />
           </UniformSpacingPanelWidget>
 
           <UniformSpacingPanelWidget Direction="Horizontal">
-            <LabelWidget Text="在右上角显示 FPS:" Font="{Fonts\Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-            <BevelledButtonWidget Name="DisplayFpsCounterButton" Style="{Styles\ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+            <LabelWidget Text="显示帧率：" Font="{Fonts/Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+            <BevelledButtonWidget Name="DisplayFpsCounterButton" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
           </UniformSpacingPanelWidget>
 
         </StackPanelWidget>

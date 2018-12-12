@@ -1,7 +1,5 @@
 <CanvasWidget xmlns="runtime-namespace:Game">
 
-  <RectangleWidget FillColor="0, 0, 0, 192" OutlineColor="0, 0, 0, 0" IsHitTestVisible="true" />
-
   <CanvasWidget Size="600, 420" ClampToBounds="true" HorizontalAlignment="Center" VerticalAlignment="Center">
     <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" OutlineThickness="2" />
 
@@ -10,7 +8,7 @@
       <StackPanelWidget Name="EditSignDialog.LinesPage" Direction="Vertical">
 
         <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
-          <LabelWidget Text="按行键入告示牌上的文字" HorizontalAlignment="Center" Margin="0, 15" />
+          <LabelWidget Text="输入文本行" HorizontalAlignment="Center" Margin="0, 15" />
         </StackPanelWidget>
 
         <CanvasWidget Size="Infinity, Infinity">
@@ -18,46 +16,46 @@
 
             <StackPanelWidget Margin="0, 2">
               <CanvasWidget Size="70, 50" VerticalAlignment="Center">
-                <LabelWidget Text="行 1" Font="{Fonts\Pericles18}" VerticalAlignment="Center" Color="128, 128, 128" />
+                <LabelWidget Text="行 1" Font="{Fonts/Pericles18}" VerticalAlignment="Center" Color="128, 128, 128" />
               </CanvasWidget>
               <CanvasWidget Size="360, 50" VerticalAlignment="Center" >
                 <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" />
-                <TextBoxWidget Name="EditSignDialog.TextBox1" Title="Enter Sign Line 1" Size="360, 50" Description="" Font="{Fonts\Pericles24}" VerticalAlignment="Center" MaximumLength="16" Margin="10, 0"/>
+                <TextBoxWidget Name="EditSignDialog.TextBox1" Title="输入行 1" Size="360, 50" Description="" Font="{Fonts/Pericles24}" VerticalAlignment="Center" MaximumLength="16" Margin="10, 0"/>
               </CanvasWidget>
-              <BevelledButtonWidget Name="EditSignDialog.ColorButton1" Style="{Styles\ButtonStyle_ColorPicker}" Margin="20, 0" VerticalAlignment="Center" />
+              <BevelledButtonWidget Name="EditSignDialog.ColorButton1" Style="{Styles/ButtonStyle_ColorPicker}" Margin="20, 0" VerticalAlignment="Center" />
             </StackPanelWidget>
 
             <StackPanelWidget Margin="0, 2">
               <CanvasWidget Size="70, 50" VerticalAlignment="Center">
-                <LabelWidget Text="行 2" Font="{Fonts\Pericles18}" VerticalAlignment="Center" Color="128, 128, 128" />
+                <LabelWidget Text="行 2" Font="{Fonts/Pericles18}" VerticalAlignment="Center" Color="128, 128, 128" />
               </CanvasWidget>
               <CanvasWidget Size="360, 50" VerticalAlignment="Center">
                 <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" />
-                <TextBoxWidget Name="EditSignDialog.TextBox2" Title="Enter Sign Line 2" Size="360, 50" Description="" Font="{Fonts\Pericles24}" VerticalAlignment="Center" MaximumLength="16" Margin="10, 0"/>
+                <TextBoxWidget Name="EditSignDialog.TextBox2" Title="输入行 2" Size="360, 50" Description="" Font="{Fonts/Pericles24}" VerticalAlignment="Center" MaximumLength="16" Margin="10, 0"/>
               </CanvasWidget>
-              <BevelledButtonWidget Name="EditSignDialog.ColorButton2" Style="{Styles\ButtonStyle_ColorPicker}" Margin="20, 0" VerticalAlignment="Center" />
+              <BevelledButtonWidget Name="EditSignDialog.ColorButton2" Style="{Styles/ButtonStyle_ColorPicker}" Margin="20, 0" VerticalAlignment="Center" />
             </StackPanelWidget>
 
             <StackPanelWidget Margin="0, 2">
               <CanvasWidget Size="70, 50" VerticalAlignment="Center">
-                <LabelWidget Text="行 3" Font="{Fonts\Pericles18}" VerticalAlignment="Center" Color="128, 128, 128" />
+                <LabelWidget Text="行 3" Font="{Fonts/Pericles18}" VerticalAlignment="Center" Color="128, 128, 128" />
               </CanvasWidget>
               <CanvasWidget Size="360, 50" VerticalAlignment="Center">
                 <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" />
-                <TextBoxWidget Name="EditSignDialog.TextBox3" Title="Enter Sign Line 3" Size="360, 50" Description="" Font="{Fonts\Pericles24}" VerticalAlignment="Center" MaximumLength="16" Margin="10, 0"/>
+                <TextBoxWidget Name="EditSignDialog.TextBox3" Title="输入行 3" Size="360, 50" Description="" Font="{Fonts/Pericles24}" VerticalAlignment="Center" MaximumLength="16" Margin="10, 0"/>
               </CanvasWidget>
-              <BevelledButtonWidget Name="EditSignDialog.ColorButton3" Style="{Styles\ButtonStyle_ColorPicker}" Margin="20, 0" VerticalAlignment="Center" />
+              <BevelledButtonWidget Name="EditSignDialog.ColorButton3" Style="{Styles/ButtonStyle_ColorPicker}" Margin="20, 0" VerticalAlignment="Center" />
             </StackPanelWidget>
 
             <StackPanelWidget Margin="0, 2">
               <CanvasWidget Size="70, 50" VerticalAlignment="Center">
-                <LabelWidget Text="行 4" Font="{Fonts\Pericles18}" VerticalAlignment="Center" Color="128, 128, 128" />
+                <LabelWidget Text="行 4" Font="{Fonts/Pericles18}" VerticalAlignment="Center" Color="128, 128, 128" />
               </CanvasWidget>
               <CanvasWidget Size="360, 50" VerticalAlignment="Center">
                 <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" />
-                <TextBoxWidget Name="EditSignDialog.TextBox4" Title="Enter Sign Line 4" Size="360, 50" Description="" Font="{Fonts\Pericles24}" VerticalAlignment="Center" MaximumLength="16" Margin="10, 0"/>
+                <TextBoxWidget Name="EditSignDialog.TextBox4" Title="输入行 4" Size="360, 50" Description="" Font="{Fonts/Pericles24}" VerticalAlignment="Center" MaximumLength="16" Margin="10, 0"/>
               </CanvasWidget>
-              <BevelledButtonWidget Name="EditSignDialog.ColorButton4" Style="{Styles\ButtonStyle_ColorPicker}" Margin="20, 0" VerticalAlignment="Center" />
+              <BevelledButtonWidget Name="EditSignDialog.ColorButton4" Style="{Styles/ButtonStyle_ColorPicker}" Margin="20, 0" VerticalAlignment="Center" />
             </StackPanelWidget>
 
           </StackPanelWidget>
@@ -68,9 +66,9 @@
       <StackPanelWidget Name="EditSignDialog.UrlPage" Direction="Vertical" IsVisible="false">
         
         <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 15">
-          <LabelWidget Text="键入告示 URL" HorizontalAlignment="Center" />
-          <LabelWidget Text="当在冒险模式下进行游戏时, 轻触" Font="{Fonts\Pericles18}" Color="128, 128, 128" HorizontalAlignment="Center" Margin="0, 0" />
-          <LabelWidget Text="告示牌将会打开浏览器，并转到该 URL" Font="{Fonts\Pericles18}" Color="128, 128, 128" HorizontalAlignment="Center" Margin="0, 0" />
+          <LabelWidget Text="输入URL" HorizontalAlignment="Center" />
+          <LabelWidget Text="只有冒险模式下可用" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Center" Margin="0, 0" />
+          <LabelWidget Text="在浏览器中打开连接进行登陆" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Center" Margin="0, 0" />
         </StackPanelWidget>
 
         <CanvasWidget Size="Infinity, Infinity">
@@ -79,11 +77,11 @@
             <StackPanelWidget Margin="0, 10">
               <CanvasWidget Size="480, 50" VerticalAlignment="Center" >
                 <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" />
-                <TextBoxWidget Name="EditSignDialog.UrlTextBox" Title="Enter Sign Url" Size="480, 50" Description="" Font="{Fonts\Pericles24}" VerticalAlignment="Center" MaximumLength="256" Margin="10, 0"/>
+                <TextBoxWidget Name="EditSignDialog.UrlTextBox" Title="输入Url" Size="480, 50" Description="" Font="{Fonts/Pericles24}" VerticalAlignment="Center" MaximumLength="256" Margin="10, 0"/>
               </CanvasWidget>
             </StackPanelWidget>
 
-            <BevelledButtonWidget Style="{Styles\ButtonStyle_160x60}" HorizontalAlignment="Center" VerticalAlignment="Center" Name="EditSignDialog.UrlTestButton" Text="Try" Margin="0, 10"/>
+            <BevelledButtonWidget Style="{Styles/ButtonStyle_160x60}" HorizontalAlignment="Center" VerticalAlignment="Center" Name="EditSignDialog.UrlTestButton" Text="测试" Margin="0, 10"/>
 
           </StackPanelWidget>
         </CanvasWidget>
@@ -91,10 +89,10 @@
       </StackPanelWidget>
 
       <UniformSpacingPanelWidget Direction="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10, 15">
-        <BevelledButtonWidget Style="{Styles\ButtonStyle_160x60}" HorizontalAlignment="Center" Name="EditSignDialog.OkButton" Text="OK" />
-        <BevelledButtonWidget Style="{Styles\ButtonStyle_160x60}" HorizontalAlignment="Center" Name="EditSignDialog.UrlButton" Text="URL" />
-        <BevelledButtonWidget Style="{Styles\ButtonStyle_160x60}" HorizontalAlignment="Center" Name="EditSignDialog.LinesButton" Text="Lines" />
-        <BevelledButtonWidget Style="{Styles\ButtonStyle_160x60}" HorizontalAlignment="Center" Name="EditSignDialog.CancelButton" Text="Cancel" />
+        <BevelledButtonWidget Style="{Styles/ButtonStyle_160x60}" HorizontalAlignment="Center" Name="EditSignDialog.OkButton" Text="确定" />
+        <BevelledButtonWidget Style="{Styles/ButtonStyle_160x60}" HorizontalAlignment="Center" Name="EditSignDialog.UrlButton" Text="URL" />
+        <BevelledButtonWidget Style="{Styles/ButtonStyle_160x60}" HorizontalAlignment="Center" Name="EditSignDialog.LinesButton" Text="行数" />
+        <BevelledButtonWidget Style="{Styles/ButtonStyle_160x60}" HorizontalAlignment="Center" Name="EditSignDialog.CancelButton" Text="取消" />
       </UniformSpacingPanelWidget>
 
     </StackPanelWidget>

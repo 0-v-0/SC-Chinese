@@ -1,63 +1,61 @@
 <CanvasWidget xmlns="runtime-namespace:Game">
 
-  <RectangleWidget FillColor="0, 0, 0, 192" OutlineColor="0, 0, 0, 0" IsHitTestVisible="true" />
-
   <CanvasWidget Size="680, 420" ClampToBounds="true" HorizontalAlignment="Center" VerticalAlignment="Center">
     <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" OutlineThickness="2" />
     <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Near" Margin="0, 15">
       
-      <LabelWidget Font="{Fonts\Pericles32}" Text="发布指向文件的链接" HorizontalAlignment="Center"/>
+      <LabelWidget Font="{Fonts/Pericles32}" Text="发布文件链接" HorizontalAlignment="Center"/>
 
       <CanvasWidget Size="0, 5" />
 
       <CanvasWidget Size="Infinity, 50">
-        <LabelWidget Font="{Fonts\Pericles18}" Color="128, 128, 128" Text="发布一个链接并不会把链接指向的文件上传到服务器。只有链接本身被存储在了服务器上。你必须保证你的文件可以通过你发布的链接来访问。" HorizontalAlignment="Center" TextAnchor="HorizontalCenter" WordWrap="true" Margin="20, 0"/>
+        <LabelWidget Font="{Fonts/Pericles18}" Color="128, 128, 128" Text="发布一个文件链接而不是文件本身到服务器。你有责任保持你的文件链接的通畅性。" HorizontalAlignment="Center" TextAnchor="HorizontalCenter" WordWrap="true" Margin="20, 0"/>
       </CanvasWidget>
 
       <CanvasWidget Size="0, Infinity" />
 
       <StackPanelWidget>
         <CanvasWidget Size="180, 70">
-          <LabelWidget Text="链接:" Font="{Fonts\Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center"/>
+          <LabelWidget Text="链接：" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center"/>
         </CanvasWidget>
         <CanvasWidget Size="20, 0" />
         <CanvasWidget Size="Infinity, 45" VerticalAlignment="Center">
           <RectangleWidget FillColor="0, 0, 0, 192" OutlineColor="48, 48, 48, 48" />
-          <TextBoxWidget Name="PublishCommunityLinkDialog.Link" Font="{Fonts\Pericles24}" Size="Infinity, 45" Margin="10, 0" MaximumLength="1024"/>
+          <TextBoxWidget Name="PublishCommunityLinkDialog.Link" Font="{Fonts/Pericles24}" Size="Infinity, 45" Margin="10, 0" MaximumLength="1024"/>
         </CanvasWidget>
         <CanvasWidget Size="30, 0" />
       </StackPanelWidget>
 
       <StackPanelWidget>
         <CanvasWidget Size="180, 70">
-          <LabelWidget Text="名字:" Font="{Fonts\Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center"/>
+          <LabelWidget Text="名称：" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center"/>
         </CanvasWidget>
         <CanvasWidget Size="20, 0" />
         <CanvasWidget Size="Infinity, 45" VerticalAlignment="Center">
           <RectangleWidget FillColor="0, 0, 0, 192" OutlineColor="48, 48, 48, 48" />
-          <TextBoxWidget Name="PublishCommunityLinkDialog.Name" Font="{Fonts\Pericles24}" Size="Infinity, 45" Margin="10, 0" MaximumLength="50"/>
+          <TextBoxWidget Name="PublishCommunityLinkDialog.Name" Font="{Fonts/Pericles24}" Size="Infinity, 45" Margin="10, 0" MaximumLength="50"/>
         </CanvasWidget>
         <CanvasWidget Size="30, 0" />
       </StackPanelWidget>
 
       <StackPanelWidget>
         <CanvasWidget Size="180, 70">
-          <LabelWidget Text="内容类型:" Font="{Fonts\Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center"/>
+          <LabelWidget Text="内容类型：" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center"/>
         </CanvasWidget>
         <CanvasWidget Size="20, 0" />
         <RectangleWidget Name="PublishCommunityLinkDialog.TypeIcon" FillColor="255, 255, 255" OutlineColor="0, 0, 0, 0" Size="64, 64" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="4, 0"/>
         <CanvasWidget Size="4, 0" />
-        <LabelWidget Name="PublishCommunityLinkDialog.Type" Font="{Fonts\Pericles24}" VerticalAlignment="Center"/>
+        <LabelWidget Name="PublishCommunityLinkDialog.Type" Font="{Fonts/Pericles24}" VerticalAlignment="Center"/>
         <CanvasWidget Size="10, 0" />
-        <BevelledButtonWidget Name="PublishCommunityLinkDialog.ChangeType" Text="..." Style="{Styles\ButtonStyle_70x60}" VerticalAlignment="Center"/>
+        <BevelledButtonWidget Name="PublishCommunityLinkDialog.ChangeType" Text="..." Style="{Styles/ButtonStyle_70x60}" VerticalAlignment="Center"/>
       </StackPanelWidget>
 
       <CanvasWidget Size="0, Infinity" />
 
       <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
-        <BevelledButtonWidget Name="PublishCommunityLinkDialog.Publish" Style="{Styles\ButtonStyle_310x60}" Text="发布" />
+        <BevelledButtonWidget Name="PublishCommunityLinkDialog.Publish" Style="{Styles/ButtonStyle_310x60}" Text="发布" />
         <CanvasWidget Size="40, 0" />
-        <BevelledButtonWidget Name="PublishCommunityLinkDialog.Cancel" Style="{Styles\ButtonStyle_160x60}" Text="取消"/>
+        <BevelledButtonWidget Name="PublishCommunityLinkDialog.Cancel" Style="{Styles/ButtonStyle_160x60}" Text="取消"/>
       </StackPanelWidget>
       
     </StackPanelWidget>

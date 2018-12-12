@@ -5,7 +5,7 @@
   <StackPanelWidget Direction="Horizontal">
 
     <CanvasWidget Style="{Widgets/TopBarContents}" >
-      <LabelWidget Name="TopBar.Label" Text="材质描述" />
+      <LabelWidget Name="TopBar.Label" Text="生物描述" />
     </CanvasWidget>
 
     <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center">
@@ -16,8 +16,8 @@
         <CanvasWidget Size="10, 0" />
         <BevelledButtonWidget Name="Left" Style="{Styles/ButtonStyle_ArrowLeft}" VerticalAlignment="Center" />
         <CanvasWidget Size="Infinity, 0" />
-        <BlockIconWidget Name="Icon" Size="112, 112" VerticalAlignment="Center" />
-        <CanvasWidget Size="20, 0" />
+        <ModelWidget Name="Model" Size="220, 150" VerticalAlignment="Center" />
+        <CanvasWidget Size="10, 0" />
         <LabelWidget Name="Name" VerticalAlignment="Center"/>
         <CanvasWidget Size="Infinity, 0" />
         <BevelledButtonWidget Name="Right" Style="{Styles/ButtonStyle_ArrowRight}" VerticalAlignment="Center" />
@@ -29,21 +29,30 @@
       <ScrollPanelWidget Direction="Vertical">
         <LabelWidget Name="Description" Font="{Fonts/Pericles18}" WordWrap="true" Margin="10, 0" TextAnchor="HorizontalCenter" HorizontalAlignment="Center"/>
       </ScrollPanelWidget>
-      
+
       <CanvasWidget Size="0, 20" />
 
-      <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Margin="30, 0">
-        <LabelWidget Name="PropertyNames1" Font="{Fonts/Pericles18}" Color="128, 128, 128" />
+      <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+        <LabelWidget Name="PropertyNames1" Font="{Fonts/Pericles18}" Color="128, 128, 128" VerticalAlignment="Center" />
         <CanvasWidget Size="10, 0" />
-        <LabelWidget Name="PropertyValues1" Font="{Fonts/Pericles18}" />
-        <CanvasWidget Size="60, 0" />
-        <LabelWidget Name="PropertyNames2" Font="{Fonts/Pericles18}" Color="128, 128, 128" />
+        <LabelWidget Name="PropertyValues1" Font="{Fonts/Pericles18}" VerticalAlignment="Center"/>
+        <CanvasWidget Size="40, 0" />
+        <LabelWidget Name="PropertyNames2" Font="{Fonts/Pericles18}" Color="128, 128, 128" VerticalAlignment="Center"/>
         <CanvasWidget Size="10, 0" />
-        <LabelWidget Name="PropertyValues2" Font="{Fonts/Pericles18}" />
+        <LabelWidget Name="PropertyValues2" Font="{Fonts/Pericles18}" VerticalAlignment="Center"/>
       </StackPanelWidget>
+
+      <CanvasWidget Size="0, 5" />
+
+      <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+        <LabelWidget Text="掉落：" Font="{Fonts/Pericles18}" VerticalAlignment="Center" Color="128, 128, 128" />
+        <StackPanelWidget Name="Drops" Direction="Horizontal" />
+      </StackPanelWidget>
+
+      <CanvasWidget Size="0, 5" />
 
     </StackPanelWidget>
 
   </StackPanelWidget>
-  
+
 </Screen>

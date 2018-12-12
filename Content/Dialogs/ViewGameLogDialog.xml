@@ -1,7 +1,5 @@
 <CanvasWidget xmlns="runtime-namespace:Game">
 
-  <RectangleWidget FillColor="0, 0, 0, 192" OutlineColor="0, 0, 0, 0" IsHitTestVisible="true" />
-
   <CanvasWidget Size="780, 440" ClampToBounds="true" HorizontalAlignment="Center" VerticalAlignment="Center">
     <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 255" OutlineThickness="2" />
     
@@ -15,11 +13,11 @@
       <CanvasWidget Size="0, 10" />
       
       <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
-        <BevelledButtonWidget Name="ViewGameLogDialog.CopyButton" Style="{Styles\ButtonStyle_160x60}" VerticalAlignment="Center" Text="复制"/>
+        <BevelledButtonWidget Name="ViewGameLogDialog.CopyButton" Style="{Styles/ButtonStyle_160x60}" VerticalAlignment="Center" Text="复制"/>
         <CanvasWidget Size="40, 0" />
-        <BevelledButtonWidget Name="ViewGameLogDialog.FilterButton" Style="{Styles\ButtonStyle_310x60}" VerticalAlignment="Center"/>
+        <BevelledButtonWidget Name="ViewGameLogDialog.FilterButton" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center"/>
         <CanvasWidget Size="40, 0" />
-        <BevelledButtonWidget Name="ViewGameLogDialog.CloseButton" Style="{Styles\ButtonStyle_160x60}" VerticalAlignment="Center" Text="关闭"/>
+        <BevelledButtonWidget Name="ViewGameLogDialog.CloseButton" Style="{Styles/ButtonStyle_160x60}" VerticalAlignment="Center" Text="关闭"/>
       </StackPanelWidget>
 
       <CanvasWidget Size="0, 10" />

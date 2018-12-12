@@ -1,13 +1,11 @@
 <CanvasWidget xmlns="runtime-namespace:Game">
 
-  <RectangleWidget FillColor="0, 0, 0, 192" OutlineColor="0, 0, 0, 0" IsHitTestVisible="true" />
-
   <CanvasWidget Size="640, 360" ClampToBounds="true" HorizontalAlignment="Center" VerticalAlignment="Center">
     <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" OutlineThickness="2" />
     <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Near" Margin="0, 15">
 
-      <LabelWidget Font="{Fonts\Pericles32}" HorizontalAlignment="Center" Text="给社区内容打分"/>
-      <LabelWidget Name="RateCommunityContentDialog.Name" Font="{Fonts\Pericles24}" HorizontalAlignment="Center"/>
+      <LabelWidget Font="{Fonts/Pericles32}" HorizontalAlignment="Center" Text="评价社区内容"/>
+      <LabelWidget Name="RateCommunityContentDialog.Name" Font="{Fonts/Pericles24}" HorizontalAlignment="Center"/>
 
       <CanvasWidget Size="0, Infinity" />
 
@@ -18,16 +16,16 @@
       <CanvasWidget Size="0, Infinity" />
 
       <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
-        <LabelWidget Font="{Fonts\Pericles18}" Color="128, 128, 128" Text="冒犯性的内容？" HorizontalAlignment="Center" VerticalAlignment="Center" TextAnchor="HorizontalCenter" />
+        <LabelWidget Font="{Fonts/Pericles18}" Color="128, 128, 128" Text="令人反感的内容？" HorizontalAlignment="Center" VerticalAlignment="Center" TextAnchor="HorizontalCenter" />
         <CanvasWidget Size="10, 0" />
-        <LinkWidget Name="RateCommunityContentDialog.Report" Font="{Fonts\Pericles18u}" VerticalAlignment="Center" Text="报告" Color="64, 192, 64" />
+        <LinkWidget Name="RateCommunityContentDialog.Report" Font="{Fonts/Pericles18u}" VerticalAlignment="Center" Text="报告" Color="64, 192, 64" />
       </StackPanelWidget>
 
       <CanvasWidget Size="0, Infinity" />
 
       <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Margin="5, 0">
-        <BevelledButtonWidget Name="RateCommunityContentDialog.Rate" Text="打分" Style="{Styles\ButtonStyle_160x60}" VerticalAlignment="Center" Margin="40, 0"/>
-        <BevelledButtonWidget Name="RateCommunityContentDialog.Cancel" Style="{Styles\ButtonStyle_160x60}" Text="取消" Margin="40, 0"/>
+        <BevelledButtonWidget Name="RateCommunityContentDialog.Rate" Text="评价" Style="{Styles/ButtonStyle_160x60}" VerticalAlignment="Center" Margin="40, 0"/>
+        <BevelledButtonWidget Name="RateCommunityContentDialog.Cancel" Style="{Styles/ButtonStyle_160x60}" Text="取消" Margin="40, 0"/>
       </StackPanelWidget>
 
     </StackPanelWidget>

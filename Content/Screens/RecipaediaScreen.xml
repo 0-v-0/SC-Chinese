@@ -1,12 +1,11 @@
 <Screen xmlns="runtime-namespace:Game">
 
-  <ClearWidget />
   <PanoramaWidget />
 
   <StackPanelWidget Direction="Horizontal">
 
-    <CanvasWidget Style="{Widgets\TopBarContents}" >
-      <LabelWidget Name="TopBar.Label" Text="合成表" />
+    <CanvasWidget Style="{Widgets/TopBarContents}" >
+      <LabelWidget Name="TopBar.Label" Text="合成谱" />
     </CanvasWidget>
 
     <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center">
@@ -14,11 +13,11 @@
       <CanvasWidget Size="0, 10" />
       
       <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
-        <BevelledButtonWidget Style="{Styles\ButtonStyle_ArrowLeft}" Name="PreviousCategory" Margin="20, 0" VerticalAlignment="Center"/>
+        <BevelledButtonWidget Style="{Styles/ButtonStyle_ArrowLeft}" Name="PreviousCategory" Margin="20, 0" VerticalAlignment="Center"/>
         <CanvasWidget Size="340, 60" VerticalAlignment="Center">
           <LabelWidget Name="Category" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </CanvasWidget>
-        <BevelledButtonWidget Style="{Styles\ButtonStyle_ArrowRight}" Name="NextCategory" Margin="20, 0" VerticalAlignment="Center"/>
+        <BevelledButtonWidget Style="{Styles/ButtonStyle_ArrowRight}" Name="NextCategory" Margin="20, 0" VerticalAlignment="Center"/>
       </StackPanelWidget>
 
       <CanvasWidget Size="0, 10" />
@@ -33,9 +32,9 @@
       <CanvasWidget Size="0, 10" />
 
       <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Margin="0, 0">
-        <BevelledButtonWidget Name="DetailsButton" Style="{Styles\ButtonStyle_310x60}" Text="描述" HorizontalAlignment="Center"/>
+        <BevelledButtonWidget Name="DetailsButton" Style="{Styles/ButtonStyle_310x60}" Text="描述" HorizontalAlignment="Center"/>
         <CanvasWidget Size="20, 0" />
-        <BevelledButtonWidget Name="RecipesButton" Style="{Styles\ButtonStyle_310x60}" Text="合成配方" HorizontalAlignment="Center"/>
+        <BevelledButtonWidget Name="RecipesButton" Style="{Styles/ButtonStyle_310x60}" Text="种合成" HorizontalAlignment="Center"/>
       </StackPanelWidget>
 
       <CanvasWidget Size="0, 10" />

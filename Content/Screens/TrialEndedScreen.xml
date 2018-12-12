@@ -1,33 +1,33 @@
 <Screen xmlns="runtime-namespace:Game">
 
-  <PanoramaWidget></PanoramaWidget>
+  <PanoramaWidget />
 
   <CanvasWidget Size="720, 340" HorizontalAlignment="Center" VerticalAlignment="Center">
     <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="255, 255, 255, 255" />
 
     <UniformSpacingPanelWidget Direction="Vertical" HorizontalAlignment="Center" _ExcludePlatforms="Ios">
       <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <LabelWidget Text="The day has ended" HorizontalAlignment="Center" Margin="0, 20" />
-        <LabelWidget Text="Please purchase the game to continue playing." Font="{Fonts\Pericles18}" Color="128, 128, 128" HorizontalAlignment="Center" Margin="0, 0" />
-        <LabelWidget Text="You will be able to keep all the worlds you started." Font="{Fonts\Pericles18}" Color="128, 128, 128" HorizontalAlignment="Center" Margin="0, 0" />
+        <LabelWidget Text="试用期已结束" HorizontalAlignment="Center" Margin="0, 20" />
+        <LabelWidget Text="请购买游戏继续玩下去。" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Center" Margin="0, 0" />
+        <LabelWidget Text="可以保存所有世界。" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Center" Margin="0, 0" />
       </StackPanelWidget>
       <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <BevelledButtonWidget Name="Buy" Style="{Styles\ButtonStyle_310x60}" Text="Purchase" HorizontalAlignment="Center" Margin="20, 0" />
-        <BevelledButtonWidget Name="Quit" Style="{Styles\ButtonStyle_160x60}" Text="Quit" HorizontalAlignment="Center" Margin="20, 0" />
+        <BevelledButtonWidget Name="Buy" Style="{Styles/ButtonStyle_310x60}" Text="购买" HorizontalAlignment="Center" Margin="20, 0" />
+        <BevelledButtonWidget Name="Quit" Style="{Styles/ButtonStyle_160x60}" Text="退出" HorizontalAlignment="Center" Margin="20, 0" />
       </StackPanelWidget>
     </UniformSpacingPanelWidget>
 
     <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" _IncludePlatforms="Ios">
       <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center">
-        <LabelWidget Text="You managed to survive a day\nin this world" HorizontalAlignment="Center" TextAnchor="HorizontalCenter" Margin="0, 30" />
-        <LabelWidget Text="Please purchase Survivalcraft or start a new world to play again." WordWrap="true" Font="{Fonts\Pericles18}" Color="128, 128, 128" HorizontalAlignment="Center" TextAnchor="HorizontalCenter" Margin="100, 0" />
+        <LabelWidget Text="你需要在这个世界上设法/n生存一天" HorizontalAlignment="Center" TextAnchor="HorizontalCenter" Margin="0, 30" />
+        <LabelWidget Text="请购买生存战争或开始一个新的世界。" WordWrap="true" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Center" TextAnchor="HorizontalCenter" Margin="100, 0" />
       </StackPanelWidget>
       <CanvasWidget Size="0, Infinity"/>
       <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
-        <BevelledButtonWidget Name="Buy" Style="{Styles\ButtonStyle_310x60}" Text="Purchase" HorizontalAlignment="Center" Margin="20, 0" >
-        	<BevelledRectangleWidget Name="BevelledButton.Rectangle" CenterColor="70, 220, 60" BevelColor="70, 220, 60" />
+        <BevelledButtonWidget Name="Buy" Style="{Styles/ButtonStyle_310x60}" Text="购买" HorizontalAlignment="Center" Margin="20, 0" >
+        	<BevelledRectangleWidget Name="BevelledButton.Rectangle" CenterColor="50, 150, 35" BevelColor="50, 150, 35" />
         </BevelledButtonWidget>
-        <BevelledButtonWidget Name="NewWorld" Style="{Styles\ButtonStyle_310x60}" Text="New World" HorizontalAlignment="Center" Margin="20, 0" />
+        <BevelledButtonWidget Name="NewWorld" Style="{Styles/ButtonStyle_310x60}" Text="新的世界" HorizontalAlignment="Center" Margin="20, 0" />
       </StackPanelWidget>
       <CanvasWidget Size="0, 30"/>
     </StackPanelWidget>
