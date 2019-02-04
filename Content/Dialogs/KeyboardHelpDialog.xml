@@ -80,7 +80,7 @@
         <CanvasWidget Size="40, 0" />
         <BevelledButtonWidget Name="HelpButton" Text="帮助" Style="{Styles/ButtonStyle_160x60}" />
       </StackPanelWidget>
-      
+
     </StackPanelWidget>
 
   </CanvasWidget>

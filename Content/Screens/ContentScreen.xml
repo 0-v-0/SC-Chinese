@@ -9,7 +9,7 @@
     </CanvasWidget>
 
     <CanvasWidget Size="Infinity, 0" />
-    
+
     <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
 
       <StackPanelWidget Direction="Horizontal">
@@ -49,7 +49,7 @@
     </StackPanelWidget>
 
     <CanvasWidget Size="Infinity, 0" />
-  
+
   </StackPanelWidget>
 
 </Screen>

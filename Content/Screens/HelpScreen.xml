@@ -11,7 +11,7 @@
     <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center">
 
       <CanvasWidget Size="0, 20" />
-      
+
       <StackPanelWidget Direction="Vertical" Margin="20, 0">
         <CanvasWidget>
           <RectangleWidget FillColor="0, 0, 0, 192" OutlineColor="128, 128, 128, 128" />
@@ -30,11 +30,11 @@
           <BevelledRectangleWidget Name="BevelledButton.Rectangle" CenterColor="50, 150, 35" BevelColor="50, 150, 35" />
         </BevelledButtonWidget>
       </StackPanelWidget>
-      
+
       <CanvasWidget Size="0, 10" />
 
     </StackPanelWidget>
 
   </StackPanelWidget>
-  
+
 </Screen>

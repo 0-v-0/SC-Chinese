@@ -3,13 +3,13 @@
   <GameViewWidget Name="View" ClampToBounds="true" />
 
   <ClearWidget ClearColor="false" />
-  
+
   <CanvasWidget Name="ControlsContainer" IsHitTestVisible="false" IsVisible="false">
 
     <StackPanelWidget Direction="Vertical" IsHitTestVisible="false">
 
       <CanvasWidget Size="0, Infinity" IsHitTestVisible="false" />
-      
+
       <CanvasWidget Name="ModalPanelContainer" HorizontalAlignment="Center" VerticalAlignment="Center" IsHitTestVisible="false" />
 
       <CanvasWidget Size="0, Infinity" IsHitTestVisible="false" />
@@ -39,11 +39,11 @@
             <TouchInputWidget Name="Look" />
           </CanvasWidget>
         </StackPanelWidget>
-      
+
       </CanvasWidget>
 
     </StackPanelWidget>
-    
+
     <StackPanelWidget Direction="Vertical" VerticalAlignment="Far" HorizontalAlignment="Center" IsHitTestVisible="false">
       <MessageWidget Name="Message" HorizontalAlignment="Center" Margin="140, 6" IsHitTestVisible="false"/>
       <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Margin="0, 2">

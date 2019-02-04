@@ -62,7 +62,7 @@
       </StackPanelWidget>
 
       <CanvasWidget Size="0, Infinity"/>
-        
+
       <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
         <BevelledButtonWidget Name="AddButton" Text="添加玩家" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0"/>
         <BevelledButtonWidget Name="DeleteButton" Text="删除玩家" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0"/>

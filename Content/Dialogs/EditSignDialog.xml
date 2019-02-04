@@ -64,7 +64,7 @@
       </StackPanelWidget>
 
       <StackPanelWidget Name="EditSignDialog.UrlPage" Direction="Vertical" IsVisible="false">
-        
+
         <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 15">
           <LabelWidget Text="输入URL" HorizontalAlignment="Center" />
           <LabelWidget Text="只有冒险模式下可用" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Center" Margin="0, 0" />
@@ -85,7 +85,7 @@
 
           </StackPanelWidget>
         </CanvasWidget>
-        
+
       </StackPanelWidget>
 
       <UniformSpacingPanelWidget Direction="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10, 15">

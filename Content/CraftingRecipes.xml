@@ -6,25 +6,25 @@
     <Recipe Result="GraniteBlock" ResultCount="1" RequiredHeatLevel="1" a="cobblestone" Description="鹅卵石可以熔炼成花岗岩">
       "a"
     </Recipe>
-    <Recipe Result="GlassBlock" ResultCount="1" RequiredHeatLevel="1" a="sand" Description="沙土可以熔化成玻璃">
+    <Recipe Result="GlassBlock" ResultCount="1" RequiredHeatLevel="1" a="sand" Description="通过熔炼沙子来得到玻璃">
       "a"
     </Recipe>
     <Recipe Result="MarbleBlock" ResultCount="1" RequiredHeatLevel="1" a="limestone" b="sand" Description="石灰岩可以烧成大理石">
       "ab"
     </Recipe>
-    <Recipe Result="IronIngotBlock" ResultCount="1" RequiredHeatLevel="1" a="ironorechunk" Description="铁矿可以烧成铁">
+    <Recipe Result="IronIngotBlock" ResultCount="1" RequiredHeatLevel="1" a="ironorechunk" Description="冶炼铁矿石以获得铁">
       "a"
     </Recipe>
-    <Recipe Result="CopperIngotBlock" ResultCount="1" RequiredHeatLevel="1" a="malachitechunk" Description="铜矿可以烧成铜">
+    <Recipe Result="CopperIngotBlock" ResultCount="1" RequiredHeatLevel="1" a="malachitechunk" Description="冶炼铜矿石以获得铜">
       "a"
     </Recipe>
-    <Recipe Result="GermaniumChunkBlock" ResultCount="1" RequiredHeatLevel="1" a="germaniumorechunk" Description="锗矿可以烧成锗晶">
+    <Recipe Result="GermaniumChunkBlock" ResultCount="1" RequiredHeatLevel="1" a="germaniumorechunk" Description="冶炼锗矿石以获得锗晶体">
       "a"
     </Recipe>
-    <Recipe Result="BrickBlock" ResultCount="2" RequiredHeatLevel="1" a="clay" Description="黏土可以烧成砖">
+    <Recipe Result="BrickBlock" ResultCount="2" RequiredHeatLevel="1" a="clay" Description="烧制粘土可以得到砖">
       "a"
     </Recipe>
-    <Recipe Result="RodBlock" ResultCount="4" RequiredHeatLevel="1" a="ironingot" Description="铁锭可以锻造成铁棒">
+    <Recipe Result="RodBlock" ResultCount="4" RequiredHeatLevel="1" a="ironingot" Description="将铁锭锻造成棒">
       "aa"
     </Recipe>
   </Smelting>
@@ -93,51 +93,51 @@
       "aa"
       "aa"
     </Recipe>
-    <Recipe Result="StoneBrickBlock" ResultCount="4" RequiredHeatLevel="0" a="cobblestone" Description="用石头砌石墙">
+    <Recipe Result="StoneBrickBlock" ResultCount="4" RequiredHeatLevel="0" a="cobblestone" Description="用石头砌石砖">
       "aa"
       "aa"
     </Recipe>
     <Recipe Result="FramedGlassBlock" ResultCount="1" RequiredHeatLevel="0" a="glass" b="stick" Description="木头可以做玻璃框">
       "bab"
     </Recipe>
-    <Recipe Result="WindowBlock" ResultCount="1" RequiredHeatLevel="0" a="glass" b="stick" Description="木头可以做玻璃框">
+    <Recipe Result="WindowBlock" ResultCount="1" RequiredHeatLevel="0" a="glass" b="stick" Description="用木头做玻璃框">
       " b"
       "bab"
       " b"
     </Recipe>
-    <Recipe Result="IronBlock" ResultCount="1" RequiredHeatLevel="0" a="ironingot" Description="将几块铁锭放在一起可以合成铁块">
+    <Recipe Result="IronBlock" ResultCount="1" RequiredHeatLevel="0" a="ironingot" Description="将多块铁锭组合成铁块">
       "aaa"
       "aaa"
       "aaa"
     </Recipe>
-    <Recipe Result="CopperBlock" ResultCount="1" RequiredHeatLevel="0" a="copperingot" Description="将几块铜锭放在一起可以合成铜块">
+    <Recipe Result="CopperBlock" ResultCount="1" RequiredHeatLevel="0" a="copperingot" Description="将多块铜锭组合成铜块">
       "aaa"
       "aaa"
       "aaa"
     </Recipe>
-    <Recipe Result="SemiconductorBlock" ResultCount="1" RequiredHeatLevel="0" a="germaniumchunk" Description="将许多锗晶体合成一个半导体块">
+    <Recipe Result="SemiconductorBlock" ResultCount="1" RequiredHeatLevel="0" a="germaniumchunk" Description="将多块锗晶体组合成半导体块">
       "aaa"
       "aaa"
       "aaa"
     </Recipe>
-    <Recipe Result="MalachiteBlock" ResultCount="1" RequiredHeatLevel="0" a="malachitechunk" Description="将零碎的孔雀石合成得到的孔雀石块">
+    <Recipe Result="MalachiteBlock" ResultCount="1" RequiredHeatLevel="0" a="malachitechunk" Description="将多块孔雀石组合成孔雀石块">
       "aaa"
       "aaa"
       "aaa"
     </Recipe>
-    <Recipe Result="DiamondBlock" ResultCount="1" RequiredHeatLevel="0" a="diamond" Description="几块的小钻石可以组合成钻石块">
+    <Recipe Result="DiamondBlock" ResultCount="1" RequiredHeatLevel="0" a="diamond" Description="将多个钻石组合成钻石块">
       "aaa"
       "aaa"
       "aaa"
     </Recipe>
-    <Recipe Result="CoalBlock" ResultCount="1" RequiredHeatLevel="0" a="coalchunk" Description="几块小煤块可以组合成纯煤">
+    <Recipe Result="CoalBlock" ResultCount="1" RequiredHeatLevel="0" a="coalchunk" Description="将多块煤块组合成纯煤">
       "aaa"
       "aaa"
       "aaa"
     </Recipe>
   </Materials>
   <Dismantling>
-    <Recipe Result="IronIngotBlock" ResultCount="9" RequiredHeatLevel="0" a="ironblock" Description="铁块可以分解成铁锭">
+    <Recipe Result="IronIngotBlock" ResultCount="9" RequiredHeatLevel="0" a="ironblock" Description="将铁块拆成铁锭">
       "a"
     </Recipe>
     <Recipe Result="CopperIngotBlock" ResultCount="9" RequiredHeatLevel="0" a="copperblock" Description="铜块可以分解成铜锭">
@@ -166,141 +166,141 @@
     </Recipe>
   </Dismantling>
   <Plants>
-    <Recipe Result="SaplingBlock" ResultCount="1" RequiredHeatLevel="0" a="oakleaves" Description="打碎橡树叶得到橡树苗">
+    <Recipe Result="SaplingBlock" ResultCount="1" RequiredHeatLevel="0" a="oakleaves" Description="从橡树树叶里切下树苗">
       "a"
     </Recipe>
-    <Recipe Result="SaplingBlock:1" ResultCount="1" RequiredHeatLevel="0" a="birchleaves" Description="打碎桦木叶得到桦木苗">
+    <Recipe Result="SaplingBlock:1" ResultCount="1" RequiredHeatLevel="0" a="birchleaves" Description="从桦树树叶里切下树苗">
       "a"
     </Recipe>
-    <Recipe Result="SaplingBlock:2" ResultCount="1" RequiredHeatLevel="0" a="spruceleaves" Description="打碎云衫木叶得到云衫木苗">
+    <Recipe Result="SaplingBlock:2" ResultCount="1" RequiredHeatLevel="0" a="spruceleaves" Description="从云杉树叶里切下树苗">
       "a"
     </Recipe>
-    <Recipe Result="SaplingBlock:3" ResultCount="1" RequiredHeatLevel="0" a="tallspruceleaves" Description="打碎高大的云衫木叶得到高大的云衫木苗">
+    <Recipe Result="SaplingBlock:3" ResultCount="1" RequiredHeatLevel="0" a="tallspruceleaves" Description="从高云杉树叶里切下树苗">
       "a"
     </Recipe>
     <Recipe Result="SeedsBlock:0" ResultCount="2" RequiredHeatLevel="0" a="tallgrass" Description="从高草中提取种子">
       "a"
     </Recipe>
-    <Recipe Result="SeedsBlock:1" ResultCount="4" RequiredHeatLevel="0" a="redflower" Description="打碎红花得到红花种子">
+    <Recipe Result="SeedsBlock:1" ResultCount="4" RequiredHeatLevel="0" a="redflower" Description="从红花中提取红花种子">
       "a"
     </Recipe>
-    <Recipe Result="SeedsBlock:2" ResultCount="3" RequiredHeatLevel="0" a="purpleflower" Description="打碎紫花得到紫花种子">
+    <Recipe Result="SeedsBlock:2" ResultCount="3" RequiredHeatLevel="0" a="purpleflower" Description="从紫花中提取紫花种子">
       "a"
     </Recipe>
-    <Recipe Result="SeedsBlock:3" ResultCount="5" RequiredHeatLevel="0" a="whiteflower" Description="打碎白花得到白花种子">
+    <Recipe Result="SeedsBlock:3" ResultCount="5" RequiredHeatLevel="0" a="whiteflower" Description="从白花中提取白花种子">
       "a"
     </Recipe>
-    <Recipe Result="SeedsBlock:7" ResultCount="3" RequiredHeatLevel="0" a="pumpkin:8" Description="打碎南瓜得到南瓜种子">
+    <Recipe Result="SeedsBlock:7" ResultCount="3" RequiredHeatLevel="0" a="pumpkin:8" Description="从成熟的南瓜中提取种子">
       "a"
     </Recipe>
   </Plants>
   <WoodenTools>
-    <Recipe Result="WoodenShovelBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="planks" Description="得到一把木锹">
+    <Recipe Result="WoodenShovelBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="planks" Description="用木头制造工具">
       "b"
       "a"
       "a"
     </Recipe>
-    <Recipe Result="WoodenPickaxeBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="planks" Description="得到一把木镐">
+    <Recipe Result="WoodenPickaxeBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="planks" Description="用木头制造工具">
       "bbb"
       " a"
       " a"
     </Recipe>
-    <Recipe Result="WoodenAxeBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="planks" Description="得到一把木斧">
+    <Recipe Result="WoodenAxeBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="planks" Description="用木头制造工具">
       "bb"
       "ba"
       " a"
     </Recipe>
-    <Recipe Result="WoodenRakeBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="planks" Description="得到一把木耙">
+    <Recipe Result="WoodenRakeBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="planks" Description="用木头制造工具">
       "b b"
       " a"
       " a"
     </Recipe>
   </WoodenTools>
   <StoneTools>
-    <Recipe Result="StoneShovelBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="cobblestone" Description="得到一把石锹">
+    <Recipe Result="StoneShovelBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="cobblestone" Description="用石头制造工具">
       "b"
       "a"
       "a"
     </Recipe>
-    <Recipe Result="StonePickaxeBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="cobblestone" Description="得到一把石镐">
+    <Recipe Result="StonePickaxeBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="cobblestone" Description="用石头制造工具">
       "bbb"
       " a"
       " a"
     </Recipe>
-    <Recipe Result="StoneAxeBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="cobblestone" Description="得到一把石斧">
+    <Recipe Result="StoneAxeBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="cobblestone" Description="用石头制造工具">
       "bb"
       "ba"
       " a"
     </Recipe>
-    <Recipe Result="StoneRakeBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="cobblestone" Description="得到一把石耙">
+    <Recipe Result="StoneRakeBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="cobblestone" Description="用石头制造工具">
       "b b"
       " a"
       " a"
     </Recipe>
   </StoneTools>
   <CopperTools>
-    <Recipe Result="CopperShovelBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="copperingot" Description="得到一把铜锹">
+    <Recipe Result="CopperShovelBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="copperingot" Description="用铜制造工具">
       "b"
       "a"
       "a"
     </Recipe>
-    <Recipe Result="CopperPickaxeBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="copperingot" Description="得到一把铜镐">
+    <Recipe Result="CopperPickaxeBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="copperingot" Description="用铜制造工具">
       "bbb"
       " a"
       " a"
     </Recipe>
-    <Recipe Result="CopperAxeBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="copperingot" Description="得到一把铜斧">
+    <Recipe Result="CopperAxeBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="copperingot" Description="用铜制造工具">
       "bb"
       "ba"
       " a"
     </Recipe>
-    <Recipe Result="CopperRakeBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="copperingot" Description="得到一把铜耙">
+    <Recipe Result="CopperRakeBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="copperingot" Description="用铜制造工具">
       "b b"
       " a"
       " a"
     </Recipe>
   </CopperTools>
   <IronTools>
-    <Recipe Result="IronShovelBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="ironingot" Description="得到一把铁锹">
+    <Recipe Result="IronShovelBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="ironingot" Description="用铁制造工具">
       "b"
       "a"
       "a"
     </Recipe>
-    <Recipe Result="IronPickaxeBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="ironingot" Description="得到一把铁镐">
+    <Recipe Result="IronPickaxeBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="ironingot" Description="用铁制造工具">
       "bbb"
       " a"
       " a"
     </Recipe>
-    <Recipe Result="IronAxeBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="ironingot" Description="得到一把铁斧">
+    <Recipe Result="IronAxeBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="ironingot" Description="用铁制造工具">
       "bb"
       "ba"
       " a"
     </Recipe>
-    <Recipe Result="IronRakeBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="ironingot" Description="得到一把铁耙">
+    <Recipe Result="IronRakeBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="ironingot" Description="用铁制造工具">
       "b b"
       " a"
       " a"
     </Recipe>
-    <Recipe Result="IronHammerBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="ironingot" Description="制作一个铁工具">
+    <Recipe Result="IronHammerBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="ironingot" Description="用铁制造工具">
       "bbb"
       "bab"
       " a"
     </Recipe>
   </IronTools>
   <DiamondTools>
-    <Recipe Result="DiamondShovelBlock" ResultCount="1" RequiredHeatLevel="0" a="ironshovel" b="diamond" Description="加钻得到钻锹">
+    <Recipe Result="DiamondShovelBlock" ResultCount="1" RequiredHeatLevel="0" a="ironshovel" b="diamond" Description="用钻石给工具镶边">
       " b"
       "bab"
     </Recipe>
-    <Recipe Result="DiamondPickaxeBlock" ResultCount="1" RequiredHeatLevel="0" a="ironpickaxe" b="diamond" Description="加钻得到钻镐">
+    <Recipe Result="DiamondPickaxeBlock" ResultCount="1" RequiredHeatLevel="0" a="ironpickaxe" b="diamond" Description="用钻石给工具镶边">
       " b"
       "bab"
     </Recipe>
-    <Recipe Result="DiamondAxeBlock" ResultCount="1" RequiredHeatLevel="0" a="ironaxe" b="diamond" Description="加钻得到钻斧">
+    <Recipe Result="DiamondAxeBlock" ResultCount="1" RequiredHeatLevel="0" a="ironaxe" b="diamond" Description="用钻石给工具镶边">
       " b"
       "bab"
     </Recipe>
-    <Recipe Result="DiamondRakeBlock" ResultCount="1" RequiredHeatLevel="0" a="ironrake" b="diamond" Description="加钻得到钻耙">
+    <Recipe Result="DiamondRakeBlock" ResultCount="1" RequiredHeatLevel="0" a="ironrake" b="diamond" Description="用钻石给工具镶边">
       " b"
       "bab"
     </Recipe>
@@ -310,7 +310,7 @@
       "a a"
       " a"
     </Recipe>
-    <Recipe Result="MagnetBlock" ResultCount="1" RequiredHeatLevel="0" a="ironingot" Description="用磁铁磁化指南针">
+    <Recipe Result="MagnetBlock" ResultCount="1" RequiredHeatLevel="0" a="ironingot" Description="制作一个能吸引指南针指针的磁铁">
       "a a "
       "a a"
       "aaa "
@@ -332,55 +332,55 @@
     </Recipe>
   </CopperTools>
   <Weapons>
-    <Recipe Result="WoodenSpearBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="planks" Description="得到一把木矛">
+    <Recipe Result="WoodenSpearBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="planks" Description="用木头制造武器">
       " b"
       "bab"
       " a"
     </Recipe>
-    <Recipe Result="WoodenMacheteBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="planks" Description="得到一把木刀">
+    <Recipe Result="WoodenMacheteBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="planks" Description="用木头制造武器">
       "b"
       "b"
       "a"
     </Recipe>
-    <Recipe Result="StoneSpearBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="cobblestone" Description="得到一把石矛">
+    <Recipe Result="StoneSpearBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="cobblestone" Description="用石头制造武器">
       " b"
       "bab"
       " a"
     </Recipe>
-    <Recipe Result="StoneMacheteBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="cobblestone" Description="得到一把石刀">
+    <Recipe Result="StoneMacheteBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="cobblestone" Description="用石头制造武器">
       "b"
       "b"
       "a"
     </Recipe>
-    <Recipe Result="CopperSpearBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="copperingot" Description="得到一把铜矛">
+    <Recipe Result="CopperSpearBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="copperingot" Description="用铜制造武器">
       " b"
       "bab"
       " a"
     </Recipe>
-    <Recipe Result="CopperMacheteBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="copperingot" Description="得到一把铜刀">
+    <Recipe Result="CopperMacheteBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="copperingot" Description="用铜制造武器">
       "b"
       "b"
       "a"
     </Recipe>
-    <Recipe Result="IronSpearBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="ironingot" Description="得到一把铁矛">
+    <Recipe Result="IronSpearBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="ironingot" Description="用铁制造武器">
       " b"
       "bab"
       " a"
     </Recipe>
-    <Recipe Result="IronMacheteBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="ironingot" Description="得到一把铁刀">
+    <Recipe Result="IronMacheteBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="ironingot" Description="用铁制造武器">
       "b"
       "b"
       "a"
     </Recipe>
-    <Recipe Result="DiamondSpearBlock" ResultCount="1" RequiredHeatLevel="0" a="ironspear" b="diamond" Description="加钻得到钻矛">
+    <Recipe Result="DiamondSpearBlock" ResultCount="1" RequiredHeatLevel="0" a="ironspear" b="diamond" Description="用钻石给武器镶边">
       " b"
       "bab"
     </Recipe>
-    <Recipe Result="DiamondMacheteBlock" ResultCount="1" RequiredHeatLevel="0" a="ironmachete" b="diamond" Description="加钻得到钻刀">
+    <Recipe Result="DiamondMacheteBlock" ResultCount="1" RequiredHeatLevel="0" a="ironmachete" b="diamond" Description="用钻石给武器镶边">
       " b"
       "bab"
     </Recipe>
-    <Recipe Result="BowBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="string" Description="组合绳子和木棍得到弓">
+    <Recipe Result="BowBlock" ResultCount="1" RequiredHeatLevel="0" a="stick" b="string" Description="用木棍和绳子制造弓">
       " ab"
       "a b"
       " ab"
@@ -436,11 +436,11 @@
     <Recipe Result="BulletBlock:0" ResultCount="4" RequiredHeatLevel="0" a="rod" Description="用铁棒制作子弹">
       "a"
     </Recipe>
-    <Recipe Result="BulletBlock:1" ResultCount="4" RequiredHeatLevel="0" a="bullet:0" Description="用子弹制作铅弹">
+    <Recipe Result="BulletBlock:1" ResultCount="4" RequiredHeatLevel="0" a="bullet:0" Description="用子弹制作散弹">
       "aa"
       "aa"
     </Recipe>
-    <Recipe Result="BulletBlock:2" ResultCount="4" RequiredHeatLevel="0" a="bullet:1" Description="用铅弹分解得到散弹">
+    <Recipe Result="BulletBlock:2" ResultCount="4" RequiredHeatLevel="0" a="bullet:1" Description=从散弹中提取弹丸">
       "a"
     </Recipe>
     <Recipe Result="BombBlock" ResultCount="2" RequiredHeatLevel="0" a="ironingot" b="gunpowder" Description="在铁球里放火药来制作炸弹">
@@ -887,7 +887,7 @@
       "b"
       "a"
     </Recipe>
-    <Recipe Result="PistonBlock:452" ResultCount="1" RequiredHeatLevel="0" a="piston:448" b="copperingot" Description="在活塞上加铜钩，做一个强力钩子活塞">
+    <Recipe Result="PistonBlock:452" ResultCount="1" RequiredHeatLevel="0" a="piston:448" b="copperingot" Description="在活塞上加铜钩，做一个严格钩子活塞">
       "b"
       "a"
     </Recipe>

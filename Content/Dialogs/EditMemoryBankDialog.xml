@@ -3,7 +3,7 @@
   <CanvasWidget Size="640, 400" ClampToBounds="true" HorizontalAlignment="Center" VerticalAlignment="Center">
     <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" OutlineThickness="2" />
     <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Near" Margin="0, 15">
-      
+
       <LabelWidget Font="{Fonts/Pericles32}" Text="编辑内存数据" HorizontalAlignment="Center"/>
 
       <CanvasWidget Size="0, 5" />
@@ -104,7 +104,7 @@
             </StackPanelWidget>
 
           </StackPanelWidget>
-        
+
         </ScrollPanelWidget>
       </CanvasWidget>
 
@@ -118,7 +118,7 @@
         </CanvasWidget>
         <CanvasWidget Size="0, Infinity" />
       </StackPanelWidget>
-      
+
       <CanvasWidget Size="0, 15" />
 
       <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
@@ -126,7 +126,7 @@
         <BevelledButtonWidget Name="EditMemoryBankDialog.SwitchViewButton" Style="{Styles/ButtonStyle_160x60}" Margin="20, 0" />
         <BevelledButtonWidget Name="EditMemoryBankDialog.Cancel" Style="{Styles/ButtonStyle_160x60}" Margin="20, 0" Text="取消"/>
       </StackPanelWidget>
-      
+
     </StackPanelWidget>
   </CanvasWidget>
 

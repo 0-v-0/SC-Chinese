@@ -158,9 +158,9 @@
       <CanvasWidget Size="Infinity, 80" Margin="20, 0">
         <LabelWidget Name="Description" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Center" VerticalAlignment="Center" TextAnchor="HorizontalCenter, VerticalCenter" WordWrap="true"/>
       </CanvasWidget>
-    
+
     </StackPanelWidget>
-    
+
   </StackPanelWidget>
 
 </Screen>

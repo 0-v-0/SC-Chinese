@@ -1,5 +1,5 @@
 <FurnitureInventoryPanel xmlns="runtime-namespace:Game">
-  
+
   <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Margin="5, 0">
 
     <StackPanelWidget Direction="Vertical">
@@ -15,11 +15,11 @@
     </StackPanelWidget>
 
     <CanvasWidget Size="4, 0"/>
-        
+
     <CanvasWidget Size="288, 288">
       <GridPanelWidget Name="InventoryGrid" ColumnsCount="4" RowsCount="4" VerticalAlignment="Center" />
     </CanvasWidget>
 
   </StackPanelWidget>
-  
+
 </FurnitureInventoryPanel>

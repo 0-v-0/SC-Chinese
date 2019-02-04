@@ -3,7 +3,7 @@
   <CanvasWidget Size="640, 400" ClampToBounds="true" HorizontalAlignment="Center" VerticalAlignment="Center">
     <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" OutlineThickness="2" />
     <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Near" Margin="0, 15">
-      
+
       <LabelWidget Font="{Fonts/Pericles32}" Text="社区内容" HorizontalAlignment="Center"/>
 
       <CanvasWidget Size="0, 5" />
@@ -39,7 +39,7 @@
         <CanvasWidget Size="40, 0" />
         <BevelledButtonWidget Name="MoreCommunityLinkDialog.Close" Style="{Styles/ButtonStyle_160x60}" Text="关闭"/>
       </StackPanelWidget>
-      
+
     </StackPanelWidget>
   </CanvasWidget>
 

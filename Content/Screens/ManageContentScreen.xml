@@ -7,7 +7,7 @@
     <CanvasWidget Style="{Widgets/TopBarContents}" >
       <LabelWidget Name="TopBar.Label" Text="管理内容" />
     </CanvasWidget>
-    
+
     <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center">
 
       <LabelWidget Text="(从社区下载更多内容)" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Center" Margin="0, 10" />

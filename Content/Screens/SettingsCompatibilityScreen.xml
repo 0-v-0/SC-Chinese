@@ -47,7 +47,7 @@
               <LabelWidget Text="查看游戏日志：" Font="{Fonts/Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
               <BevelledButtonWidget Name="ViewGameLogButton" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" Text="..."/>
             </UniformSpacingPanelWidget>
-			
+
             <UniformSpacingPanelWidget Direction="Horizontal">
 			  <LabelWidget Text="恢复默认：" Font="{Fonts/Pericles18}" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
               <BevelledButtonWidget Name="ResetDefaultsButton" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" Text="重置"/>

@@ -10,7 +10,7 @@
     <LabelWidget Text="生命统计" Font="{Fonts/Pericles18}" Color="160, 160, 160, 255" HorizontalAlignment="Center" />
 
     <CanvasWidget Size="0, Infinity"/>
-    
+
     <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" >
 
       <StackPanelWidget Direction="Vertical">
@@ -160,5 +160,5 @@
   <BevelledButtonWidget Name="ChokeButton" CanvasWidget.Position="535, 12" Text="" Style="{Styles/ButtonStyle_70x60}">
     <RectangleWidget Size="40, 40" OutlineColor="0, 0, 0, 0" FillColor="255, 255, 255" Subtexture="{Textures/Atlas/SkullAndBones}" HorizontalAlignment="Center" VerticalAlignment="Center" />
   </BevelledButtonWidget>
-  
+
 </ClothingWidget>

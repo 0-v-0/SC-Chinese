@@ -5,7 +5,7 @@
   <StackPanelWidget Direction="Vertical">
 
     <CanvasWidget Size="0, Infinity" />
-    
+
     <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center">
       <RectangleWidget Name="Logo" Size="800, 100" OutlineColor="0, 0, 0, 0" HorizontalAlignment="Center" FillColor="255, 255, 255" Margin="0, 0" Subtexture="{Textures/Gui/Logo}" />
       <CanvasWidget Size="0, 5" />
@@ -15,7 +15,7 @@
     <CanvasWidget Size="0, Infinity" />
 
     <MotdWidget Size="Infinity, 60"/>
-    
+
     <CanvasWidget Size="0, Infinity" />
 
     <StackPanelWidget HorizontalAlignment="Center" Direction="Vertical" Margin="0, 0">

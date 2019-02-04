@@ -29,7 +29,7 @@
       <ScrollPanelWidget Direction="Vertical">
         <LabelWidget Name="Description" Font="{Fonts/Pericles18}" WordWrap="true" Margin="10, 0" TextAnchor="HorizontalCenter" HorizontalAlignment="Center"/>
       </ScrollPanelWidget>
-      
+
       <CanvasWidget Size="0, 20" />
 
       <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Margin="30, 0">
@@ -45,5 +45,5 @@
     </StackPanelWidget>
 
   </StackPanelWidget>
-  
+
 </Screen>

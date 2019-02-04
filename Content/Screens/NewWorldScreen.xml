@@ -7,7 +7,7 @@
     <CanvasWidget Style="{Widgets/TopBarContents}" >
       <LabelWidget Name="TopBar.Label" Text="创建新的世界" />
     </CanvasWidget>
-    
+
     <StackPanelWidget Direction="Vertical" VerticalAlignment="Center" Margin="10, 10">
 
       <UniformSpacingPanelWidget Direction="Horizontal" VerticalAlignment="Center">

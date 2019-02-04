@@ -11,7 +11,7 @@
     <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center">
 
       <CanvasWidget Size="0, 10" />
-      
+
       <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
         <BevelledButtonWidget Style="{Styles/ButtonStyle_ArrowLeft}" Name="PreviousCategory" Margin="20, 0" VerticalAlignment="Center"/>
         <CanvasWidget Size="340, 60" VerticalAlignment="Center">
@@ -42,5 +42,5 @@
     </StackPanelWidget>
 
   </StackPanelWidget>
-  
+
 </Screen>

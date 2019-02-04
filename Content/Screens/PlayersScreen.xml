@@ -30,7 +30,7 @@
       <CanvasWidget Size="0, 10"/>
 
     </StackPanelWidget>
-    
+
   </StackPanelWidget>
 
   <!--So that model widgets on top of the screen work-->

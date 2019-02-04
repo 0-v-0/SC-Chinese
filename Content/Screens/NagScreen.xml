@@ -11,7 +11,7 @@
       <LabelWidget HorizontalAlignment="Center" Text="生存战争" Color="0, 180, 0"/>
       <LabelWidget HorizontalAlignment="Center" Text="!"/>
     </StackPanelWidget>
-    
+
     <LabelWidget HorizontalAlignment="Center" Text="确定要购买游戏？" Margin="0, 5"/>
 
     <StackPanelWidget HorizontalAlignment="Center" VerticalAlignment="Far" Direction="Horizontal" Margin="0, 20">
