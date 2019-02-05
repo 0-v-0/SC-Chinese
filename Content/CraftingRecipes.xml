@@ -440,7 +440,7 @@
       "aa"
       "aa"
     </Recipe>
-    <Recipe Result="BulletBlock:2" ResultCount="4" RequiredHeatLevel="0" a="bullet:1" Description=从散弹中提取弹丸">
+    <Recipe Result="BulletBlock:2" ResultCount="4" RequiredHeatLevel="0" a="bullet:1" Description="从散弹中提取弹丸">
       "a"
     </Recipe>
     <Recipe Result="BombBlock" ResultCount="2" RequiredHeatLevel="0" a="ironingot" b="gunpowder" Description="在铁球里放火药来制作炸弹">

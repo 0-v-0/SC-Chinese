@@ -20,7 +20,7 @@
           <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Near" Margin="8, 0">
             <BevelledButtonWidget Name="Audio" Text="声音" Style="{Styles/ButtonStyle_310x60}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 5" />
             <BevelledButtonWidget Name="Controls" Text="控制" Style="{Styles/ButtonStyle_310x60}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 5" />
-            <BevelledButtonWidget Name="Compatibility" Text="灵敏度" Style="{Styles/ButtonStyle_310x60}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 5" />
+            <BevelledButtonWidget Name="Compatibility" Text="兼容性" Style="{Styles/ButtonStyle_310x60}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 5" />
           </StackPanelWidget>
         </StackPanelWidget>
       </CanvasWidget>
