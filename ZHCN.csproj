@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <OutputType>Library</OutputType>
     <RootNamespace>ZHCN</RootNamespace>
-    <AssemblyName>汉化补丁</AssemblyName>
+    <AssemblyName>zh-cn</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
@@ -74,6 +74,7 @@
   <ItemGroup>
     <Compile Include="Blocks.cs" />
     <Compile Include="ComponentGui.cs" />
+    <Compile Include="ComponentLevel.cs" />
     <Compile Include="DescriptionScreens.cs" />
     <Compile Include="Dialogs.cs" />
     <Compile Include="ExternalContentScreen.cs" />

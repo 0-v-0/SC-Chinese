@@ -24,11 +24,11 @@ namespace ZHCN
 			m_nameTextBox.Text = m_worldSettings.Name;
 			m_seedLabel.Text = m_worldSettings.Seed;
 			m_gameModeButton.Text = m_worldSettings.GameMode.ToString();
-			m_gameModeButton.IsEnabled = (m_worldSettings.GameMode != GameMode.Cruel);
+			m_gameModeButton.IsEnabled = m_worldSettings.GameMode != GameMode.Cruel;
 			m_errorLabel.IsVisible = !flag2;
 			m_descriptionLabel.IsVisible = flag2;
-			m_uploadButton.IsEnabled = (flag2 && !flag);
-			m_applyButton.IsEnabled = (flag2 & flag);
+			m_uploadButton.IsEnabled = flag2 && !flag;
+			m_applyButton.IsEnabled = flag2 & flag;
 			m_descriptionLabel.Text = StringsManager.GetString("GameMode." + m_worldSettings.GameMode + ".Description");
 			if (m_worldOptionsButton.IsClicked)
 			{

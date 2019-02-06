@@ -187,6 +187,7 @@ namespace ZHCN
 	public class FireworksBlock : Game.FireworksBlock
 	{
 		public new const int Index = 215;
+
 		public new static readonly string[] ShapeDisplayNames = new string[8]
 		{
 			"小型爆炸",
@@ -233,25 +234,33 @@ namespace ZHCN
 		}
 	}
 
+	public class PaintBucketBlock : Game.PaintBucketBlock
+	{
+		public new const int Index = 129;
+
+		public override string GetDisplayName(SubsystemTerrain subsystemTerrain, int value)
+		{
+			int color = GetColor(Terrain.ExtractData(value));
+			return SubsystemPalette.GetName(subsystemTerrain, color, "油漆桶");
+		}
+	}
+
 	public class SaplingBlock : Game.SaplingBlock
 	{
 		public new const int Index = 119;
+
 		public override string GetDisplayName(SubsystemTerrain subsystemTerrain, int value)
 		{
 			switch (Terrain.ExtractData(value))
 			{
 				case 0:
 					return "橡树树苗";
-
 				case 1:
 					return "白桦树苗";
-
 				case 2:
 					return "云杉树苗";
-
 				case 3:
 					return "高大云杉树苗";
-
 				default:
 					return "树苗";
 			}
@@ -261,41 +270,34 @@ namespace ZHCN
 	public class SeedsBlock : Game.SeedsBlock
 	{
 		public new const int Index = 173;
+
 		public override string GetDisplayName(SubsystemTerrain subsystemTerrain, int value)
 		{
 			switch (Terrain.ExtractData(value))
 			{
 				case 0:
 					return "高草种子";
-
 				case 1:
 					return "红花种子";
-
 				case 2:
 					return "紫花种子";
-
 				case 3:
 					return "白花种子";
-
 				case 4:
 					return "野黑麦种子";
-
 				case 5:
 					return "黑麦种子";
-
 				case 6:
 					return "棉花种子";
-
 				case 7:
 					return "南瓜种子";
-
 				default:
 					return string.Empty;
 			}
 		}
 	}
 
-	public class FourLedBlock : Game.FourLedBlock
+	/*public class FourLedBlock : Game.FourLedBlock
 	{
 		public new const int Index = 182;
 
@@ -327,7 +329,7 @@ namespace ZHCN
 			int color = GetColor(Terrain.ExtractData(value));
 			return LedColorDisplayNames[color] + " LED";
 		}
-	}
+	}*/
 
 	public class SevenSegmentDisplayBlock : Game.SevenSegmentDisplayBlock
 	{

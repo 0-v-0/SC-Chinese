@@ -16,7 +16,7 @@
       <StackPanelWidget Direction="Vertical">
 
         <StackPanelWidget Direction="Horizontal">
-          <LinkWidget Name="HealthLink" Size="110, -1" Text="生命" Font="{Fonts/Pericles18u}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
+          <LinkWidget Name="HealthLink" Size="110, -1" Text="生命" Font="{Fonts/Pericles18}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
           <CanvasWidget Size="10, 0"/>
           <CanvasWidget Size="148, 36" >
             <BevelledRectangleWidget BevelSize="-2" CenterColor="0, 0, 0, 0" />
@@ -27,7 +27,7 @@
         <CanvasWidget Size="0, 8" />
 
         <StackPanelWidget Direction="Horizontal">
-          <LinkWidget Name="StaminaLink" Size="110, -1" Text="耐力" Font="{Fonts/Pericles18u}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
+          <LinkWidget Name="StaminaLink" Size="110, -1" Text="耐力" Font="{Fonts/Pericles18}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
           <CanvasWidget Size="10, 0"/>
           <CanvasWidget Size="148, 36" >
             <BevelledRectangleWidget BevelSize="-2" CenterColor="0, 0, 0, 0" />
@@ -38,7 +38,7 @@
         <CanvasWidget Size="0, 8" />
 
         <StackPanelWidget Direction="Horizontal">
-          <LinkWidget Name="SleepLink" Size="110, -1" Text="睡觉" Font="{Fonts/Pericles18u}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
+          <LinkWidget Name="SleepLink" Size="110, -1" Text="睡觉" Font="{Fonts/Pericles18}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
           <CanvasWidget Size="10, 0"/>
           <CanvasWidget Size="148, 36" >
             <BevelledRectangleWidget BevelSize="-2" CenterColor="0, 0, 0, 0" />
@@ -49,7 +49,7 @@
         <CanvasWidget Size="0, 8" />
 
         <StackPanelWidget Direction="Horizontal">
-          <LinkWidget Name="FoodLink" Size="110, -1" Text="食物" Font="{Fonts/Pericles18u}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
+          <LinkWidget Name="FoodLink" Size="110, -1" Text="食物" Font="{Fonts/Pericles18}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
           <CanvasWidget Size="10, 0"/>
           <CanvasWidget Size="148, 36" >
             <BevelledRectangleWidget BevelSize="-2" CenterColor="0, 0, 0, 0" />
@@ -60,7 +60,7 @@
         <CanvasWidget Size="0, 8" />
 
         <StackPanelWidget Direction="Horizontal">
-          <LinkWidget Name="WetnessLink" Size="110, -1" Text="湿度" Font="{Fonts/Pericles18u}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
+          <LinkWidget Name="WetnessLink" Size="110, -1" Text="湿度" Font="{Fonts/Pericles18}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
           <CanvasWidget Size="10, 0"/>
           <CanvasWidget Size="148, 36" >
             <BevelledRectangleWidget BevelSize="-2" CenterColor="0, 0, 0, 0" />
@@ -71,7 +71,7 @@
         <CanvasWidget Size="0, 8" />
 
         <StackPanelWidget Direction="Horizontal">
-          <LinkWidget Name="TemperatureLink" Size="110, -1" Text="体温" Font="{Fonts/Pericles18u}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
+          <LinkWidget Name="TemperatureLink" Size="110, -1" Text="体温" Font="{Fonts/Pericles18}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
           <CanvasWidget Size="10, 0"/>
           <CanvasWidget Size="148, 36" >
             <BevelledRectangleWidget BevelSize="-2" CenterColor="0, 0, 0, 0" />
@@ -86,7 +86,7 @@
       <StackPanelWidget Direction="Vertical" VerticalAlignment="Center">
 
         <StackPanelWidget Direction="Horizontal">
-          <LinkWidget Name="ExperienceLink" Size="110, -1" Text="经验" Font="{Fonts/Pericles18u}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
+          <LinkWidget Name="ExperienceLink" Size="110, -1" Text="经验" Font="{Fonts/Pericles18}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
           <CanvasWidget Size="10, 0"/>
           <CanvasWidget Size="148, 36" >
             <BevelledRectangleWidget BevelSize="-2" CenterColor="0, 0, 0, 0" />
@@ -97,7 +97,7 @@
         <CanvasWidget Size="0, 8" />
 
         <StackPanelWidget Direction="Horizontal">
-          <LinkWidget Name="StrengthLink" Size="110, -1" Text="力量" Font="{Fonts/Pericles18u}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
+          <LinkWidget Name="StrengthLink" Size="110, -1" Text="力量" Font="{Fonts/Pericles18}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
           <CanvasWidget Size="10, 0"/>
           <CanvasWidget Size="148, 36" >
             <BevelledRectangleWidget BevelSize="-2" CenterColor="0, 0, 0, 0" />
@@ -108,7 +108,7 @@
         <CanvasWidget Size="0, 8" />
 
         <StackPanelWidget Direction="Horizontal">
-          <LinkWidget Name="ResilienceLink" Size="110, -1" Text="恢复" Font="{Fonts/Pericles18u}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
+          <LinkWidget Name="ResilienceLink" Size="110, -1" Text="恢复" Font="{Fonts/Pericles18}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
           <CanvasWidget Size="10, 0"/>
           <CanvasWidget Size="148, 36" >
             <BevelledRectangleWidget BevelSize="-2" CenterColor="0, 0, 0, 0" />
@@ -119,7 +119,7 @@
         <CanvasWidget Size="0, 8" />
 
         <StackPanelWidget Direction="Horizontal">
-          <LinkWidget Name="SpeedLink" Size="110, -1" Text="速度" Font="{Fonts/Pericles18u}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
+          <LinkWidget Name="SpeedLink" Size="110, -1" Text="速度" Font="{Fonts/Pericles18}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
           <CanvasWidget Size="10, 0"/>
           <CanvasWidget Size="148, 36" >
             <BevelledRectangleWidget BevelSize="-2" CenterColor="0, 0, 0, 0" />
@@ -130,7 +130,7 @@
         <CanvasWidget Size="0, 8" />
 
         <StackPanelWidget Direction="Horizontal">
-          <LinkWidget Name="HungerLink" Size="110, -1" Text="饥饿" Font="{Fonts/Pericles18u}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
+          <LinkWidget Name="HungerLink" Size="110, -1" Text="饥饿" Font="{Fonts/Pericles18}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
           <CanvasWidget Size="10, 0"/>
           <CanvasWidget Size="148, 36" >
             <BevelledRectangleWidget BevelSize="-2" CenterColor="0, 0, 0, 0" />
@@ -141,7 +141,7 @@
         <CanvasWidget Size="0, 8" />
 
         <StackPanelWidget Direction="Horizontal">
-          <LinkWidget Name="InsulationLink" Size="110, -1" Text="绝缘" Font="{Fonts/Pericles18u}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
+          <LinkWidget Name="InsulationLink" Size="110, -1" Text="绝热" Font="{Fonts/Pericles18}" TextAnchor="Right,VerticalCenter" Color="64, 192, 64" VerticalAlignment="Center" />
           <CanvasWidget Size="10, 0"/>
           <CanvasWidget Size="148, 36" >
             <BevelledRectangleWidget BevelSize="-2" CenterColor="0, 0, 0, 0" />

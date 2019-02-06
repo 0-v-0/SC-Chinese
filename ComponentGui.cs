@@ -17,7 +17,6 @@ namespace ZHCN
 			PlayerInput playerInput = m_componentPlayer.ComponentInput.PlayerInput;
 			ComponentRider componentRider = m_componentPlayer.ComponentRider;
 			if (m_componentPlayer.View.ActiveCamera.IsEntityControlEnabled)
-			{
 				if (!m_keyboardHelpMessageShown && (m_componentPlayer.PlayerData.InputDevice & WidgetInputDevice.Keyboard) != 0 && Time.PeriodicEvent(7.0, 0.0))
 				{
 					m_keyboardHelpMessageShown = true;
@@ -28,7 +27,6 @@ namespace ZHCN
 					m_gamepadHelpMessageShown = true;
 					DisplaySmallMessage("按 START/PAUSE 键查看手柄控制帮助\n(或看帮助)", blinking: true, playNotificationSound: true);
 				}
-			}
 			if (playerInput.KeyboardHelp)
 			{
 				if (m_keyboardHelpDialog == null)
@@ -74,12 +72,10 @@ namespace ZHCN
 				bool isSneaking = m_componentPlayer.ComponentBody.IsSneaking;
 				m_componentPlayer.ComponentBody.IsSneaking = !isSneaking;
 				if (m_componentPlayer.ComponentBody.IsSneaking != isSneaking)
-				{
 					if (m_componentPlayer.ComponentBody.IsSneaking)
 						DisplaySmallMessage("潜行模式：开", false, false);
 					else
 						DisplaySmallMessage("潜行模式：关", false, false);
-				}
 			}
 			if (componentRider != null && (m_mountButtonWidget.IsClicked || playerInput.ToggleMount))
 			{
@@ -93,12 +89,10 @@ namespace ZHCN
 						componentRider.StartMounting(componentMount);
 				}
 				if (componentRider.Mount != null != flag)
-				{
 					if (componentRider.Mount != null)
 						DisplaySmallMessage("上马", false, false);
 					else
 						DisplaySmallMessage("下马", false, false);
-				}
 			}
 			if ((m_editItemButton.IsClicked || playerInput.EditItem) && m_nearbyEditableCell.HasValue)
 			{
@@ -215,9 +209,7 @@ namespace ZHCN
 					ModalPanelWidget = null;
 			}
 			else if (input.Back || m_backButtonWidget.IsClicked)
-			{
 				DialogsManager.ShowDialog(m_componentPlayer.View.GameWidget, new GameMenuDialog(m_componentPlayer));
-			}
 		}
 	}
 }

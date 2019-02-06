@@ -40,19 +40,14 @@ namespace ZHCN
 			{
 				case ExternalContentType.Directory:
 					return "目录";
-
 				case ExternalContentType.World:
 					return "世界";
-
 				case ExternalContentType.BlocksTexture:
 					return "材质纹理";
-
 				case ExternalContentType.CharacterSkin:
 					return "角色皮肤";
-
 				case ExternalContentType.FurniturePack:
 					return "家具包";
-
 				default:
 					return string.Empty;
 			}
@@ -72,18 +67,14 @@ namespace ZHCN
 			{
 				string text = PlayerData.ComponentPlayer.ComponentHealth.CauseOfDeath;
 				if (string.IsNullOrEmpty(text))
-					text = "Unknown";
-				string arg = $"Cause of death: {text}";
+					text = "未知";
+				string arg = "死因: " + text;
 				if (PlayerData.m_subsystemGameInfo.WorldSettings.GameMode == GameMode.Cruel)
-					PlayerData.ComponentPlayer.ComponentGui.DisplayLargeMessage("YOU HAVE DIED", $"{arg}\n\nCannot respawn in \"{PlayerData.m_subsystemGameInfo.WorldSettings.GameMode.ToString()}\" game mode", 30f, 1.5f);
+					PlayerData.ComponentPlayer.ComponentGui.DisplayLargeMessage("你死了", $"{arg}\n\n不能在残酷模式复活", 30f, 1.5f);
 				else if (PlayerData.m_subsystemGameInfo.WorldSettings.GameMode == GameMode.Adventure && !PlayerData.m_subsystemGameInfo.WorldSettings.IsAdventureRespawnAllowed)
-				{
-					PlayerData.ComponentPlayer.ComponentGui.DisplayLargeMessage("YOU HAVE DIED", $"{arg}\n\nTap to restart adventure", 30f, 1.5f);
-				}
+					PlayerData.ComponentPlayer.ComponentGui.DisplayLargeMessage("你死了", $"{arg}\n\n轻触以重置", 30f, 1.5f);
 				else
-				{
-					PlayerData.ComponentPlayer.ComponentGui.DisplayLargeMessage("YOU HAVE DIED", $"{arg}\n\nTap to respawn", 30f, 1.5f);
-				}
+					PlayerData.ComponentPlayer.ComponentGui.DisplayLargeMessage("你死了", $"{arg}\n\n轻触以复活", 30f, 1.5f);
 			}
 			PlayerData.Level = MathUtils.Max(MathUtils.Floor(PlayerData.Level / 2f), 1f);
 		}
@@ -93,41 +84,16 @@ namespace ZHCN
 			if (PlayerData.ComponentPlayer == null)
 				PlayerData.m_stateMachine.TransitionTo("PrepareSpawn");
 			else if (Time.RealTime - PlayerData.m_playerDeathTime.Value > 1.5 && !DialogsManager.HasDialogs(PlayerData.ComponentPlayer.View.GameWidget) && PlayerData.ComponentPlayer.View.Input.Any)
-			{
 				if (PlayerData.m_subsystemGameInfo.WorldSettings.GameMode == GameMode.Cruel)
 					DialogsManager.ShowDialog(PlayerData.ComponentPlayer.View.GameWidget, new GameMenuDialog(PlayerData.ComponentPlayer));
 				else if (PlayerData.m_subsystemGameInfo.WorldSettings.GameMode == GameMode.Adventure && !PlayerData.m_subsystemGameInfo.WorldSettings.IsAdventureRespawnAllowed)
 					ScreensManager.SwitchScreen("GameLoading", GameManager.WorldInfo, "AdventureRestart");
 				else
 					PlayerData.m_project.RemoveEntity(PlayerData.ComponentPlayer.Entity, true);
-			}
 		}
 
-		public static void Init(WorldPalette wp)
-		{
-			wp.Names = new string[16]
-			{
-				"白色",
-				"浅青色",
-				"粉红色",
-				"淡蓝色",
-				"黄色",
-				"浅绿色",
-				"鲑红色",
-				"浅灰色",
-				"灰色",
-				"青色",
-				"紫色",
-				"蓝色",
-				"棕色",
-				"绿色",
-				"红色",
-				"黑色"
-			};
-		}
-
-		public static string[] DigMethodNames;
-		public static string[] CommunityContentModeNames;
+		public static string[] BlockDigMethodNames;
+		/*public static string[] CommunityContentModeNames;
 		public static string[] ScreenshotSizeNames;
 		public static string[] TextureAnimationModeNames;
 		public static string[] ResolutionModeNames;
@@ -141,24 +107,18 @@ namespace ZHCN
 		public static string[] ExternalContentTypeNames;
 		public static string[] LookControlModeNames;
 		public static string[] MoveControlModeNames;
-		public static string[] TimeOfDayModeNames;
+		public static string[] TimeOfDayModeNames;*/
 
 		public static void Initialize()
 		{
-			DigMethodNames = new[]{
+			BlockDigMethodNames = new[]{
 				"无",
 				"铲",
 				"挖",
 				"劈"
 			};
-			BlockDigMethodNames = new[]{
-				"None",
-				"铲子",
-				"镐",
-				"斧头"
-			};
 
-			GameModeNames = new[]{
+			/*GameModeNames = new[]{
 				"创造",
 				"无害",
 				"挑战",
@@ -243,7 +203,7 @@ namespace ZHCN
 				"严格",
 				"普通",
 				"全部显示"
-			};
+			};*/
 			var enumerator = ModsManager.GetEntries(".lng").GetEnumerator();
 			while (enumerator.MoveNext())
 				ReadKeyValueFile(LabelWidget.Strings, enumerator.Current.Stream);
@@ -268,7 +228,38 @@ namespace ZHCN
 			ExternalContentManager.GetEntryTypeDescription1 += GetEntryTypeDescription;
 			PlayerData.ctor1 += Init;
 			ScreensManager.Initialized += Init;
-			WorldPalette.ctor1 += Init;
+			//WorldPalette.DefaultNames
+			BulletBlock.m_displayNames = new string[16]
+			{
+				"白色",
+				"浅青色",
+				"粉红色",
+				"淡蓝色",
+				"黄色",
+				"浅绿色",
+				"鲑红色",
+				"浅灰色",
+				"灰色",
+				"青色",
+				"紫色",
+				"蓝色",
+				"棕色",
+				"绿色",
+				"红色",
+				"黑色"
+			};
+			//LedBlock.LedColorDisplayNames
+			BulletBlock.m_displayNames = new string[8]
+			{
+				"白色",
+				"青色",
+				"红色",
+				"蓝色",
+				"黄色",
+				"绿色",
+				"橙色",
+				"紫色"
+			};
 		}
 
 		public static void Init()
@@ -276,12 +267,12 @@ namespace ZHCN
 			((LoadingScreen)ScreensManager.CurrentScreen).AddLoadAction(ReplaceScreen);
 		}
 
-		private static void ReplaceScreen()
+		public static void ReplaceScreen()
 		{
-			ScreensManager.m_screens["BestiaryDescriptionScreen"] = new BestiaryDescriptionScreen();
-			ScreensManager.m_screens["ExternalContentScreen"] = new ExternalContentScreen();
-			ScreensManager.m_screens["ModifyWorldScreen"] = new ModifyWorldScreen();
-			ScreensManager.m_screens["RecipaediaDescriptionScreen"] = new RecipaediaDescriptionScreen();
+			ScreensManager.m_screens["BestiaryDescription"] = new BestiaryDescriptionScreen();
+			ScreensManager.m_screens["ExternalContent"] = new ExternalContentScreen();
+			ScreensManager.m_screens["ModifyWorld"] = new ModifyWorldScreen();
+			ScreensManager.m_screens["RecipaediaDescription"] = new RecipaediaDescriptionScreen();
 		}
 	}
 }

@@ -17,8 +17,8 @@ namespace ZHCN
 
 		public override void Update()
 		{
-			m_leftButtonWidget.IsEnabled = (m_index > 0);
-			m_rightButtonWidget.IsEnabled = (m_index < m_infoList.Count - 1);
+			m_leftButtonWidget.IsEnabled = m_index > 0;
+			m_rightButtonWidget.IsEnabled = m_index < m_infoList.Count - 1;
 			if (m_leftButtonWidget.IsClicked || Input.Left)
 			{
 				m_index = MathUtils.Max(m_index - 1, 0);
@@ -30,9 +30,7 @@ namespace ZHCN
 				UpdateCreatureProperties();
 			}
 			if (Input.Back || Input.Cancel || Children.Find<ButtonWidget>("TopBar.Back", true).IsClicked)
-			{
 				ScreensManager.SwitchScreen(ScreensManager.PreviousScreen);
-			}
 		}
 
 		public new void UpdateCreatureProperties()
@@ -72,7 +70,7 @@ namespace ZHCN
 				m_propertyNames2Widget.Text += "重量：\n";
 				LabelWidget propertyValues2Widget3 = m_propertyValues2Widget;
 				propertyValues2Widget3.Text = propertyValues2Widget3.Text + bestiaryCreatureInfo.Mass.ToString() + " kg\n";
-				m_propertyNames2Widget.Text += "可否产卵：\n";
+				m_propertyNames2Widget.Text += "是否有蛋：\n";
 				LabelWidget propertyValues2Widget4 = m_propertyValues2Widget;
 				propertyValues2Widget4.Text = propertyValues2Widget4.Text + (bestiaryCreatureInfo.HasSpawnerEgg ? "是" : "否") + "\n";
 				m_propertyNames2Widget.Text = m_propertyNames2Widget.Text.TrimEnd();
@@ -136,8 +134,8 @@ namespace ZHCN
 
 		public override void Update()
 		{
-			m_leftButtonWidget.IsEnabled = (m_index > 0);
-			m_rightButtonWidget.IsEnabled = (m_index < m_valuesList.Count - 1);
+			m_leftButtonWidget.IsEnabled = m_index > 0;
+			m_rightButtonWidget.IsEnabled = m_index < m_valuesList.Count - 1;
 			if (m_leftButtonWidget.IsClicked || Input.Left)
 			{
 				m_index = MathUtils.Max(m_index - 1, 0);
@@ -172,12 +170,10 @@ namespace ZHCN
 				dictionary.Add("营养值", num2.ToString());
 			}
 			if (block.GetRotPeriod(value) > 0)
-			{
 				dictionary.Add("最大保存时间", $"{2 * block.GetRotPeriod(value) * 60f / 1200f:0.0} 天");
-			}
 			if (block.DigMethod != 0)
 			{
-				dictionary.Add("挖掘方法", ZHCN.DigMethodNames[(int)block.DigMethod]);
+				dictionary.Add("挖掘方法", ZHCN.BlockDigMethodNames[(int)block.DigMethod]);
 				dictionary.Add("挖掘难度", block.DigResilience.ToString());
 			}
 			if (block.ExplosionResilience > 0f)

@@ -18,9 +18,7 @@ namespace ZHCN
 			}
 			ExternalContentEntry externalContentEntry = null;
 			if (m_directoryList.SelectedIndex.HasValue)
-			{
-				externalContentEntry = (m_directoryList.Items[m_directoryList.SelectedIndex.Value] as ExternalContentEntry);
-			}
+				externalContentEntry = m_directoryList.Items[m_directoryList.SelectedIndex.Value] as ExternalContentEntry;
 			if (externalContentEntry != null)
 			{
 				m_actionButton.IsVisible = true;
@@ -50,13 +48,13 @@ namespace ZHCN
 				m_actionButton.IsVisible = false;
 				m_copyLinkButton.IsVisible = false;
 			}
-			m_directoryLabel.Text = (m_externalContentProvider.IsLoggedIn ? ("内容 " + m_path) : "未登陆");
+			m_directoryLabel.Text = m_externalContentProvider.IsLoggedIn ? ("内容 " + m_path) : "未登陆";
 			m_providerNameLabel.Text = m_externalContentProvider.DisplayName;
-			m_upDirectoryButton.IsEnabled = (m_externalContentProvider.IsLoggedIn && m_path != "/");
-			m_loginLogoutButton.Text = (m_externalContentProvider.IsLoggedIn ? "注销" : "登陆");
+			m_upDirectoryButton.IsEnabled = m_externalContentProvider.IsLoggedIn && m_path != "/";
+			m_loginLogoutButton.Text = m_externalContentProvider.IsLoggedIn ? "注销" : "登陆";
 			m_loginLogoutButton.IsVisible = m_externalContentProvider.RequiresLogin;
 			m_copyLinkButton.IsVisible = m_externalContentProvider.SupportsLinks;
-			m_copyLinkButton.IsEnabled = (externalContentEntry != null && ExternalContentManager.IsEntryTypeDownloadSupported(externalContentEntry.Type));
+			m_copyLinkButton.IsEnabled = externalContentEntry != null && ExternalContentManager.IsEntryTypeDownloadSupported(externalContentEntry.Type);
 			if (m_changeProviderButton.IsClicked)
 			{
 				DialogsManager.ShowDialog(null, new SelectExternalContentProviderDialog("选择内容源", true, delegate (IExternalContentProvider provider)
@@ -72,16 +70,10 @@ namespace ZHCN
 				SetPath(directoryName);
 			}
 			if (m_actionButton.IsClicked && externalContentEntry != null)
-			{
 				if (externalContentEntry.Type == ExternalContentType.Directory)
-				{
 					SetPath(externalContentEntry.Path);
-				}
 				else
-				{
 					DownloadEntry(externalContentEntry);
-				}
-			}
 			if (m_copyLinkButton.IsClicked && externalContentEntry != null && ExternalContentManager.IsEntryTypeDownloadSupported(externalContentEntry.Type))
 			{
 				CancellableBusyDialog busyDialog = new CancellableBusyDialog("创建链接", false);
@@ -97,7 +89,6 @@ namespace ZHCN
 				});
 			}
 			if (m_loginLogoutButton.IsClicked)
-			{
 				if (m_externalContentProvider.IsLoggedIn)
 				{
 					m_externalContentProvider.Logout();
@@ -112,11 +103,8 @@ namespace ZHCN
 						m_listDirty = true;
 					});
 				}
-			}
 			if (Input.Back || Input.Cancel || Children.Find<ButtonWidget>("TopBar.Back", true).IsClicked)
-			{
 				ScreensManager.SwitchScreen("Content");
-			}
 		}
 
 		public new void UpdateList()
@@ -129,20 +117,16 @@ namespace ZHCN
 				m_externalContentProvider.List(m_path, busyDialog.Progress, delegate (ExternalContentEntry entry)
 				{
 					DialogsManager.HideDialog(busyDialog);
-					List<ExternalContentEntry> list = new List<ExternalContentEntry>((from e in entry.ChildEntries
-																					  where EntryFilter(e)
-																					  select e).Take(1000));
+					var list = new List<ExternalContentEntry>((from e in entry.ChildEntries
+															   where EntryFilter(e)
+															   select e).Take(1000));
 					m_directoryList.ClearItems();
 					list.Sort(delegate (ExternalContentEntry e1, ExternalContentEntry e2)
 					{
 						if (e1.Type == ExternalContentType.Directory && e2.Type != ExternalContentType.Directory)
-						{
 							return -1;
-						}
 						if (e1.Type != ExternalContentType.Directory && e2.Type == ExternalContentType.Directory)
-						{
 							return 1;
-						}
 						return string.Compare(e1.Path, e2.Path);
 					});
 					foreach (ExternalContentEntry item in list)

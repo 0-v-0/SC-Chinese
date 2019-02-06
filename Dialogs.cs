@@ -29,8 +29,8 @@ namespace ZHCN
 		public new void UpdateControls()
 		{
 			m_delaySlider.Value = m_delay;
-			m_minusButton.IsEnabled = (m_delay > m_delaySlider.MinValue);
-			m_plusButton.IsEnabled = (m_delay < m_delaySlider.MaxValue);
+			m_minusButton.IsEnabled = m_delay > m_delaySlider.MinValue;
+			m_plusButton.IsEnabled = m_delay < m_delaySlider.MaxValue;
 			m_delayLabel.Text = $"{(m_delay + 1) * 0.01f:0.00} 秒";
 		}
 	}
@@ -137,7 +137,7 @@ namespace ZHCN
 			{
 				if (m_lineCheckboxes[i].IsClicked)
 					m_tmpTruthTableData.Data[i] = (byte)((m_tmpTruthTableData.Data[i] == 0) ? 15 : 0);
-				m_lineCheckboxes[i].IsChecked = (m_tmpTruthTableData.Data[i] > 0);
+				m_lineCheckboxes[i].IsChecked = m_tmpTruthTableData.Data[i] > 0;
 			}
 			if (m_linearPanel.IsVisible)
 			{
@@ -267,7 +267,7 @@ namespace ZHCN
 				z = z,
 				value = value
 			};
-			c__DisplayClass4_.memoryBankData = (GetBlockData(new Point3(c__DisplayClass4_.x, c__DisplayClass4_.y, c__DisplayClass4_.z)) ?? new MemoryBankData());
+			c__DisplayClass4_.memoryBankData = GetBlockData(new Point3(c__DisplayClass4_.x, c__DisplayClass4_.y, c__DisplayClass4_.z)) ?? new MemoryBankData();
 			DialogsManager.ShowDialog(componentPlayer.View.GameWidget, new EditMemoryBankDialog(c__DisplayClass4_.memoryBankData, c__DisplayClass4_.OnEditBlock_b__0));
 			return true;
 		}
@@ -305,7 +305,7 @@ namespace ZHCN
 				z = z,
 				value = value
 			};
-			c__DisplayClass4_.truthTableData = (GetBlockData(new Point3(c__DisplayClass4_.x, c__DisplayClass4_.y, c__DisplayClass4_.z)) ?? new TruthTableData());
+			c__DisplayClass4_.truthTableData = GetBlockData(new Point3(c__DisplayClass4_.x, c__DisplayClass4_.y, c__DisplayClass4_.z)) ?? new TruthTableData();
 			DialogsManager.ShowDialog(componentPlayer.View.GameWidget, new EditTruthTableDialog(c__DisplayClass4_.truthTableData, c__DisplayClass4_.OnEditBlock_b__0));
 			return true;
 		}

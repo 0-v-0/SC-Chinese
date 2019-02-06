@@ -3,10 +3,10 @@
     <Recipe Result="CoalChunkBlock" ResultCount="1" RequiredHeatLevel="1" a="wood" Description="在无氧环境下燃烧原木可以得到木炭">
       "aa"
     </Recipe>
-    <Recipe Result="GraniteBlock" ResultCount="1" RequiredHeatLevel="1" a="cobblestone" Description="鹅卵石可以熔炼成花岗岩">
+    <Recipe Result="GraniteBlock" ResultCount="1" RequiredHeatLevel="1" a="cobblestone" Description="熔炼鹅卵石来获得花岗岩">
       "a"
     </Recipe>
-    <Recipe Result="GlassBlock" ResultCount="1" RequiredHeatLevel="1" a="sand" Description="通过熔炼沙子来得到玻璃">
+    <Recipe Result="GlassBlock" ResultCount="1" RequiredHeatLevel="1" a="sand" Description="熔炼沙子来获得玻璃">
       "a"
     </Recipe>
     <Recipe Result="MarbleBlock" ResultCount="1" RequiredHeatLevel="1" a="limestone" b="sand" Description="石灰岩可以烧成大理石">
@@ -51,13 +51,13 @@
     <Recipe Result="BreadBlock" ResultCount="1" RequiredHeatLevel="1" a="dough" Description="烘烤面团得到面包">
       "a"
     </Recipe>
-    <Recipe Result="CookedBirdBlock" ResultCount="1" RequiredHeatLevel="1" a="rawbird" Description="生鸟肉烤熟后营养价值提升">
+    <Recipe Result="CookedBirdBlock" ResultCount="1" RequiredHeatLevel="1" a="rawbird" Description="烘烤生鸟肉来提升营养价值并使它更易保存">
       "a"
     </Recipe>
-    <Recipe Result="CookedMeatBlock" ResultCount="1" RequiredHeatLevel="1" a="rawmeat" Description="生肉烤熟后营养价值提升">
+    <Recipe Result="CookedMeatBlock" ResultCount="1" RequiredHeatLevel="1" a="rawmeat" Description="烘烤生肉来提升营养价值并使它更易保存">
       "a"
     </Recipe>
-    <Recipe Result="CookedFishBlock" ResultCount="1" RequiredHeatLevel="1" a="rawfish" Description="生鱼肉烤熟后营养价值提升">
+    <Recipe Result="CookedFishBlock" ResultCount="1" RequiredHeatLevel="1" a="rawfish" Description="烘烤生鱼肉来提升营养价值并使它更易保存">
       "a"
     </Recipe>
   </Food>
@@ -69,22 +69,22 @@
       "a"
       "a"
     </Recipe>
-    <Recipe Result="StringBlock" ResultCount="1" RequiredHeatLevel="0" a="ivy" Description="绳子可以由常春藤制得">
+    <Recipe Result="StringBlock" ResultCount="1" RequiredHeatLevel="0" a="ivy" Description="用常春藤制作绳子">
       "a"
       "a"
       "a"
     </Recipe>
-    <Recipe Result="StringBlock" ResultCount="3" RequiredHeatLevel="0" a="cottonwad" Description="绳子可以由棉花制得">
+    <Recipe Result="StringBlock" ResultCount="3" RequiredHeatLevel="0" a="cottonwad" Description="用棉花制作绳子">
       "a"
       "a"
       "a"
     </Recipe>
-    <Recipe Result="CanvasBlock" ResultCount="3" RequiredHeatLevel="0" a="cottonwad" Description="用棉花上做一张帆布">
+    <Recipe Result="CanvasBlock" ResultCount="3" RequiredHeatLevel="0" a="cottonwad" Description="用棉花制作帆布">
       "aaa"
       "aaa"
       "aaa"
     </Recipe>
-    <Recipe Result="CarpetBlock" ResultCount="6" RequiredHeatLevel="0" a="canvas" Description="用帆布上做一条地毯">
+    <Recipe Result="CarpetBlock" ResultCount="6" RequiredHeatLevel="0" a="canvas" Description="用帆布制作地毯">
       "aaa"
       "aaa"
       "aaa"
@@ -125,12 +125,12 @@
       "aaa"
       "aaa"
     </Recipe>
-    <Recipe Result="DiamondBlock" ResultCount="1" RequiredHeatLevel="0" a="diamond" Description="将多个钻石组合成钻石块">
+    <Recipe Result="DiamondBlock" ResultCount="1" RequiredHeatLevel="0" a="diamond" Description="将多颗钻石组合成钻石块">
       "aaa"
       "aaa"
       "aaa"
     </Recipe>
-    <Recipe Result="CoalBlock" ResultCount="1" RequiredHeatLevel="0" a="coalchunk" Description="将多块煤块组合成纯煤">
+    <Recipe Result="CoalBlock" ResultCount="1" RequiredHeatLevel="0" a="coalchunk" Description="将多块煤组合成煤块">
       "aaa"
       "aaa"
       "aaa"
@@ -385,50 +385,50 @@
       "a b"
       " ab"
     </Recipe>
-    <Recipe Result="CrossbowBlock" ResultCount="1" RequiredHeatLevel="0" a="rod" b="planks" c="string" Description="组合绳子、木板、铁棒得到弩">
+    <Recipe Result="CrossbowBlock" ResultCount="1" RequiredHeatLevel="0" a="rod" b="planks" c="string" Description="用绳子、木板、铁棒制作弩">
       " a"
       "acb"
       " a"
     </Recipe>
-    <Recipe Result="MusketBlock" ResultCount="1" RequiredHeatLevel="0" a="planks" b="ironblock" c="rod" Description="用铁和木板做一把枪">
+    <Recipe Result="MusketBlock" ResultCount="1" RequiredHeatLevel="0" a="planks" b="ironblock" c="rod" Description="用铁和木板制作一把滑膛枪">
       "cba"
       " ba"
     </Recipe>
-    <Recipe Result="ArrowBlock:0" ResultCount="4" RequiredHeatLevel="0" b="stick" c="feather" Description="组合木棍、羽毛得到弓用木箭">
+    <Recipe Result="ArrowBlock:0" ResultCount="4" RequiredHeatLevel="0" b="stick" c="feather" Description="用木棍、羽毛制作弓用木箭">
       "b"
       "c"
     </Recipe>
-    <Recipe Result="ArrowBlock:1" ResultCount="4" RequiredHeatLevel="0" a="stonechunk" b="stick" c="feather" Description="组合木棍、羽毛、碎石得到弓用石箭">
-      "a"
-      "b"
-      "c"
-    </Recipe>
-    <Recipe Result="ArrowBlock:2" ResultCount="4" RequiredHeatLevel="0" a="ironingot" b="stick" c="feather" Description="组合木棍、羽毛、铁锭得到弓用铁箭">
+    <Recipe Result="ArrowBlock:1" ResultCount="4" RequiredHeatLevel="0" a="stonechunk" b="stick" c="feather" Description="用木棍、羽毛、碎石制作弓用石箭">
       "a"
       "b"
       "c"
     </Recipe>
-    <Recipe Result="ArrowBlock:3" ResultCount="1" RequiredHeatLevel="0" a="diamond" b="arrow:2" Description="组合弓用铁箭和钻石得到弓用钻箭">
+    <Recipe Result="ArrowBlock:2" ResultCount="4" RequiredHeatLevel="0" a="ironingot" b="stick" c="feather" Description="用木棍、羽毛、铁锭制作弓用铁箭">
+      "a"
+      "b"
+      "c"
+    </Recipe>
+    <Recipe Result="ArrowBlock:3" ResultCount="1" RequiredHeatLevel="0" a="diamond" b="arrow:2" Description="用弓用铁箭和钻石制作弓用钻箭">
       "a"
       "b"
     </Recipe>
-    <Recipe Result="ArrowBlock:4" ResultCount="1" RequiredHeatLevel="0" a="sulphurchunk" b="arrow:0" Description="组合弓用木箭和硫磺得到弓用火箭">
+    <Recipe Result="ArrowBlock:4" ResultCount="1" RequiredHeatLevel="0" a="sulphurchunk" b="arrow:0" Description="用弓用木箭和硫磺制作弓用火箭">
       "a"
       "b"
     </Recipe>
-    <Recipe Result="ArrowBlock:5" ResultCount="2" RequiredHeatLevel="0" a="rod" b="feather" Description="组合铁棒和羽毛得到弩用铁箭">
+    <Recipe Result="ArrowBlock:5" ResultCount="2" RequiredHeatLevel="0" a="rod" b="feather" Description="用铁棒和羽毛制作铁质弩箭">
       "a"
       "b"
     </Recipe>
-    <Recipe Result="ArrowBlock:6" ResultCount="1" RequiredHeatLevel="0" a="diamond" b="arrow:5" Description="组合弩用铁箭和钻石得到弩用钻箭">
+    <Recipe Result="ArrowBlock:6" ResultCount="1" RequiredHeatLevel="0" a="diamond" b="arrow:5" Description="用铁弩箭和钻石制作钻石弩箭">
       "a"
       "b"
     </Recipe>
-    <Recipe Result="ArrowBlock:7" ResultCount="1" RequiredHeatLevel="0" a="gunpowder" b="arrow:5" Description="组合弩用铁箭和火药得到弩用火箭">
+    <Recipe Result="ArrowBlock:7" ResultCount="1" RequiredHeatLevel="0" a="gunpowder" b="arrow:5" Description="用铁弩箭和火药制作爆炸弩箭">
       "a"
       "b"
     </Recipe>
-    <Recipe Result="ArrowBlock:8" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="stick" c="feather" Description="组合木棍、羽毛、铜锭得到弓用铜箭">
+    <Recipe Result="ArrowBlock:8" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="stick" c="feather" Description="用木棍、羽毛、铜锭制作弓用铜箭">
       "a"
       "b"
       "c"
@@ -440,10 +440,10 @@
       "aa"
       "aa"
     </Recipe>
-    <Recipe Result="BulletBlock:2" ResultCount="4" RequiredHeatLevel="0" a="bullet:1" Description="从散弹中提取弹丸">
+    <Recipe Result="BulletBlock:2" ResultCount="4" RequiredHeatLevel="0" a="bullet:1" Description="从散弹中取出弹丸">
       "a"
     </Recipe>
-    <Recipe Result="BombBlock" ResultCount="2" RequiredHeatLevel="0" a="ironingot" b="gunpowder" Description="在铁球里放火药来制作炸弹">
+    <Recipe Result="BombBlock" ResultCount="2" RequiredHeatLevel="0" a="ironingot" b="gunpowder" Description="将火药包裹在铁球中来制作可投掷的炸弹">
       " a"
       "aba"
       " a"
@@ -460,43 +460,43 @@
     <Recipe Result="GunpowderBlock" ResultCount="3" RequiredHeatLevel="0" a="saltpeterchunk" b="sulphurchunk" c="coalchunk" Description="组合煤、硫磺、硝石得到火药">
       "abc"
     </Recipe>
-    <Recipe Result="SmallGunpowderKegBlock" ResultCount="1" RequiredHeatLevel="0" a="planks" b="gunpowder" Description="把火药放入密闭的桶中使其爆炸">
+    <Recipe Result="SmallGunpowderKegBlock" ResultCount="1" RequiredHeatLevel="0" a="planks" b="gunpowder" Description="把火药装入密闭的桶中使其能爆炸">
       "aba"
     </Recipe>
-    <Recipe Result="MediumGunpowderKegBlock" ResultCount="1" RequiredHeatLevel="0" a="planks" b="gunpowder" Description="把火药放入密闭的桶中使其爆炸">
-      "aba"
-      "aba"
-    </Recipe>
-    <Recipe Result="LargeGunpowderKegBlock" ResultCount="1" RequiredHeatLevel="0" a="planks" b="gunpowder" Description="把火药放入密闭的桶中使其爆炸">
-      "aba"
+    <Recipe Result="MediumGunpowderKegBlock" ResultCount="1" RequiredHeatLevel="0" a="planks" b="gunpowder" Description="把火药装入密闭的桶中使其能爆炸">
       "aba"
       "aba"
     </Recipe>
-    <Recipe Result="SmallIncendiaryKegBlock" ResultCount="1" RequiredHeatLevel="0" a="smallgunpowderkeg" b="sulphurchunk" Description="添加硫到火药桶，使其燃烧">
+    <Recipe Result="LargeGunpowderKegBlock" ResultCount="1" RequiredHeatLevel="0" a="planks" b="gunpowder" Description="把火药放入密闭的桶中使其能爆炸">
+      "aba"
+      "aba"
+      "aba"
+    </Recipe>
+    <Recipe Result="SmallIncendiaryKegBlock" ResultCount="1" RequiredHeatLevel="0" a="smallgunpowderkeg" b="sulphurchunk" Description="向火药桶中加入硫磺使其成为燃烧弹">
       "ab"
     </Recipe>
-    <Recipe Result="MediumIncendiaryKegBlock" ResultCount="1" RequiredHeatLevel="0" a="mediumgunpowderkeg" b="sulphurchunk" Description="添加硫到火药桶，使其燃烧">
+    <Recipe Result="MediumIncendiaryKegBlock" ResultCount="1" RequiredHeatLevel="0" a="mediumgunpowderkeg" b="sulphurchunk" Description="向火药桶中加入硫磺使其成为燃烧弹">
       "ab"
     </Recipe>
-    <Recipe Result="LargeIncendiaryKegBlock" ResultCount="1" RequiredHeatLevel="0" a="largegunpowderkeg" b="sulphurchunk" Description="添加硫到火药桶，使其燃烧">
+    <Recipe Result="LargeIncendiaryKegBlock" ResultCount="1" RequiredHeatLevel="0" a="largegunpowderkeg" b="sulphurchunk" Description="向火药桶中加入硫磺使其成为燃烧弹">
       "ab"
     </Recipe>
   </Explosives>
   <Items>
-    <Recipe Result="TorchBlock" ResultCount="2" RequiredHeatLevel="0" a="stick" b="coalchunk" Description="组合可燃的煤与木棒得到火把">
+    <Recipe Result="TorchBlock" ResultCount="2" RequiredHeatLevel="0" a="stick" b="coalchunk" Description="用可燃的煤和木棍制作火把">
       "b"
       "a"
     </Recipe>
-    <Recipe Result="WickerLampBlock" ResultCount="1" RequiredHeatLevel="0" a="torch" b="planks" c="stick" Description="把火把放入箱中得到柳条灯">
+    <Recipe Result="WickerLampBlock" ResultCount="1" RequiredHeatLevel="0" a="torch" b="planks" c="stick" Description="把火把放入木箱中制作柳条灯">
       " b"
       "cac"
       " b"
     </Recipe>
-    <Recipe Result="CraftingTableBlock" ResultCount="1" RequiredHeatLevel="0" a="planks" Description="工艺桌由木板制成">
+    <Recipe Result="CraftingTableBlock" ResultCount="1" RequiredHeatLevel="0" a="planks" Description="用木板制作合成台">
       "aa"
       "aa"
     </Recipe>
-    <Recipe Result="ChestBlock" ResultCount="1" RequiredHeatLevel="0" a="planks" Description="箱子由木板制成">
+    <Recipe Result="ChestBlock" ResultCount="1" RequiredHeatLevel="0" a="planks" Description="用木板制作箱子">
       "aaa"
       "a a"
       "aaa"
@@ -575,26 +575,26 @@
     <Recipe Result="BasaltSlabBlock" ResultCount="4" RequiredHeatLevel="0" a="basalt" Description="玄武岩板可做装饰材料">
       "aaa"
     </Recipe>
-    <Recipe Result="WoodenDoorBlock" ResultCount="1" RequiredHeatLevel="0" a="planks" Description="木制门">
+    <Recipe Result="WoodenDoorBlock" ResultCount="1" RequiredHeatLevel="0" a="planks" Description="用木板制作门">
       "aa"
       "aa"
       "aa"
     </Recipe>
-    <Recipe Result="IronDoorBlock" ResultCount="1" RequiredHeatLevel="0" a="ironingot" Description="铁门很牢固，由铁锭做成">
+    <Recipe Result="IronDoorBlock" ResultCount="1" RequiredHeatLevel="0" a="ironingot" Description="用铁锭制作的坚固铁门">
       "aa"
       "aa"
       "aa"
     </Recipe>
-    <Recipe Result="CellDoorBlock" ResultCount="1" RequiredHeatLevel="0" a="rod" Description="铁棒可以做牢门">
+    <Recipe Result="CellDoorBlock" ResultCount="1" RequiredHeatLevel="0" a="rod" Description="用铁棒制作牢门">
       "aa"
       "aa"
       "aa"
     </Recipe>
-    <Recipe Result="WoodenTrapdoorBlock" ResultCount="2" RequiredHeatLevel="0" a="planks" Description="木活板门">
+    <Recipe Result="WoodenTrapdoorBlock" ResultCount="2" RequiredHeatLevel="0" a="planks" Description="用木板制作木活板门">
       "aaa"
       "aaa"
     </Recipe>
-    <Recipe Result="CellTrapdoorBlock" ResultCount="2" RequiredHeatLevel="0" a="ironingot" Description="铁制的牢活板门">
+    <Recipe Result="CellTrapdoorBlock" ResultCount="2" RequiredHeatLevel="0" a="ironingot" Description="用铁锭制作牢活板门">
       "aaa"
       "aaa"
     </Recipe>
@@ -657,7 +657,7 @@
       "aaa"
       " b"
     </Recipe>
-    <Recipe Result="JackOLanternBlock" ResultCount="1" RequiredHeatLevel="0" a="pumpkin:8" b="torch" Description="在万圣节来临的时候，用南瓜和火把雕刻南瓜灯笼">
+    <Recipe Result="JackOLanternBlock" ResultCount="1" RequiredHeatLevel="0" a="pumpkin:8" b="torch" Description="在万圣节来临的时候，把火把放入南瓜中雕刻成灯笼">
       "a"
       "b"
     </Recipe>
@@ -720,30 +720,30 @@
     </Recipe>
   </Items>
   <Electrics>
-    <Recipe Result="WireBlock" ResultCount="16" RequiredHeatLevel="0" a="copperingot" Description="组合铜锭和电线得到导线">
+    <Recipe Result="WireBlock" ResultCount="16" RequiredHeatLevel="0" a="copperingot" Description="将铜锭加工成一段电线">
       "a"
     </Recipe>
-    <Recipe Result="NotGateBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="germaniumchunk" Description="组合铜和锗得到逻辑非门">
+    <Recipe Result="NotGateBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="germaniumchunk" Description="用铜和锗合成逻辑非门">
       "a"
       "aaa"
       "bbb"
     </Recipe>
-    <Recipe Result="AndGateBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="germaniumchunk" Description="组合铜和锗得到逻辑与门">
+    <Recipe Result="AndGateBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="germaniumchunk" Description="用铜和锗合成逻辑与门">
       "a"
       "baa"
       "bbb"
     </Recipe>
-    <Recipe Result="OrGateBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="germaniumchunk" Description="组合铜和锗得到逻辑或门">
+    <Recipe Result="OrGateBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="germaniumchunk" Description="用铜和锗合成逻辑或门">
       "a"
       "aba"
       "bbb"
     </Recipe>
-    <Recipe Result="XorGateBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="germaniumchunk" Description="组合铜和锗得到逻辑异或门">
+    <Recipe Result="XorGateBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="germaniumchunk" Description="用铜和锗合成逻辑异或门">
       "a"
       "bba"
       "bbb"
     </Recipe>
-    <Recipe Result="DelayGateBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="germaniumchunk" Description="组合铜和锗得到延迟门">
+    <Recipe Result="DelayGateBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="germaniumchunk" Description="用铜和锗合成延迟门">
       "a"
       "aab"
       "bbb"
@@ -753,47 +753,47 @@
       "aab"
       "bbb"
     </Recipe>
-    <Recipe Result="SRLatchBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="germaniumchunk" Description="组合铜和锗得到逻辑SR锁存器">
+    <Recipe Result="SRLatchBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="germaniumchunk" Description="用铜和锗合成逻辑SR锁存器">
       "a"
       "bab"
       "bbb"
     </Recipe>
-    <Recipe Result="CounterBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="germaniumchunk" Description="组合铜和锗得到4位计数器">
+    <Recipe Result="CounterBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="germaniumchunk" Description="用铜和锗合成4位计数器">
       "a"
       "abb"
       "bbb"
     </Recipe>
-    <Recipe Result="MemoryBankBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="germaniumchunk" Description="组合铜和锗得到内存条">
+    <Recipe Result="MemoryBankBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="germaniumchunk" Description="用铜和锗合成内存条">
       "a"
       "bbb"
       "bbb"
     </Recipe>
-    <Recipe Result="TruthTableCircuitBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="germaniumchunk" Description="组合铜和锗得到真值表电路">
+    <Recipe Result="TruthTableCircuitBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="germaniumchunk" Description="用铜和锗合成真值表电路">
       "a"
       "aaa"
       "abb"
     </Recipe>
-    <Recipe Result="RealTimeClockBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="germaniumchunk" c="glass" Description="组合铜、锗、玻璃得到实时钟">
+    <Recipe Result="RealTimeClockBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="germaniumchunk" c="glass" Description="用铜、锗、玻璃合成实时钟">
       "c"
       "baa"
       "abb"
     </Recipe>
-    <Recipe Result="RandomGeneratorBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="germaniumchunk" Description="组合铜和锗得到随机信号发生器">
+    <Recipe Result="RandomGeneratorBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="germaniumchunk" Description="用铜和锗合成随机信号发生器">
       "a"
       "aba"
       "abb"
     </Recipe>
-    <Recipe Result="DigitalToAnalogConverterBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="germaniumchunk" Description="组合铜和锗得到数模转换器">
+    <Recipe Result="DigitalToAnalogConverterBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="germaniumchunk" Description="用铜和锗合成数模转换器">
       "a"
       "bba"
       "abb"
     </Recipe>
-    <Recipe Result="AnalogToDigitalConverterBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="germaniumchunk" Description="组合铜和锗得到模数转换器">
+    <Recipe Result="AnalogToDigitalConverterBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="germaniumchunk" Description="用铜和锗合成模数转换器">
       "a"
       "aab"
       "abb"
     </Recipe>
-    <Recipe Result="SoundGeneratorBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="germaniumchunk" c="ironingot" Description="组合铜、锗、铁得到声音发生器">
+    <Recipe Result="SoundGeneratorBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="germaniumchunk" c="ironingot" Description="用铜、锗、铁合成声音发生器">
       "c"
       "bab"
       "abb"
@@ -808,67 +808,67 @@
       "bbb"
       "abb"
     </Recipe>
-    <Recipe Result="BatteryBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="coalchunk" Description="用碳和铜制作电池">
+    <Recipe Result="BatteryBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="coalchunk" Description="用碳和铜合成电池">
       "aa"
       "bb"
       "bb"
     </Recipe>
-    <Recipe Result="LightbulbBlock" ResultCount="8" RequiredHeatLevel="0" a="copperingot" b="glass" Description="组合铜和玻璃得到电灯">
+    <Recipe Result="LightbulbBlock" ResultCount="8" RequiredHeatLevel="0" a="copperingot" b="glass" Description="用铜和玻璃合成电灯">
       " a"
       "aba"
       " a"
     </Recipe>
-    <Recipe Result="DetonatorBlock" ResultCount="10" RequiredHeatLevel="0" a="copperingot" b="gunpowder" Description="组合铜和火药得到电子雷管">
+    <Recipe Result="DetonatorBlock" ResultCount="10" RequiredHeatLevel="0" a="copperingot" b="gunpowder" Description="用铜和火药合成电子雷管">
       " a"
       "aba"
       " a"
     </Recipe>
-    <Recipe Result="SwitchBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="stick" Description="组合铜和木棍得到拉杆开关">
+    <Recipe Result="SwitchBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="stick" Description="用铜和木棍合成拉杆">
       " b"
       "aaa"
     </Recipe>
-    <Recipe Result="ButtonBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="planks" Description="组合铜和木板得到按钮开关">
+    <Recipe Result="ButtonBlock" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="planks" Description="用铜和木板合成按钮">
       " b"
       "aaa"
     </Recipe>
-    <Recipe Result="PressurePlateBlock:0" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="woodenslab" Description="组合铜和木板得到压力板">
+    <Recipe Result="PressurePlateBlock:0" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="woodenslab" Description="用铜和木板合成压力板">
       "bbb"
       "aaa"
     </Recipe>
-    <Recipe Result="PressurePlateBlock:1" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="stoneslab" Description="组合铜和石头得到压力板">
+    <Recipe Result="PressurePlateBlock:1" ResultCount="4" RequiredHeatLevel="0" a="copperingot" b="stoneslab" Description="用铜和石头合成压力板">
       "bbb"
       "aaa"
     </Recipe>
-    <Recipe Result="PhotodiodeBlock" ResultCount="2" RequiredHeatLevel="0" a="copperingot" b="glass" Description="组合铜和玻璃得到光敏二级管">
+    <Recipe Result="PhotodiodeBlock" ResultCount="2" RequiredHeatLevel="0" a="copperingot" b="glass" Description="用铜和玻璃合成光敏二级管">
       " b"
       "aaa"
     </Recipe>
-    <Recipe Result="MotionDetectorBlock" ResultCount="2" RequiredHeatLevel="0" a="copperingot" b="glass" c="marble" Description="组合铜、玻璃、大理石得到运动探测器">
+    <Recipe Result="MotionDetectorBlock" ResultCount="2" RequiredHeatLevel="0" a="copperingot" b="glass" c="marble" Description="用铜、玻璃、大理石合成运动探测器">
       " b"
       " c"
       "aaa"
     </Recipe>
-    <Recipe Result="WireThroughPlanksBlock" ResultCount="3" RequiredHeatLevel="0" a="wire" b="planks" Description="在木块上钻一个洞，用电线穿过">
+    <Recipe Result="WireThroughPlanksBlock" ResultCount="3" RequiredHeatLevel="0" a="wire" b="planks" Description="在木板上打洞并用电线穿过">
       "bab"
       "bab"
       "bab"
     </Recipe>
-    <Recipe Result="WireThroughStoneBlock" ResultCount="3" RequiredHeatLevel="0" a="wire" b="granite" Description="在石块上钻一个洞，用电线穿过">
+    <Recipe Result="WireThroughStoneBlock" ResultCount="3" RequiredHeatLevel="0" a="wire" b="granite" Description="在石块上打洞并用电线穿过">
       "bab"
       "bab"
       "bab"
     </Recipe>
-    <Recipe Result="WireThroughBricksBlock" ResultCount="3" RequiredHeatLevel="0" a="wire" b="brickblock" Description="将石砖墙打洞并用电线穿过得到石砖墙穿线块">
+    <Recipe Result="WireThroughBricksBlock" ResultCount="3" RequiredHeatLevel="0" a="wire" b="brickblock" Description="在石砖上打洞并用电线穿过">
       "bab"
       "bab"
       "bab"
     </Recipe>
-    <Recipe Result="WireThroughSemiconductorBlock" ResultCount="3" RequiredHeatLevel="0" a="wire" b="germaniumchunk" Description="将半导体打洞并用电线穿过得到半导体穿线块">
+    <Recipe Result="WireThroughSemiconductorBlock" ResultCount="3" RequiredHeatLevel="0" a="wire" b="germaniumchunk" Description="在半导体块上打洞并用电线穿过">
       "bab"
       "bab"
       "bab"
     </Recipe>
-    <Recipe Result="WireThroughCobblestoneBlock" ResultCount="3" RequiredHeatLevel="0" a="wire" b="cobblestone" Description="在鹅卵石块中钻一个洞，并用电线穿过它">
+    <Recipe Result="WireThroughCobblestoneBlock" ResultCount="3" RequiredHeatLevel="0" a="wire" b="cobblestone" Description="在鹅卵石上打洞并用电线穿过">
       "bab"
       "bab"
       "bab"
@@ -883,11 +883,11 @@
       "aca"
       "aaa"
     </Recipe>
-    <Recipe Result="PistonBlock:450" ResultCount="1" RequiredHeatLevel="0" a="piston:448" b="ironingot" Description="在活塞上加铁钩，做一个钩子活塞">
+    <Recipe Result="PistonBlock:450" ResultCount="1" RequiredHeatLevel="0" a="piston:448" b="ironingot" Description="在活塞上加铁钩，做一个推拉活塞">
       "b"
       "a"
     </Recipe>
-    <Recipe Result="PistonBlock:452" ResultCount="1" RequiredHeatLevel="0" a="piston:448" b="copperingot" Description="在活塞上加铜钩，做一个严格钩子活塞">
+    <Recipe Result="PistonBlock:452" ResultCount="1" RequiredHeatLevel="0" a="piston:448" b="copperingot" Description="在活塞上加铜钩，做一个精密推拉活塞">
       "b"
       "a"
     </Recipe>
@@ -991,11 +991,11 @@
       "a a"
     </Recipe>
 
-    <Recipe Result="ClothingBlock:33" ResultCount="1" RequiredHeatLevel="0" a="copperingot" b="clothing:11" Description="用铜和皮帽制造铜头盔头盔">
+    <Recipe Result="ClothingBlock:33" ResultCount="1" RequiredHeatLevel="0" a="copperingot" b="clothing:11" Description="用铜和皮帽制造铜头盔">
       " a"
       "aba"
     </Recipe>
-    <Recipe Result="ClothingBlock:34" ResultCount="1" RequiredHeatLevel="0" a="copperingot" b="clothing:5" Description="用铜和皮背心制作铜装甲">
+    <Recipe Result="ClothingBlock:34" ResultCount="1" RequiredHeatLevel="0" a="copperingot" b="clothing:5" Description="用铜和皮背心制作铜胸甲">
       " a"
       "aba"
       " a"
@@ -1015,7 +1015,7 @@
       " a"
       "aba"
     </Recipe>
-    <Recipe Result="ClothingBlock:3" ResultCount="1" RequiredHeatLevel="0" a="ironingot" b="clothing:5" Description="用铁和皮衣制作胸甲">
+    <Recipe Result="ClothingBlock:3" ResultCount="1" RequiredHeatLevel="0" a="ironingot" b="clothing:5" Description="用铁和皮衣制作铁胸甲">
       " a"
       "aba"
       " a"
@@ -1033,17 +1033,17 @@
       " a"
       "aba"
     </Recipe>
-    <Recipe Result="ClothingBlock:19" ResultCount="1" RequiredHeatLevel="0" a="diamond" b="clothing:3" Description="用钻石和胸甲制作钻石胸甲">
+    <Recipe Result="ClothingBlock:19" ResultCount="1" RequiredHeatLevel="0" a="diamond" b="clothing:3" Description="用钻石和铁胸甲制作钻石胸甲">
       " a"
       "aba"
       " a"
     </Recipe>
-    <Recipe Result="ClothingBlock:20" ResultCount="1" RequiredHeatLevel="0" a="diamond" b="clothing:4" Description="用钻石和护腿制作钻石护腿">
+    <Recipe Result="ClothingBlock:20" ResultCount="1" RequiredHeatLevel="0" a="diamond" b="clothing:4" Description="用钻石和铁护腿制作钻石护腿">
       " a"
       "aba"
       " a"
     </Recipe>
-    <Recipe Result="ClothingBlock:22" ResultCount="1" RequiredHeatLevel="0" a="diamond" b="clothing:9" Description="用钻石和护靴制作钻石护靴">
+    <Recipe Result="ClothingBlock:22" ResultCount="1" RequiredHeatLevel="0" a="diamond" b="clothing:9" Description="用钻石和铁靴子制作钻石靴子">
       " a"
       "aba"
     </Recipe>

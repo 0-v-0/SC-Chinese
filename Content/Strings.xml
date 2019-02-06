@@ -45,8 +45,8 @@
   <String Name="AdventureSurvivalMechanics.True">饥饿、耐力、体温、睡眠将在冒险模式中进行模拟。</String>
   <String Name="AdventureSurvivalMechanics.False">饥饿、耐力、体温、睡眠将在冒险模式中禁用。生命和伤害仍然将被模拟。</String>
 
-  <String Name="SupernaturalCreatures.True">超自然生物会在世界上产卵。</String>
-  <String Name="SupernaturalCreatures.False">超自然生物不会在世界上产卵。 任何现有的生物将保留。</String>
+  <String Name="SupernaturalCreatures.True">超自然生物会在世界上生成。</String>
+  <String Name="SupernaturalCreatures.False">超自然生物不会在世界上生成。 任何现有的生物将保留。</String>
 
   <String Name="CharacterSkin.Description">选择游戏中使用的角色皮肤。</String>
   <String Name="BlocksTexture.Description">选择绘制世界时使用的材质，可以通过使用不同的材质完全改变世界的外观。</String>
@@ -70,7 +70,11 @@
   <String Name="ScreenLayout.TripleHorizontal.Description">三人玩家垂直分屏</String>
   <String Name="ScreenLayout.TripleEven.Name">三人均分</String>
   <String Name="ScreenLayout.TripleEven.Description">三人玩家均分屏幕</String>
+  <String Name="ScreenLayout.TripleOpposite.Name">三人对分</String>
+  <String Name="ScreenLayout.TripleOpposite.Description">三人玩家对分屏幕</String>
   <String Name="ScreenLayout.Quadruple.Name">四人均分</String>
   <String Name="ScreenLayout.Quadruple.Description">四人玩家均分屏幕</String>
+  <String Name="ScreenLayout.QuadrupleOpposite.Name">四人对分</String>
+  <String Name="ScreenLayout.QuadrupleOpposite.Description">四人玩家对分屏幕</String>
 
 </Strings>
