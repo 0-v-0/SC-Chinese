@@ -1,5 +1,7 @@
 <ZHCN>
-<Parameter Name="Class" Guid="8b3d07dc-6498-4691-9686-cf4edabb8f3f" new-Value="ZHCN.ComponentGui" Type="string" />
+<Parameter Name="Class" Guid="8b3d07dc-6498-4691-9686-cf4edabb8f3f" new-Value="ZHCN.ComponentGui" />
+<Parameter Name="Class" Guid="a346c456-5087-48c4-835a-5829b3f35c68" new-Value="ZHCN.ComponentLevel" />
+<Parameter Name="Class" Guid="46dd5d8f-8a84-4bb6-bb7c-bc42afe926d4" new-Value="ZHCN.ComponentSleep" />
 <Parameter Name="Class" Guid="64552991-c904-476c-a0bb-3b2710e54433" new-Value="ZHCN.SubsystemAdjustableDelayGateBlockBehavior" />
 <Parameter Name="Class" Guid="1c05e732-2ea1-4db4-b37a-0cd1ac6d7d73" new-Value="ZHCN.SubsystemBatteryBlockBehavior" />
 <Parameter Name="Class" Guid="32a2d9ef-b01a-4f80-a6f8-5d2d5e9e9275" new-Value="ZHCN.SubsystemMemoryBankBlockBehavior" />

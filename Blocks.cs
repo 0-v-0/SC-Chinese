@@ -229,8 +229,7 @@ namespace ZHCN
 
 		public override string GetDisplayName(SubsystemTerrain subsystemTerrain, int value)
 		{
-			int? color = GetColor(Terrain.ExtractData(value));
-			return SubsystemPalette.GetName(subsystemTerrain, color, "电灯");
+            return SubsystemPalette.GetName(subsystemTerrain, GetColor(Terrain.ExtractData(value)), "电灯");
 		}
 	}
 
@@ -240,8 +239,7 @@ namespace ZHCN
 
 		public override string GetDisplayName(SubsystemTerrain subsystemTerrain, int value)
 		{
-			int color = GetColor(Terrain.ExtractData(value));
-			return SubsystemPalette.GetName(subsystemTerrain, color, "油漆桶");
+            return SubsystemPalette.GetName(subsystemTerrain, GetColor(Terrain.ExtractData(value)), "油漆桶");
 		}
 	}
 
@@ -296,40 +294,6 @@ namespace ZHCN
 			}
 		}
 	}
-
-	/*public class FourLedBlock : Game.FourLedBlock
-	{
-		public new const int Index = 182;
-
-		public override string GetDisplayName(SubsystemTerrain subsystemTerrain, int value)
-		{
-			int color = GetColor(Terrain.ExtractData(value));
-			return LedBlock.LedColorDisplayNames[color] + " 4-LED";
-		}
-	}
-
-	public class LedBlock : Game.LedBlock
-	{
-		public new const int Index = 152;
-
-		public new static readonly string[] LedColorDisplayNames = new string[8]
-		{
-			"白色",
-			"青色",
-			"红色",
-			"蓝色",
-			"黄色",
-			"绿色",
-			"橙色",
-			"紫色"
-		};
-
-		public override string GetDisplayName(SubsystemTerrain subsystemTerrain, int value)
-		{
-			int color = GetColor(Terrain.ExtractData(value));
-			return LedColorDisplayNames[color] + " LED";
-		}
-	}*/
 
 	public class SevenSegmentDisplayBlock : Game.SevenSegmentDisplayBlock
 	{
