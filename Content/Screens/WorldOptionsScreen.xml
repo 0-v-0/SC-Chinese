@@ -114,11 +114,6 @@
               <BevelledButtonWidget Name="Palette" Text="..." Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
             </UniformSpacingPanelWidget>
 
-            <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
-              <LabelWidget Text="超自然生物：" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
-              <BevelledButtonWidget Name="SupernaturalCreatures" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
-            </UniformSpacingPanelWidget>
-
             <!--Creative mode panel-->
             <StackPanelWidget Name="CreativeModePanel" Direction="Vertical" HorizontalAlignment="Center">
 
@@ -148,6 +143,11 @@
               </UniformSpacingPanelWidget>
 
             </StackPanelWidget>
+
+            <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+              <LabelWidget Text="超自然生物：" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+              <BevelledButtonWidget Name="SupernaturalCreatures" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+            </UniformSpacingPanelWidget>
 
           </StackPanelWidget>
         </ScrollPanelWidget>

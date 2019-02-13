@@ -211,5 +211,114 @@ namespace ZHCN
 			else if (input.Back || m_backButtonWidget.IsClicked)
 				DialogsManager.ShowDialog(m_componentPlayer.View.GameWidget, new GameMenuDialog(m_componentPlayer));
 		}
+
+		public new void UpdateWidgets()
+		{
+			ComponentRider componentRider = m_componentPlayer.ComponentRider;
+			var componentSleep = m_componentPlayer.ComponentSleep;
+			ComponentInput componentInput = m_componentPlayer.ComponentInput;
+			WorldSettings worldSettings = m_subsystemGameInfo.WorldSettings;
+			GameMode gameMode = worldSettings.GameMode;
+			UpdateSidePanelsAnimation();
+			if (m_modalPanelAnimationData != null)
+				UpdateModalPanelAnimation();
+			if (m_message != null)
+			{
+				double realTime = Time.RealTime;
+				m_largeMessageWidget.IsVisible = true;
+				LabelWidget labelWidget = m_largeMessageWidget.Children.Find<LabelWidget>("LargeLabel");
+				LabelWidget labelWidget2 = m_largeMessageWidget.Children.Find<LabelWidget>("SmallLabel");
+				labelWidget.Text = m_message.LargeText ?? string.Empty;
+				labelWidget2.Text = m_message.SmallText;
+				labelWidget.IsVisible = !string.IsNullOrEmpty(m_message.LargeText);
+				labelWidget2.IsVisible = !string.IsNullOrEmpty(m_message.SmallText);
+				float num = (float)MathUtils.Min(MathUtils.Saturate(2.0 * (realTime - m_message.StartTime)), MathUtils.Saturate(2.0 * (m_message.StartTime + m_message.Duration - realTime)));
+				labelWidget.Color = new Color(num, num, num, num);
+				labelWidget2.Color = new Color(num, num, num, num);
+				if (Time.RealTime > m_message.StartTime + m_message.Duration)
+					m_message = null;
+			}
+			else
+				m_largeMessageWidget.IsVisible = false;
+			m_controlsContainerWidget.IsVisible = m_componentPlayer.PlayerData.IsReadyForPlaying && m_componentPlayer.View.ActiveCamera.IsEntityControlEnabled && componentSleep.SleepFactor <= 0f;
+			m_moveRectangleContainerWidget.IsVisible = !SettingsManager.HideMoveLookPads && componentInput.IsControlledByTouch;
+			m_lookRectangleContainerWidget.IsVisible = !SettingsManager.HideMoveLookPads && componentInput.IsControlledByTouch && (SettingsManager.LookControlMode != LookControlMode.EntireScreen || SettingsManager.MoveControlMode != MoveControlMode.Buttons);
+			m_lookPadContainerWidget.IsVisible = SettingsManager.LookControlMode != LookControlMode.SplitTouch;
+			MoveRoseWidget.IsVisible = componentInput.IsControlledByTouch;
+			m_moreContentsWidget.IsVisible = m_moreButtonWidget.IsChecked;
+			HealthBarWidget.IsVisible = gameMode != GameMode.Creative;
+			FoodBarWidget.IsVisible = gameMode != 0 && worldSettings.AreAdventureSurvivalMechanicsEnabled;
+			TemperatureBarWidget.IsVisible = gameMode != 0 && worldSettings.AreAdventureSurvivalMechanicsEnabled;
+			LevelLabelWidget.IsVisible = gameMode != 0 && worldSettings.AreAdventureSurvivalMechanicsEnabled;
+			m_creativeFlyButtonWidget.IsVisible = gameMode == GameMode.Creative;
+			m_timeOfDayButtonWidget.IsVisible = gameMode == GameMode.Creative;
+			m_lightningButtonWidget.IsVisible = gameMode == GameMode.Creative;
+			m_moveButtonsContainerWidget.IsVisible = SettingsManager.MoveControlMode == MoveControlMode.Buttons;
+			m_movePadContainerWidget.IsVisible = SettingsManager.MoveControlMode == MoveControlMode.Pad;
+			if (SettingsManager.LeftHandedLayout)
+			{
+				m_moveContainerWidget.HorizontalAlignment = WidgetAlignment.Far;
+				m_lookContainerWidget.HorizontalAlignment = WidgetAlignment.Near;
+				m_moveRectangleWidget.FlipHorizontal = true;
+				m_lookRectangleWidget.FlipHorizontal = false;
+			}
+			else
+			{
+				m_moveContainerWidget.HorizontalAlignment = WidgetAlignment.Near;
+				m_lookContainerWidget.HorizontalAlignment = WidgetAlignment.Far;
+				m_moveRectangleWidget.FlipHorizontal = false;
+				m_lookRectangleWidget.FlipHorizontal = true;
+			}
+			m_nearbyEditableCell = FindNearbyEditableCell();
+			m_sneakButtonWidget.IsChecked = m_componentPlayer.ComponentBody.IsSneaking;
+			m_creativeFlyButtonWidget.IsChecked = m_componentPlayer.ComponentLocomotion.IsCreativeFlyEnabled;
+			m_inventoryButtonWidget.IsChecked = IsInventoryVisible();
+			m_clothingButtonWidget.IsChecked = IsClothingVisible();
+			if (IsActiveSlotEditable() || m_nearbyEditableCell.HasValue)
+			{
+				m_sneakButtonWidget.IsVisible = false;
+				m_mountButtonWidget.IsVisible = false;
+				m_editItemButton.IsVisible = true;
+			}
+			else if (componentRider != null && componentRider.Mount != null)
+			{
+				m_sneakButtonWidget.IsVisible = false;
+				m_mountButtonWidget.IsChecked = true;
+				m_mountButtonWidget.IsVisible = true;
+				m_editItemButton.IsVisible = false;
+			}
+			else
+			{
+				m_mountButtonWidget.IsChecked = false;
+				if (componentRider != null && Time.FrameStartTime - m_lastMountableCreatureSearchTime > 0.5)
+				{
+					m_lastMountableCreatureSearchTime = Time.FrameStartTime;
+					if (componentRider.FindNearestMount() != null)
+					{
+						m_sneakButtonWidget.IsVisible = false;
+						m_mountButtonWidget.IsVisible = true;
+						m_editItemButton.IsVisible = false;
+					}
+					else
+					{
+						m_sneakButtonWidget.IsVisible = true;
+						m_mountButtonWidget.IsVisible = false;
+						m_editItemButton.IsVisible = false;
+					}
+				}
+			}
+			if (!m_componentPlayer.IsAddedToProject || m_componentPlayer.ComponentHealth.Health == 0f || componentSleep.IsSleeping || m_componentPlayer.ComponentSickness.IsPuking)
+				ModalPanelWidget = null;
+			if (m_componentPlayer.ComponentSickness.IsSick)
+				m_componentPlayer.ComponentGui.HealthBarWidget.LitBarColor = new Color(166, 175, 103);
+			else if (m_componentPlayer.ComponentFlu.HasFlu)
+			{
+				m_componentPlayer.ComponentGui.HealthBarWidget.LitBarColor = new Color(0, 48, 255);
+			}
+			else
+			{
+				m_componentPlayer.ComponentGui.HealthBarWidget.LitBarColor = new Color(224, 24, 0);
+			}
+		}
 	}
 }

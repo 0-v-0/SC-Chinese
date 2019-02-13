@@ -251,16 +251,11 @@ namespace ZHCN
 		{
 			switch (Terrain.ExtractData(value))
 			{
-				case 0:
-					return "橡树树苗";
-				case 1:
-					return "白桦树苗";
-				case 2:
-					return "云杉树苗";
-				case 3:
-					return "高大云杉树苗";
-				default:
-					return "树苗";
+				case 0: return "橡树树苗";
+				case 1: return "白桦树苗";
+				case 2: return "云杉树苗";
+				case 3: return "高大云杉树苗";
+				default: return "树苗";
 			}
 		}
 	}
@@ -273,24 +268,15 @@ namespace ZHCN
 		{
 			switch (Terrain.ExtractData(value))
 			{
-				case 0:
-					return "高草种子";
-				case 1:
-					return "红花种子";
-				case 2:
-					return "紫花种子";
-				case 3:
-					return "白花种子";
-				case 4:
-					return "野黑麦种子";
-				case 5:
-					return "黑麦种子";
-				case 6:
-					return "棉花种子";
-				case 7:
-					return "南瓜种子";
-				default:
-					return string.Empty;
+				case 0: return "高草种子";
+				case 1: return "红花种子";
+				case 2: return "紫花种子";
+				case 3: return "白花种子";
+				case 4: return "野黑麦种子";
+				case 5: return "黑麦种子";
+				case 6: return "棉花种子";
+				case 7: return "南瓜种子";
+				default: return string.Empty;
 			}
 		}
 	}

@@ -52,7 +52,7 @@ namespace ZHCN
 				item = new Factor
 				{
 					Value = num7,
-					Description = (m_componentPlayer.ComponentSickness.IsSick ? "疾病" : "无疾病")
+					Description = m_componentPlayer.ComponentSickness.IsSick ? "疾病" : "无疾病"
 				};
 				factors.Add(item);
 			}
@@ -63,7 +63,7 @@ namespace ZHCN
 				item = new Factor
 				{
 					Value = num9,
-					Description = (m_componentPlayer.ComponentSickness.IsPuking ? "呕吐" : "无呕吐")
+					Description = m_componentPlayer.ComponentSickness.IsPuking ? "呕吐" : "无呕吐"
 				};
 				factors.Add(item);
 			}
@@ -74,7 +74,7 @@ namespace ZHCN
 				item = new Factor
 				{
 					Value = num11,
-					Description = (m_componentPlayer.ComponentFlu.HasFlu ? "感冒" : "无感冒")
+					Description = m_componentPlayer.ComponentFlu.HasFlu ? "感冒" : "无感冒"
 				};
 				factors.Add(item);
 			}
@@ -85,7 +85,7 @@ namespace ZHCN
 				item = new Factor
 				{
 					Value = num13,
-					Description = (m_componentPlayer.ComponentFlu.IsCoughing ? "咳嗽" : "无咳嗽")
+					Description = m_componentPlayer.ComponentFlu.IsCoughing ? "咳嗽" : "无咳嗽"
 				};
 				factors.Add(item);
 			}
@@ -137,7 +137,7 @@ namespace ZHCN
 				item = new Factor
 				{
 					Value = num5,
-					Description = (m_componentPlayer.ComponentSickness.IsSick ? "疾病" : "无疾病")
+					Description = m_componentPlayer.ComponentSickness.IsSick ? "疾病" : "无疾病"
 				};
 				factors.Add(item);
 			}
@@ -148,7 +148,7 @@ namespace ZHCN
 				item = new Factor
 				{
 					Value = num7,
-					Description = (m_componentPlayer.ComponentFlu.HasFlu ? "感冒" : "无感冒")
+					Description = m_componentPlayer.ComponentFlu.HasFlu ? "感冒" : "无感冒"
 				};
 				factors.Add(item);
 			}
@@ -274,7 +274,7 @@ namespace ZHCN
 				item = new Factor
 				{
 					Value = num5,
-					Description = (m_componentPlayer.ComponentSickness.IsSick ? "疾病" : "无疾病")
+					Description = m_componentPlayer.ComponentSickness.IsSick ? "疾病" : "无疾病"
 				};
 				factors.Add(item);
 			}
@@ -285,7 +285,7 @@ namespace ZHCN
 				item = new Factor
 				{
 					Value = num6,
-					Description = (m_componentPlayer.ComponentSickness.IsPuking ? "呕吐" : "无呕吐")
+					Description = m_componentPlayer.ComponentSickness.IsPuking ? "呕吐" : "无呕吐"
 				};
 				factors.Add(item);
 			}
@@ -296,7 +296,7 @@ namespace ZHCN
 				item = new Factor
 				{
 					Value = num7,
-					Description = (m_componentPlayer.ComponentFlu.HasFlu ? "感冒" : "无感冒")
+					Description = m_componentPlayer.ComponentFlu.HasFlu ? "感冒" : "无感冒"
 				};
 				factors.Add(item);
 			}
@@ -307,7 +307,7 @@ namespace ZHCN
 				item = new Factor
 				{
 					Value = num8,
-					Description = (m_componentPlayer.ComponentFlu.IsCoughing ? "咳嗽" : "无咳嗽")
+					Description = m_componentPlayer.ComponentFlu.IsCoughing ? "咳嗽" : "无咳嗽"
 				};
 				factors.Add(item);
 			}
