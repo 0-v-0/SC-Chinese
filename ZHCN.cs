@@ -83,7 +83,7 @@ namespace ZHCN
 		{
 			if (PlayerData.ComponentPlayer == null)
 				PlayerData.m_stateMachine.TransitionTo("PrepareSpawn");
-			else if (Time.RealTime - PlayerData.m_playerDeathTime.Value > 1.5 && !DialogsManager.HasDialogs(PlayerData.ComponentPlayer.View.GameWidget) && PlayerData.ComponentPlayer.View.Input.Any)
+			else if ((PlayerData.m_playerDeathTime.HasValue ? Time.RealTime - PlayerData.m_playerDeathTime.Value : Time.RealTime) > 1.5 && !DialogsManager.HasDialogs(PlayerData.ComponentPlayer.View.GameWidget) && PlayerData.ComponentPlayer.View.Input.Any)
 				if (PlayerData.m_subsystemGameInfo.WorldSettings.GameMode == GameMode.Cruel)
 					DialogsManager.ShowDialog(PlayerData.ComponentPlayer.View.GameWidget, new GameMenuDialog(PlayerData.ComponentPlayer));
 				else if (PlayerData.m_subsystemGameInfo.WorldSettings.GameMode == GameMode.Adventure && !PlayerData.m_subsystemGameInfo.WorldSettings.IsAdventureRespawnAllowed)
