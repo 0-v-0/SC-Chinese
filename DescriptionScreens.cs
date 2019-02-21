@@ -44,7 +44,7 @@ namespace ZHCN
 				m_descriptionWidget.Text = bestiaryCreatureInfo.Description;
 				m_propertyNames1Widget.Text = string.Empty;
 				m_propertyValues1Widget.Text = string.Empty;
-				m_propertyNames1Widget.Text += "恢复：\n";
+				m_propertyNames1Widget.Text += "血量：\n";
 				LabelWidget propertyValues1Widget = m_propertyValues1Widget;
 				propertyValues1Widget.Text = propertyValues1Widget.Text + bestiaryCreatureInfo.AttackResilience.ToString() + "\n";
 				m_propertyNames1Widget.Text += "攻击力：\n";

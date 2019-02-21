@@ -1000,7 +1000,7 @@
       "aba"
       " a"
     </Recipe>
-    <Recipe Result="ClothingBlock:35" ResultCount="1" RequiredHeatLevel="0" a="copperingot" b="clothing:7" Description="用铜和皮护腿制作铜护腿">
+    <Recipe Result="ClothingBlock:35" ResultCount="1" RequiredHeatLevel="0" a="copperingot" b="clothing:7" Description="用铜和毛皮裤制作铜护腿">
       " a"
       "aba"
       " a"
@@ -1020,7 +1020,7 @@
       "aba"
       " a"
     </Recipe>
-    <Recipe Result="ClothingBlock:4" ResultCount="1" RequiredHeatLevel="0" a="ironingot" b="clothing:7" Description="用铁和皮裤制作腿甲">
+    <Recipe Result="ClothingBlock:4" ResultCount="1" RequiredHeatLevel="0" a="ironingot" b="clothing:7" Description="用铁和毛皮裤制作腿甲">
       " a"
       "aba"
       " a"

@@ -2306,7 +2306,7 @@
             </MemberComponentTemplate>
             <MemberComponentTemplate Name="RunAwayBehavior" Guid="47744a97-c8d7-4389-adfb-b59e14f87362" InheritanceParent="b138cc15-930c-4805-8cfc-b91bfa7f767a" />
             <MemberComponentTemplate Name="Creature" Guid="4cd38e9a-3c4f-40fd-8b96-0ede289c231c">
-              <Parameter Name="Description" Guid="2bc5624f-0df9-4afe-bf06-1f944833d5bf" Value="中型植食性哺乳动物。攻击力强大，但移动速度不快。美味可口。" Type="string" />
+              <Parameter Name="Description" Guid="2bc5624f-0df9-4afe-bf06-1f944833d5bf" Value="中型植食性哺乳动物。极具侵略性的体型，但移动速度不快。美味可口。" Type="string" />
               <Parameter Name="Category" Guid="418311cb-26af-473e-bec0-e9fda513ea33" Value="LandOther" Type="Game.CreatureCategory" />
               <Parameter Name="KillVerbs" Guid="497da686-5df3-40c2-8a59-81e76df946cd" Value="mauled" Type="string" />
               <Parameter Name="DisplayName" Guid="f751455c-6095-4059-bfbf-47fb0f4bb51c" Value="野猪" Type="string" />

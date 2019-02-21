@@ -38,18 +38,12 @@ namespace ZHCN
 		{
 			switch (type)
 			{
-				case ExternalContentType.Directory:
-					return "目录";
-				case ExternalContentType.World:
-					return "世界";
-				case ExternalContentType.BlocksTexture:
-					return "材质纹理";
-				case ExternalContentType.CharacterSkin:
-					return "角色皮肤";
-				case ExternalContentType.FurniturePack:
-					return "家具包";
-				default:
-					return string.Empty;
+				case ExternalContentType.Directory: return "目录";
+				case ExternalContentType.World: return "世界";
+				case ExternalContentType.BlocksTexture: return "材质纹理";
+				case ExternalContentType.CharacterSkin: return "角色皮肤";
+				case ExternalContentType.FurniturePack: return "家具包";
+				default: return string.Empty;
 			}
 		}
 
