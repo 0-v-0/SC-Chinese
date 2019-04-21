@@ -42,7 +42,7 @@ namespace ZHCN
 					bool flag = !string.IsNullOrEmpty(textData.Url);
 					for (int j = 0; j < list.Count; j++)
 					{
-						Vector2 vector = new Vector2(num4 / 2f, j * 26 + textData.TextureLocation.Value * 32 + (num5 - num2) / 2f);
+						var vector = new Vector2(num4 / 2f, j * 26 + textData.TextureLocation.Value * 32 + (num5 - num2) / 2f);
 						fontBatch.QueueText(list[j], vector, 0f, flag ? new Color(0, 0, 64) : list2[j], TextAnchor.HorizontalCenter);
 						if (flag)
 						{

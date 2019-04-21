@@ -62,10 +62,7 @@ namespace ZHCN
 			}
 			if (playerInput.ToggleClothing || m_clothingButtonWidget.IsClicked)
 			{
-				if (IsClothingVisible())
-					ModalPanelWidget = null;
-				else
-					ModalPanelWidget = new ClothingWidget(m_componentPlayer);
+				ModalPanelWidget = IsClothingVisible() ? null : new ClothingWidget(m_componentPlayer);
 			}
 			if (m_sneakButtonWidget.IsClicked || playerInput.ToggleSneak)
 			{
@@ -168,7 +165,7 @@ namespace ZHCN
 			}
 			if (m_subsystemGameInfo.WorldSettings.GameMode == GameMode.Creative && (m_lightningButtonWidget.IsClicked || playerInput.Lighting))
 			{
-				Matrix matrix = Matrix.CreateFromQuaternion(m_componentPlayer.ComponentCreatureModel.EyeRotation);
+				var matrix = Matrix.CreateFromQuaternion(m_componentPlayer.ComponentCreatureModel.EyeRotation);
 				Project.FindSubsystem<SubsystemWeather>(throwOnError: true).ManualLightingStrike(m_componentPlayer.ComponentCreatureModel.EyePosition, matrix.Forward);
 			}
 			if (m_subsystemGameInfo.WorldSettings.GameMode == GameMode.Creative && (m_timeOfDayButtonWidget.IsClicked || playerInput.TimeOfDay))
@@ -309,16 +306,9 @@ namespace ZHCN
 			}
 			if (!m_componentPlayer.IsAddedToProject || m_componentPlayer.ComponentHealth.Health == 0f || componentSleep.IsSleeping || m_componentPlayer.ComponentSickness.IsPuking)
 				ModalPanelWidget = null;
-			if (m_componentPlayer.ComponentSickness.IsSick)
-				m_componentPlayer.ComponentGui.HealthBarWidget.LitBarColor = new Color(166, 175, 103);
-			else if (m_componentPlayer.ComponentFlu.HasFlu)
-			{
-				m_componentPlayer.ComponentGui.HealthBarWidget.LitBarColor = new Color(0, 48, 255);
-			}
-			else
-			{
-				m_componentPlayer.ComponentGui.HealthBarWidget.LitBarColor = new Color(224, 24, 0);
-			}
+			m_componentPlayer.ComponentGui.HealthBarWidget.LitBarColor = m_componentPlayer.ComponentSickness.IsSick
+				? new Color(166, 175, 103)
+				: m_componentPlayer.ComponentFlu.HasFlu ? new Color(0, 48, 255) : new Color(224, 24, 0);
 		}
 	}
 }

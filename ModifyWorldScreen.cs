@@ -23,7 +23,7 @@ namespace ZHCN
 			bool flag2 = WorldsManager.ValidateWorldName(m_worldSettings.Name);
 			m_nameTextBox.Text = m_worldSettings.Name;
 			m_seedLabel.Text = m_worldSettings.Seed;
-			m_gameModeButton.Text = m_worldSettings.GameMode.ToString();
+			m_gameModeButton.Text = ZHCN.GameModeNames[(int)m_worldSettings.GameMode];
 			m_gameModeButton.IsEnabled = m_worldSettings.GameMode != GameMode.Cruel;
 			m_errorLabel.IsVisible = !flag2;
 			m_descriptionLabel.IsVisible = flag2;

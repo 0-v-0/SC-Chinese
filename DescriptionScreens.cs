@@ -9,9 +9,8 @@ namespace ZHCN
 	{
 		public override void Enter(object[] parameters)
 		{
-			BestiaryCreatureInfo item = (BestiaryCreatureInfo)parameters[0];
 			m_infoList = (IList<BestiaryCreatureInfo>)parameters[1];
-			m_index = m_infoList.IndexOf(item);
+			m_index = m_infoList.IndexOf((BestiaryCreatureInfo)parameters[0]);
 			UpdateCreatureProperties();
 		}
 
@@ -154,7 +153,7 @@ namespace ZHCN
 
 		public new Dictionary<string, string> GetBlockProperties(int value)
 		{
-			Dictionary<string, string> dictionary = new Dictionary<string, string>();
+			var dictionary = new Dictionary<string, string>();
 			int num = Terrain.ExtractContents(value);
 			Block block = BlocksManager.Blocks[num];
 			if (block.EmittedLightAmount > 0)

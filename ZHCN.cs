@@ -1,6 +1,7 @@
 using Engine;
 using Game;
 using GameEntitySystem;
+using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -87,21 +88,21 @@ namespace ZHCN
 		}
 
 		public static string[] BlockDigMethodNames;
-		/*public static string[] CommunityContentModeNames;
+		public static string[] CommunityContentModeNames;
 		public static string[] ScreenshotSizeNames;
-		public static string[] TextureAnimationModeNames;
+		/*public static string[] TextureAnimationModeNames;*/
 		public static string[] ResolutionModeNames;
 		public static string[] GuiSizeNames;
 		public static string[] SkyRenderingModeNames;
 		public static string[] ViewAngleModeNames;
-		public static string[] BlockDigMethodNames;
 		public static string[] GameModeNames;
 		public static string[] EnvironmentBehaviorModeNames;
 		public static string[] TerrainGenerationModeNames;
-		public static string[] ExternalContentTypeNames;
-		public static string[] LookControlModeNames;
-		public static string[] MoveControlModeNames;
-		public static string[] TimeOfDayModeNames;*/
+		//public static string[] ExternalContentTypeNames;
+		//public static string[] LookControlModeNames;
+		//public static string[] MoveControlModeNames;
+		//public static string[] TimeOfDayModeNames;
+		public static string[] PlayerClassNames;
 
 		public static void Initialize()
 		{
@@ -112,7 +113,7 @@ namespace ZHCN
 				"劈"
 			};
 
-			/*GameModeNames = new[]{
+			GameModeNames = new[]{
 				"创造",
 				"无害",
 				"挑战",
@@ -126,11 +127,12 @@ namespace ZHCN
 			};
 
 			TerrainGenerationModeNames = new[]{
-				"正常",
+				"大陆",
+				"岛屿",
 				"平坦"
 			};
 
-			ExternalContentTypeNames = new[]{
+			/*ExternalContentTypeNames = new[]{
 				"未知",
 				"目录",
 				"方块纹理",
@@ -155,7 +157,7 @@ namespace ZHCN
 				"晚上",
 				"日出",
 				"日落"
-			};
+			};*/
 
 			ViewAngleModeNames = new[]{
 				"正常",
@@ -164,7 +166,7 @@ namespace ZHCN
 			};
 
 			SkyRenderingModeNames = new[]{
-				"完全",
+				"完整",
 				"无云",
 				"禁用"
 			};
@@ -182,10 +184,10 @@ namespace ZHCN
 				"高"
 			};
 
-			TextureAnimationModeNames = new[]{
+			/*TextureAnimationModeNames = new[]{
 				"完全",
 				"简化"
-			};
+			};*/
 
 			ScreenshotSizeNames = new[]{
 				"屏幕大小",
@@ -197,10 +199,16 @@ namespace ZHCN
 				"严格",
 				"普通",
 				"全部显示"
-			};*/
+			};
+
+			PlayerClassNames = new[]{
+				"男",
+				"女"
+			};
 			var enumerator = ModsManager.GetEntries(".lng").GetEnumerator();
 			while (enumerator.MoveNext())
-				ReadKeyValueFile(LabelWidget.Strings, enumerator.Current.Stream);
+				if (string.Equals(Path.GetFileName(enumerator.Current.Filename), "zh-cn", StringComparison.OrdinalIgnoreCase))
+					ReadKeyValueFile(LabelWidget.Strings, enumerator.Current.Stream);
 			ArrowBlock.m_displayNames = new[]
 			{
 				"木箭",
@@ -267,6 +275,9 @@ namespace ZHCN
 			ScreensManager.m_screens["ExternalContent"] = new ExternalContentScreen();
 			ScreensManager.m_screens["ModifyWorld"] = new ModifyWorldScreen();
 			ScreensManager.m_screens["RecipaediaDescription"] = new RecipaediaDescriptionScreen();
+			ScreensManager.m_screens["SettingsPerformance"] = new SettingsPerformanceScreen();
+			ScreensManager.m_screens["SettingsControls"] = new SettingsControlsScreen();
+			ScreensManager.m_screens["SettingsUi"] = new SettingsUiScreen();
 		}
 	}
 }

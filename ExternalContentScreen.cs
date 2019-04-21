@@ -76,7 +76,7 @@ namespace ZHCN
 					DownloadEntry(externalContentEntry);
 			if (m_copyLinkButton.IsClicked && externalContentEntry != null && ExternalContentManager.IsEntryTypeDownloadSupported(externalContentEntry.Type))
 			{
-				CancellableBusyDialog busyDialog = new CancellableBusyDialog("创建链接", false);
+				var busyDialog = new CancellableBusyDialog("创建链接", false);
 				DialogsManager.ShowDialog(null, busyDialog);
 				m_externalContentProvider.Link(externalContentEntry.Path, busyDialog.Progress, delegate (string link)
 				{
@@ -112,7 +112,7 @@ namespace ZHCN
 			m_directoryList.ClearItems();
 			if (m_externalContentProvider != null && m_externalContentProvider.IsLoggedIn)
 			{
-				CancellableBusyDialog busyDialog = new CancellableBusyDialog("检索目录", false);
+				var busyDialog = new CancellableBusyDialog("检索目录", false);
 				DialogsManager.ShowDialog(null, busyDialog);
 				m_externalContentProvider.List(m_path, busyDialog.Progress, delegate (ExternalContentEntry entry)
 				{
@@ -143,7 +143,7 @@ namespace ZHCN
 
 		public new void DownloadEntry(ExternalContentEntry entry)
 		{
-			CancellableBusyDialog busyDialog = new CancellableBusyDialog("下载中", false);
+			var busyDialog = new CancellableBusyDialog("下载中", false);
 			DialogsManager.ShowDialog(null, busyDialog);
 			m_externalContentProvider.Download(entry.Path, busyDialog.Progress, delegate (Stream stream)
 			{

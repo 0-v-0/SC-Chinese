@@ -61,7 +61,7 @@ namespace ZHCN
 			{
 				return null;
 			}
-			List<string> list = (from i in ingredients
+			var list = (from i in ingredients
 								 where !string.IsNullOrEmpty(i)
 								 select i).ToList();
 			if (list.Count == 2)
@@ -92,7 +92,7 @@ namespace ZHCN
 					int clothingIndex = GetClothingIndex(data2);
 					bool canBeDyed = GetClothingData(data2).CanBeDyed;
 					int damage = BlocksManager.Blocks[203].GetDamage(num3);
-					int color = PaintBucketBlock.GetColor(Terrain.ExtractData(num));
+					int color = Game.PaintBucketBlock.GetColor(Terrain.ExtractData(num));
 					int damage2 = BlocksManager.Blocks[129].GetDamage(num);
 					Block block = BlocksManager.Blocks[129];
 					Block block2 = BlocksManager.Blocks[203];
@@ -100,7 +100,7 @@ namespace ZHCN
 					{
 						return null;
 					}
-					int num4 = PaintBucketBlock.CombineColors(clothingColor, color);
+					int num4 = Game.PaintBucketBlock.CombineColors(clothingColor, color);
 					if (num4 != clothingColor)
 					{
 						return new CraftingRecipe

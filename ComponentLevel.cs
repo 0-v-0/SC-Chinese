@@ -17,7 +17,7 @@ namespace ZHCN
 				item = new Factor
 				{
 					Value = num,
-					Description = m_componentPlayer.PlayerData.PlayerClass.ToString()
+					Description = ZHCN.PlayerClassNames[(int)m_componentPlayer.PlayerData.PlayerClass]
 				};
 				factors.Add(item);
 			}
@@ -96,7 +96,7 @@ namespace ZHCN
 				item = new Factor
 				{
 					Value = num15,
-					Description = m_subsystemGameInfo.WorldSettings.GameMode.ToString() + " 模式"
+					Description = ZHCN.GameModeNames[(int)m_subsystemGameInfo.WorldSettings.GameMode] + "模式"
 				};
 				factors.Add(item);
 			}
@@ -113,7 +113,7 @@ namespace ZHCN
 				item = new Factor
 				{
 					Value = num,
-					Description = m_componentPlayer.PlayerData.PlayerClass.ToString()
+					Description = ZHCN.PlayerClassNames[(int)m_componentPlayer.PlayerData.PlayerClass]
 				};
 				factors.Add(item);
 			}
@@ -167,7 +167,7 @@ namespace ZHCN
 				item = new Factor
 				{
 					Value = num9,
-					Description = m_subsystemGameInfo.WorldSettings.GameMode.ToString() + " 模式"
+					Description = ZHCN.GameModeNames[(int)m_subsystemGameInfo.WorldSettings.GameMode] + "模式"
 				};
 				factors.Add(item);
 			}
@@ -185,7 +185,7 @@ namespace ZHCN
 				item = new Factor
 				{
 					Value = num2,
-					Description = m_componentPlayer.PlayerData.PlayerClass.ToString()
+					Description = ZHCN.PlayerClassNames[(int)m_componentPlayer.PlayerData.PlayerClass]
 				};
 				factors.Add(item);
 			}
@@ -324,7 +324,7 @@ namespace ZHCN
 				item = new Factor
 				{
 					Value = num,
-					Description = m_componentPlayer.PlayerData.PlayerClass.ToString()
+					Description = ZHCN.PlayerClassNames[(int)m_componentPlayer.PlayerData.PlayerClass]
 				};
 				factors.Add(item);
 			}
@@ -355,7 +355,7 @@ namespace ZHCN
 				item = new Factor
 				{
 					Value = num5,
-					Description = m_subsystemGameInfo.WorldSettings.GameMode.ToString() + " 模式"
+					Description = ZHCN.GameModeNames[(int)m_subsystemGameInfo.WorldSettings.GameMode] + "模式"
 				};
 				factors.Add(item);
 			}

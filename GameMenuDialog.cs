@@ -50,7 +50,7 @@ namespace ZHCN
 			BitmapFont font = ContentManager.Get<BitmapFont>("Fonts/Pericles24");
 			BitmapFont font2 = ContentManager.Get<BitmapFont>("Fonts/Pericles18");
 			Color white = Color.White;
-			StackPanelWidget stackPanelWidget = new StackPanelWidget
+			var stackPanelWidget = new StackPanelWidget
 			{
 				Direction = LayoutDirection.Vertical,
 				HorizontalAlignment = WidgetAlignment.Center
@@ -64,10 +64,10 @@ namespace ZHCN
 				Margin = new Vector2(0f, 10f),
 				Color = white
 			});
-			AddStat(stackPanelWidget, "游戏模式", subsystemGameInfo.WorldSettings.GameMode.ToString() + ", " + subsystemGameInfo.WorldSettings.EnvironmentBehaviorMode.ToString(), "");
-			AddStat(stackPanelWidget, "地形类型", subsystemGameInfo.WorldSettings.TerrainGenerationMode.ToString(), "");
+			AddStat(stackPanelWidget, "游戏模式", ZHCN.GameModeNames[(int)subsystemGameInfo.WorldSettings.GameMode] + ", " + ZHCN.EnvironmentBehaviorModeNames[(int)subsystemGameInfo.WorldSettings.EnvironmentBehaviorMode], "");
+			AddStat(stackPanelWidget, "地形类型", ZHCN.TerrainGenerationModeNames[(int)subsystemGameInfo.WorldSettings.TerrainGenerationMode], "");
 			string seed = subsystemGameInfo.WorldSettings.Seed;
-			AddStat(stackPanelWidget, "世界种子", (!string.IsNullOrEmpty(seed)) ? seed : "(无)", "");
+			AddStat(stackPanelWidget, "世界种子", !string.IsNullOrEmpty(seed) ? seed : "(无)", "");
 			AddStat(stackPanelWidget, "海平面", WorldOptionsScreen.FormatOffset(subsystemGameInfo.WorldSettings.SeaLevelOffset), "");
 			AddStat(stackPanelWidget, "温度", WorldOptionsScreen.FormatOffset(subsystemGameInfo.WorldSettings.TemperatureOffset), "");
 			AddStat(stackPanelWidget, "湿度", WorldOptionsScreen.FormatOffset(subsystemGameInfo.WorldSettings.HumidityOffset), "");
@@ -90,7 +90,7 @@ namespace ZHCN
 				Color = white
 			});
 			AddStat(stackPanelWidget, "名称", playerData.Name, "");
-			AddStat(stackPanelWidget, "性别", playerData.PlayerClass.ToString(), "");
+			AddStat(stackPanelWidget, "性别", ZHCN.PlayerClassNames[(int)playerData.PlayerClass], "");
 			object obj;
 			double num2;
 			if (!(playerData.FirstSpawnTime >= 0.0))
@@ -114,8 +114,7 @@ namespace ZHCN
 				num2 = (subsystemGameInfo.TotalElapsedGameTime - playerData.LastSpawnTime) / 1200.0;
 				obj2 = num2.ToString("N1") + " 天";
 			}
-			string value2 = (string)obj2;
-			AddStat(stackPanelWidget, "存活天数", value2, "");
+			AddStat(stackPanelWidget, "存活天数", (string)obj2, "");
 			AddStat(stackPanelWidget, "重生", MathUtils.Max(playerData.SpawnsCount - 1, 0).ToString("N0") + " 次", "");
 			AddStat(stackPanelWidget, "达到最高等级", "等级 " + ((int)MathUtils.Floor(playerStats.HighestLevel)).ToString("N0"), "");
 			if (componentPlayer != null)
@@ -127,7 +126,7 @@ namespace ZHCN
 				}
 				else
 				{
-					AddStat(stackPanelWidget, "位置", "(不可用 " + subsystemGameInfo.WorldSettings.GameMode.ToString() + ")", "");
+					AddStat(stackPanelWidget, "位置", "(在 " + ZHCN.GameModeNames[(int)subsystemGameInfo.WorldSettings.GameMode] + "模式不可用)", "");
 				}
 			}
 			if (string.CompareOrdinal(subsystemGameInfo.WorldSettings.OriginalSerializationVersion, "1.29") > 0)
@@ -210,8 +209,7 @@ namespace ZHCN
 				});
 				AddStat(stackPanelWidget, "闪电袭击", playerStats.StruckByLightning.ToString("N0") + " 次", "");
 				StackPanelWidget containerWidget3 = stackPanelWidget;
-				GameMode easiestModeUsed = playerStats.EasiestModeUsed;
-				AddStat(containerWidget3, "最简单游戏模式", easiestModeUsed.ToString(), "");
+				AddStat(containerWidget3, "最简单游戏模式", ZHCN.GameModeNames[(int)playerStats.EasiestModeUsed], "");
 				ReadOnlyList<PlayerStats.DeathRecord> deathRecords = playerStats.DeathRecords;
 				if (deathRecords.Count > 0)
 				{
@@ -251,7 +249,7 @@ namespace ZHCN
 		{
 			if (Children.Find<ButtonWidget>("More", true).IsClicked)
 			{
-				List<Tuple<string, Action>> list = new List<Tuple<string, Action>>();
+				var list = new List<Tuple<string, Action>>();
 				if (m_adventureRestartExists && GameManager.WorldInfo.WorldSettings.GameMode == GameMode.Adventure)
 				{
 					list.Add(new Tuple<string, Action>("重启冒险", delegate
@@ -271,7 +269,7 @@ namespace ZHCN
 					{
 						DialogsManager.ShowDialog(null, new ListSelectionDialog("选择内容进行评价", GetRateableItems(), 60f, (object o) => ((ActiveExternalContentInfo)o).DisplayName, delegate (object o)
 						{
-							ActiveExternalContentInfo activeExternalContentInfo = (ActiveExternalContentInfo)o;
+							var activeExternalContentInfo = (ActiveExternalContentInfo)o;
 							DialogsManager.ShowDialog(null, new RateCommunityContentDialog(activeExternalContentInfo.Address, activeExternalContentInfo.DisplayName, UserManager.ActiveUser.UniqueId));
 						}));
 					}));
@@ -302,7 +300,7 @@ namespace ZHCN
 						DialogsManager.ShowDialog(ParentWidget, new GamepadHelpDialog());
 					}));
 				}
-				ListSelectionDialog dialog = new ListSelectionDialog("更多操作", list, 60f, (object t) => ((Tuple<string, Action>)t).Item1, delegate (object t)
+				var dialog = new ListSelectionDialog("更多操作", list, 60f, (object t) => ((Tuple<string, Action>)t).Item1, delegate (object t)
 				{
 					((Tuple<string, Action>)t).Item2();
 				});

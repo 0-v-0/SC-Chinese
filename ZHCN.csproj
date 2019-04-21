@@ -74,6 +74,7 @@
     <Compile Include="ExternalContentScreen.cs" />
     <Compile Include="GameMenuDialog.cs" />
     <Compile Include="ModifyWorldScreen.cs" />
+    <Compile Include="SettingsScreen.cs" />
     <Compile Include="SubsystemSignBlockBehavior.cs" />
     <Compile Include="ZHCN.cs" />
   </ItemGroup>
