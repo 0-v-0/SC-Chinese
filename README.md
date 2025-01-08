@@ -4,6 +4,7 @@
 This branch contains content related to the generation of bitmap fonts (Bitmap Font). Only for Windows OS.
 
 ## 工作步骤:
+1. 下载或克隆本项目
 1. 安装 [Python3](https://www.python.org/downloads/) 用于执行转换脚本
 1. 安装本项目根目录的`MicrosoftYaHeiPericles-Regular.ttf`字体（使用其他字体则不需要）
 1. 准备需要的字符，以 `UTF-16` 编码存储到 `fonts\chars.txt` 中，注意不要有回车。目前 `chars.txt` 中包含了1.1万个常用简繁体汉字、各语言字母、数字、特殊符号
@@ -13,6 +14,7 @@ This branch contains content related to the generation of bitmap fonts (Bitmap F
 1. 输出结果在 `output` 目录
 
 ## Workflow:
+1. Download or clone this repository.
 1. Instal [Python3](https://www.python.org/downloads/) to execute scripts.
 1. Install the `MicrosoftYaHeiPericles-Regular.ttf` font located in the root directory of this project. (Unless you use other font)
 1. Prepare the required characters and store them with `UTF-16` encoding in `fonts\chars.txt`. No `\n`(carriage return) symbol in it. Currently, `chars.txt` includes 11 thousands commonly used simplified and traditional Chinese characters, letters from many languages, numbers, and special symbols.
@@ -31,3 +33,4 @@ This branch contains content related to the generation of bitmap fonts (Bitmap F
 
 ## 鸣谢 Thanks:
 * [Bitmap Font Generator](http://www.angelcode.com/products/bmfont/)
+* [0-v-0](https://github.com/0-v-0/SC-Chinese)
