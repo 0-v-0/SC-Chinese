@@ -2,11 +2,11 @@
 fileVersion=1
 
 # font settings
-fontName=Pericles 微软雅黑
+fontName=微软雅黑 Bold Pericles
 fontFile=
 charSet=0
-fontSize=18
-aa=2
+fontSize=-38
+aa=4
 scaleH=100
 useSmoothing=1
 isBold=0
@@ -16,22 +16,26 @@ disableBoxChars=1
 outputInvalidCharGlyph=1
 dontIncludeKerningPairs=1
 useHinting=1
-renderFromOutline=1
+renderFromOutline=0
 useClearType=1
+autoFitNumPages=0
+autoFitFontSizeMin=0
+autoFitFontSizeMax=0
 
 # character alignment
 paddingDown=0
 paddingUp=0
 paddingRight=0
 paddingLeft=0
-spacingHoriz=0
-spacingVert=0
+spacingHoriz=2
+spacingVert=1
 useFixedHeight=0
 forceZero=0
+widthPaddingFactor=0.00
 
 # output file
-outWidth=1000
-outHeight=960
+outWidth=4096
+outHeight=4096
 outBitDepth=32
 fontDescFormat=0
 fourChnlPacked=0
@@ -47,7 +51,7 @@ invG=0
 invB=0
 
 # outline
-outlineThickness=0
+outlineThickness=1
 
 # selected chars
 
